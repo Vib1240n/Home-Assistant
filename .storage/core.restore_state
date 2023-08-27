@@ -10,10 +10,10 @@
         "attributes": {
           "editable": true,
           "id": "vibhore",
-          "latitude": 38.54777034286275,
-          "longitude": -121.42028741457057,
+          "latitude": 38.54779052734375,
+          "longitude": -121.42032934487132,
           "gps_accuracy": 35,
-          "source": "device_tracker.bb8",
+          "source": "device_tracker.r4_d4",
           "user_id": "2f1ff103c793419caddb354ff027fb83",
           "device_trackers": [
             "device_tracker.bb8",
@@ -23,15 +23,15 @@
           "friendly_name": "Vibhore"
         },
         "last_changed": "2023-08-27T00:17:49.669672+00:00",
-        "last_updated": "2023-08-27T04:39:57.330446+00:00",
+        "last_updated": "2023-08-27T05:28:29.270612+00:00",
         "context": {
-          "id": "01H8TMN7MJD7HC1WZWCJ5Z2GRB",
+          "id": "01H8TQE3AP59Z6ZMX5E1QBREKT",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -59,7 +59,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -87,7 +87,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -115,7 +115,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -143,7 +143,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -171,7 +171,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -199,7 +199,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -223,7 +223,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -241,7 +241,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -268,7 +268,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -296,7 +296,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -324,84 +324,84 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
         "entity_id": "sensor.speedtest_ping",
-        "state": "29",
+        "state": "31",
         "attributes": {
           "state_class": "measurement",
-          "server_name": "Rancho Murieta, CA",
+          "server_name": "Sacramento, CA",
           "server_country": "United States",
-          "server_id": "7977",
+          "server_id": "7760",
           "unit_of_measurement": "ms",
           "attribution": "Data retrieved from Speedtest.net by Ookla",
           "icon": "mdi:speedometer",
           "friendly_name": "SpeedTest Ping"
         },
-        "last_changed": "2023-08-27T03:19:40.033043+00:00",
-        "last_updated": "2023-08-27T04:20:03.091309+00:00",
+        "last_changed": "2023-08-27T05:20:26.379544+00:00",
+        "last_updated": "2023-08-27T05:20:26.379544+00:00",
         "context": {
-          "id": "01H8TKGSCK7RH53XF2C0SPZ088",
+          "id": "01H8TPZBRBT87MNKANBBK4X8XP",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
         "entity_id": "sensor.speedtest_download",
-        "state": "297.72",
+        "state": "116.15",
         "attributes": {
           "state_class": "measurement",
-          "server_name": "Rancho Murieta, CA",
+          "server_name": "Sacramento, CA",
           "server_country": "United States",
-          "server_id": "7977",
-          "bytes_received": 372470722,
+          "server_id": "7760",
+          "bytes_received": 145580496,
           "unit_of_measurement": "Mbit/s",
           "attribution": "Data retrieved from Speedtest.net by Ookla",
           "icon": "mdi:speedometer",
           "friendly_name": "Speed Test"
         },
-        "last_changed": "2023-08-27T04:20:03.091518+00:00",
-        "last_updated": "2023-08-27T04:20:03.091518+00:00",
+        "last_changed": "2023-08-27T05:20:26.380306+00:00",
+        "last_updated": "2023-08-27T05:20:26.380306+00:00",
         "context": {
-          "id": "01H8TKGSCK7B6T0QPT67VA337P",
+          "id": "01H8TPZBRCE5ZFKJ2QZ01FKD1D",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
         "entity_id": "sensor.speedtest_upload",
-        "state": "41.27",
+        "state": "37.57",
         "attributes": {
           "state_class": "measurement",
-          "server_name": "Rancho Murieta, CA",
+          "server_name": "Sacramento, CA",
           "server_country": "United States",
-          "server_id": "7977",
-          "bytes_sent": 51732480,
+          "server_id": "7760",
+          "bytes_sent": 47071232,
           "unit_of_measurement": "Mbit/s",
           "attribution": "Data retrieved from Speedtest.net by Ookla",
           "icon": "mdi:speedometer",
           "friendly_name": "SpeedTest Upload"
         },
-        "last_changed": "2023-08-27T04:20:03.091643+00:00",
-        "last_updated": "2023-08-27T04:20:03.091643+00:00",
+        "last_changed": "2023-08-27T05:20:26.380920+00:00",
+        "last_updated": "2023-08-27T05:20:26.380920+00:00",
         "context": {
-          "id": "01H8TKGSCKYY6SWKVTSGTX0GTD",
+          "id": "01H8TPZBRCVCDH7NYK6K60CM6X",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -445,7 +445,7 @@
         "native_value": 80,
         "native_unit_of_measurement": "%"
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -469,7 +469,7 @@
         "native_value": "Ethernet",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -512,34 +512,34 @@
         "native_value": "Not Charging",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
         "entity_id": "sensor.bb8_storage",
-        "state": "68.95",
+        "state": "68.70",
         "attributes": {
-          "Available": "317.14 GB",
-          "Available (Important)": "380.62 GB",
-          "Available (Opportunistic)": "340.89 GB",
+          "Available": "317.06 GB",
+          "Available (Important)": "380.54 GB",
+          "Available (Opportunistic)": "339.62 GB",
           "Total": "494.38 GB",
           "unit_of_measurement": "% available",
           "icon": "mdi:database",
           "friendly_name": "BB8 Storage"
         },
-        "last_changed": "2023-08-27T05:16:34.468467+00:00",
-        "last_updated": "2023-08-27T05:17:46.494913+00:00",
+        "last_changed": "2023-08-27T05:31:54.499075+00:00",
+        "last_updated": "2023-08-27T05:31:54.499075+00:00",
         "context": {
-          "id": "01H8TPTFKYQDAJ126G0SW6VPMZ",
+          "id": "01H8TQMBR3P0RX0D9XPST2PWAH",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": {
-        "native_value": "68.95",
+        "native_value": "68.70",
         "native_unit_of_measurement": "% available"
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -561,7 +561,7 @@
         "native_value": "1133@Lark_sacramento",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -583,7 +583,7 @@
         "native_value": "dc:ae:eb:26:fb:cc",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -624,7 +624,7 @@
         "native_value": "3075 Redding Ave\nSacramento CA 95820\nUnited States",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -652,7 +652,7 @@
         "native_value": "Inactive",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -681,7 +681,7 @@
         "native_value": "Inactive",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -699,10 +699,10 @@
           "icon": "mdi:volume-high",
           "friendly_name": "BB8 Active Audio Output"
         },
-        "last_changed": "2023-08-27T05:10:19.441196+00:00",
-        "last_updated": "2023-08-27T05:10:19.441196+00:00",
+        "last_changed": "2023-08-27T05:31:33.664771+00:00",
+        "last_updated": "2023-08-27T05:31:33.664771+00:00",
         "context": {
-          "id": "01H8TPCV1HHKR6CNE8AJZRP6GF",
+          "id": "01H8TQKQD0AZBXKK1QJ13196TP",
           "parent_id": null,
           "user_id": null
         }
@@ -711,7 +711,7 @@
         "native_value": "LG HDR WQHD+",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -739,7 +739,7 @@
         "native_value": 1,
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -761,7 +761,7 @@
         "native_value": "LG HDR WQHD+",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -783,55 +783,55 @@
         "native_value": "B20C0E0C-F439-4750-AAB4-AC1F477E94FE",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
         "entity_id": "sensor.bb8_frontmost_app",
-        "state": "iTerm2",
+        "state": "Home Assistant",
         "attributes": {
-          "Bundle Identifier": "com.googlecode.iterm2",
+          "Bundle Identifier": "io.robbie.HomeAssistant",
           "Is Hidden": false,
-          "Launch Date": "2023-08-27T04:42:16Z",
+          "Launch Date": "2023-08-27T04:39:55Z",
           "Owns Menu Bar": true,
           "icon": "mdi:traffic-light",
           "friendly_name": "BB8 Frontmost App"
         },
-        "last_changed": "2023-08-27T05:17:49.554430+00:00",
-        "last_updated": "2023-08-27T05:17:49.554430+00:00",
+        "last_changed": "2023-08-27T05:31:54.515502+00:00",
+        "last_updated": "2023-08-27T05:31:54.515502+00:00",
         "context": {
-          "id": "01H8TPTJKJ600593HQ16WBAQ2B",
+          "id": "01H8TQMBRKZ0DRFT4CHPFP4VCV",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": {
-        "native_value": "iTerm2",
+        "native_value": "Home Assistant",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
         "entity_id": "sensor.bb8_last_update_trigger",
-        "state": "Signaled",
+        "state": "Launch",
         "attributes": {
           "icon": "mdi:laptop",
           "friendly_name": "BB8 Last Update Trigger"
         },
-        "last_changed": "2023-08-27T05:17:49.555621+00:00",
-        "last_updated": "2023-08-27T05:17:49.555621+00:00",
+        "last_changed": "2023-08-27T05:31:54.628916+00:00",
+        "last_updated": "2023-08-27T05:31:54.628916+00:00",
         "context": {
-          "id": "01H8TPTJKKWEGN2BBBTG2BX89C",
+          "id": "01H8TQMBW429T4V5DMG0XY8G61",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": {
-        "native_value": "Signaled",
+        "native_value": "Launch",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -850,7 +850,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -869,7 +869,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -879,16 +879,16 @@
           "icon": "mdi:volume-high",
           "friendly_name": "BB8 Audio Output In Use"
         },
-        "last_changed": "2023-08-27T05:10:19.439972+00:00",
-        "last_updated": "2023-08-27T05:10:19.439972+00:00",
+        "last_changed": "2023-08-27T05:31:33.663310+00:00",
+        "last_updated": "2023-08-27T05:31:33.663310+00:00",
         "context": {
-          "id": "01H8TPCV1FPZHN48P2GB0AW4V0",
+          "id": "01H8TQKQCZVKV3FH8DP7CY7KW9",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -914,7 +914,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -933,7 +933,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -956,7 +956,7 @@
         "native_value": 2,
         "native_unit_of_measurement": "floors"
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -979,7 +979,7 @@
         "native_value": 1027,
         "native_unit_of_measurement": "m"
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -1002,7 +1002,7 @@
         "native_value": 3,
         "native_unit_of_measurement": "floors"
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -1026,7 +1026,7 @@
         "native_value": 30,
         "native_unit_of_measurement": "%"
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -1049,34 +1049,34 @@
         "native_value": "Not Charging",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
         "entity_id": "sensor.r4_d4_storage",
-        "state": "24.72",
+        "state": "24.71",
         "attributes": {
-          "Available": "7.80 GB",
-          "Available (Important)": "37.90 GB",
-          "Available (Opportunistic)": "31.61 GB",
+          "Available": "7.79 GB",
+          "Available (Important)": "37.89 GB",
+          "Available (Opportunistic)": "31.60 GB",
           "Total": "127.87 GB",
           "unit_of_measurement": "% available",
           "icon": "mdi:database",
           "friendly_name": "R4-D4 Storage"
         },
-        "last_changed": "2023-08-27T04:49:45.801856+00:00",
-        "last_updated": "2023-08-27T05:08:00.330505+00:00",
+        "last_changed": "2023-08-27T05:28:29.476641+00:00",
+        "last_updated": "2023-08-27T05:28:29.476641+00:00",
         "context": {
-          "id": "01H8TP8K6ATE58YDEKJDJ0VZKM",
+          "id": "01H8TQE3H44XAY9DGYD2JT05VN",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": {
-        "native_value": "24.72",
+        "native_value": "24.71",
         "native_unit_of_measurement": "% available"
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -1098,7 +1098,7 @@
         "native_value": "1133@Lark_sacramento",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -1120,7 +1120,7 @@
         "native_value": "dc:ae:eb:66:fb:c8",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -1142,7 +1142,7 @@
         "native_value": "Wi-Fi",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -1171,7 +1171,7 @@
         "native_value": "AT&T",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -1199,7 +1199,7 @@
         "native_value": "N/A",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -1214,7 +1214,7 @@
           "Locality": "Sacramento",
           "Location": [
             38.54779052734375,
-            -121.42033075434352
+            -121.42032934487132
           ],
           "Name": "3075 Redding Ave",
           "Ocean": "N/A",
@@ -1229,9 +1229,9 @@
           "friendly_name": "R4-D4 Geocoded Location"
         },
         "last_changed": "2023-08-27T00:18:04.368095+00:00",
-        "last_updated": "2023-08-27T04:33:43.577407+00:00",
+        "last_updated": "2023-08-27T05:28:29.480014+00:00",
         "context": {
-          "id": "01H8TM9TMS8MMG0RGK3K5JP2MB",
+          "id": "01H8TQE3H8HDYPPJ0MYBB1N3TH",
           "parent_id": null,
           "user_id": null
         }
@@ -1240,7 +1240,7 @@
         "native_value": "3075 Redding Ave\nSacramento CA 95820\nUnited States",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -1250,10 +1250,10 @@
           "icon": "mdi:cellphone-wireless",
           "friendly_name": "R4-D4 Last Update Trigger"
         },
-        "last_changed": "2023-08-27T04:37:34.441809+00:00",
-        "last_updated": "2023-08-27T04:37:34.441809+00:00",
+        "last_changed": "2023-08-27T05:28:34.012308+00:00",
+        "last_updated": "2023-08-27T05:28:34.012308+00:00",
         "context": {
-          "id": "01H8TMGW394VSJ428E1AYAVTXK",
+          "id": "01H8TQE7YWMQD7JE5RYF67AYFP",
           "parent_id": null,
           "user_id": null
         }
@@ -1262,7 +1262,7 @@
         "native_value": "Periodic",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -1288,7 +1288,7 @@
         "native_value": "Unknown",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -1311,7 +1311,7 @@
         "native_value": 1427,
         "native_unit_of_measurement": "steps"
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -1334,7 +1334,7 @@
         "native_value": 1,
         "native_unit_of_measurement": "m/s"
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -1353,7 +1353,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -1379,7 +1379,7 @@
         "native_value": "Stationary",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -1403,7 +1403,7 @@
         "native_value": 35,
         "native_unit_of_measurement": "%"
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -1426,7 +1426,7 @@
         "native_value": "Not Charging",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -1448,7 +1448,7 @@
         "native_value": "Wi-Fi",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -1470,7 +1470,7 @@
         "native_value": "Unknown",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -1492,7 +1492,7 @@
         "native_value": "Periodic",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -1514,7 +1514,7 @@
         "native_value": "Not Connected",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -1536,34 +1536,34 @@
         "native_value": "Not Connected",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
         "entity_id": "sensor.spock_storage",
-        "state": "11.35",
+        "state": "11.34",
         "attributes": {
           "Available": "3.27 GB",
           "Available (Important)": "9.11 GB",
-          "Available (Opportunistic)": "7.26 GB",
+          "Available (Opportunistic)": "7.25 GB",
           "Total": "63.95 GB",
           "unit_of_measurement": "% available",
           "icon": "mdi:database",
           "friendly_name": "Spock Storage"
         },
-        "last_changed": "2023-08-27T04:51:25.393630+00:00",
-        "last_updated": "2023-08-27T05:10:17.227108+00:00",
+        "last_changed": "2023-08-27T05:30:04.672069+00:00",
+        "last_updated": "2023-08-27T05:30:04.672069+00:00",
         "context": {
-          "id": "01H8TPCRWBC8R2SVNV8FN4804F",
+          "id": "01H8TQH0G0J7FRMAQSDH5SGAS7",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": {
-        "native_value": "11.35",
+        "native_value": "11.34",
         "native_unit_of_measurement": "% available"
       },
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -1582,7 +1582,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -1606,7 +1606,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -1614,24 +1614,24 @@
         "state": "not_home",
         "attributes": {
           "source_type": "gps",
-          "battery_level": 35,
+          "battery_level": 30,
           "latitude": 38.54779052734375,
-          "longitude": -121.42033075434352,
+          "longitude": -121.42032934487132,
           "gps_accuracy": 35,
-          "altitude": 14.999734878540039,
-          "vertical_accuracy": 20.048202514648438,
+          "altitude": 15.108073234558105,
+          "vertical_accuracy": 19.57619857788086,
           "friendly_name": "R4-D4"
         },
-        "last_changed": "2023-08-27T04:33:43.379256+00:00",
-        "last_updated": "2023-08-27T04:33:43.379256+00:00",
+        "last_changed": "2023-08-27T05:28:29.267283+00:00",
+        "last_updated": "2023-08-27T05:28:29.267283+00:00",
         "context": {
-          "id": "01H8TM9TEK02Y0H1JSHJK8WTZQ",
+          "id": "01H8TQE3AKC8M6D5MFH5NZDNT1",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -1650,7 +1650,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {
@@ -1677,7 +1677,7 @@
         }
       },
       "extra_data": null,
-      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+      "last_seen": "2023-08-27T05:33:08.388193+00:00"
     },
     {
       "state": {

@@ -1,0 +1,876 @@
+{
+  "version": 1,
+  "minor_version": 3,
+  "key": "core.device_registry",
+  "data": {
+    "devices": [
+      {
+        "area_id": null,
+        "config_entries": [
+          "e660a8932adf58a01df0ec52120bb98c"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "6dfd7f1e7ec50f81af883324714688de",
+        "identifiers": [
+          [
+            "hassio",
+            "core"
+          ]
+        ],
+        "manufacturer": "Home Assistant",
+        "model": "Home Assistant Core",
+        "name_by_user": null,
+        "name": "Home Assistant Core",
+        "sw_version": "2023.8.4",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "e660a8932adf58a01df0ec52120bb98c"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "c1f9047a6e8b022981c914e6838394dc",
+        "identifiers": [
+          [
+            "hassio",
+            "supervisor"
+          ]
+        ],
+        "manufacturer": "Home Assistant",
+        "model": "Home Assistant Supervisor",
+        "name_by_user": null,
+        "name": "Home Assistant Supervisor",
+        "sw_version": "2023.08.1",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "e660a8932adf58a01df0ec52120bb98c"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "977f94f4598d123788f02b0b0750717e",
+        "identifiers": [
+          [
+            "hassio",
+            "host"
+          ]
+        ],
+        "manufacturer": "Home Assistant",
+        "model": "Home Assistant Host",
+        "name_by_user": null,
+        "name": "Home Assistant Host",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "e660a8932adf58a01df0ec52120bb98c"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "39e2d069450154f8338399dab05ad412",
+        "identifiers": [
+          [
+            "hassio",
+            "OS"
+          ]
+        ],
+        "manufacturer": "Home Assistant",
+        "model": "Home Assistant Operating System",
+        "name_by_user": null,
+        "name": "Home Assistant Operating System",
+        "sw_version": "10.5",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "dc6ee843829d385984264c9c278be52c"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "4ff50eb29776e5e1af04034617c7011d",
+        "identifiers": [
+          [
+            "sun",
+            "dc6ee843829d385984264c9c278be52c"
+          ]
+        ],
+        "manufacturer": null,
+        "model": null,
+        "name_by_user": null,
+        "name": "Sun",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "ec7a3f221cd1ac93477021ba33b6fc63"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "bluetooth",
+            "E4:5F:01:AD:CF:C8"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "usb:v1D6Bp0246d0542",
+        "id": "dbda0a17f3e0e56c048c320e06a75279",
+        "identifiers": [],
+        "manufacturer": "Raspberry Pi Trading Ltd",
+        "model": "Unknown",
+        "name_by_user": null,
+        "name": "hci0 (E4:5F:01:AD:CF:C8)",
+        "sw_version": "homeassistant",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "d1c6773020a22dbac8e3ba50dc58b538"
+        ],
+        "configuration_url": "https://www.met.no/en",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "eefe8a186bd91fc798008bbcf8397992",
+        "identifiers": [
+          [
+            "met"
+          ]
+        ],
+        "manufacturer": "Met.no",
+        "model": "Forecast",
+        "name_by_user": null,
+        "name": "Forecast",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "24d5a0a6b615350175d6664e8fd885c1"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "71b874252c2f7ed4751a1c47a0087791",
+        "identifiers": [
+          [
+            "mobile_app",
+            "9DF233D3-ABAE-5DE7-B6A5-0CCA8D63A2EA"
+          ]
+        ],
+        "manufacturer": "Apple",
+        "model": "MacBookPro18,3",
+        "name_by_user": null,
+        "name": "BB8",
+        "sw_version": "14.0.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "e660a8932adf58a01df0ec52120bb98c"
+        ],
+        "configuration_url": "homeassistant://hassio/addon/a0d7b954_ssh",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "13801cd544da55f8fab13ca699315d48",
+        "identifiers": [
+          [
+            "hassio",
+            "a0d7b954_ssh"
+          ]
+        ],
+        "manufacturer": "Home Assistant Community Add-ons",
+        "model": "Home Assistant Add-on",
+        "name_by_user": null,
+        "name": "Advanced SSH & Web Terminal",
+        "sw_version": "15.0.7",
+        "via_device_id": null
+      },
+      {
+        "area_id": "officer_s_deck",
+        "config_entries": [
+          "69cfc87e9b32268c0a3e39717eaf8a31"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "mac",
+            "b0:a7:b9:64:ea:20"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "1.0",
+        "id": "3445085f0e48471a10293c1d6a3de2a9",
+        "identifiers": [
+          [
+            "tplink",
+            "B0:A7:B9:64:EA:20"
+          ]
+        ],
+        "manufacturer": "TP-Link",
+        "model": "KP125(US)",
+        "name_by_user": null,
+        "name": "TP-LINK_Smart Plug_EA20",
+        "sw_version": "1.0.4 Build 210628 Rel.164823",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "ee632917ecf210831f9e2d73accc8e09"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "ef2c01e05f4a99dcf625045e45c6d9d4",
+        "identifiers": [
+          [
+            "mobile_app",
+            "11513FC2-E75A-48ED-A46F-84732C306D1D"
+          ]
+        ],
+        "manufacturer": "Apple",
+        "model": "iPhone15,3",
+        "name_by_user": null,
+        "name": "R4-D4",
+        "sw_version": "17.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": "living_room",
+        "config_entries": [
+          "0807e676549d6df56ce254840e370551"
+        ],
+        "configuration_url": "homeassistant://hacs",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "cf0b512861af335dd988c51265a2172f",
+        "identifiers": [
+          [
+            "hacs",
+            "0717a0cd-745c-48fd-9b16-c8534c9704f9-bc944b0f-fd42-4a58-a072-ade38d1444cd"
+          ]
+        ],
+        "manufacturer": "hacs.xyz",
+        "model": "",
+        "name_by_user": null,
+        "name": "HACS",
+        "sw_version": "1.32.1",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "0807e676549d6df56ce254840e370551"
+        ],
+        "configuration_url": "homeassistant://hacs",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "b5619dd3157c4434da59caeb171592d2",
+        "identifiers": [
+          [
+            "hacs",
+            "312080478"
+          ]
+        ],
+        "manufacturer": "LaggAt",
+        "model": "integration",
+        "name_by_user": null,
+        "name": "govee",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "living_room",
+        "config_entries": [
+          "6ce83334e6428e8d94d88f3a2d053fc6"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "f0055ac907cd19d715c0b7b00cb2916c",
+        "identifiers": [
+          [
+            "honeywell",
+            8448652
+          ]
+        ],
+        "manufacturer": "Honeywell",
+        "model": null,
+        "name_by_user": null,
+        "name": "THERMOSTAT",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "e660a8932adf58a01df0ec52120bb98c"
+        ],
+        "configuration_url": "homeassistant://hassio/addon/core_configurator",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "42cef9d17a235f3d2a1cdf80fdff0e58",
+        "identifiers": [
+          [
+            "hassio",
+            "core_configurator"
+          ]
+        ],
+        "manufacturer": "Official add-ons",
+        "model": "Home Assistant Add-on",
+        "name_by_user": null,
+        "name": "File editor",
+        "sw_version": "5.6.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": "living_room",
+        "config_entries": [
+          "4f6ec63c881b6369d9e4124c2e7577f3"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "mac",
+            "10:a9:0d:a1:1b:1a"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "056bb2fbab0cfa5909c0c71fc98e5c4c",
+        "identifiers": [
+          [
+            "homekit",
+            "4f6ec63c881b6369d9e4124c2e7577f3",
+            "homekit.bridge"
+          ]
+        ],
+        "manufacturer": "Home Assistant",
+        "model": "HomeKit Bridge",
+        "name_by_user": null,
+        "name": "Homeassistant (HASS Bridge)",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "living_room",
+        "config_entries": [
+          "55439cb4499dd6aba259b4493c8dbc26"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "mac",
+            "c8:48:d6:cb:5e:40"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "0b5dbf54354091018665629c13f60ee0",
+        "identifiers": [
+          [
+            "homekit",
+            "55439cb4499dd6aba259b4493c8dbc26",
+            "homekit.bridge"
+          ]
+        ],
+        "manufacturer": "Home Assistant",
+        "model": "HomeKit Accessory",
+        "name_by_user": null,
+        "name": "Thermostat (Honeywell Thermostat)",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "officer_s_deck",
+        "config_entries": [
+          "d60a1694eb70025eb9dcc00e7a90993a"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "mac",
+            "dd:71:77:ed:53:1c"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "f6d396b6949195886103e8cb525287b3",
+        "identifiers": [
+          [
+            "homekit",
+            "d60a1694eb70025eb9dcc00e7a90993a",
+            "homekit.bridge"
+          ]
+        ],
+        "manufacturer": "Home Assistant",
+        "model": "HomeKit Bridge",
+        "name_by_user": null,
+        "name": "HASS Bridge J8:21066",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "officer_s_deck",
+        "config_entries": [
+          "367c0c56830ab8a2ffa5e893ceacc6d2"
+        ],
+        "configuration_url": "http://10.20.8.170",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "4961d10a489d5486f7388275ddfd1d0b",
+        "identifiers": [
+          [
+            "nanoleaf",
+            "S21270HD504"
+          ]
+        ],
+        "manufacturer": "Nanoleaf",
+        "model": "NL42",
+        "name_by_user": null,
+        "name": "Shapes AB03",
+        "sw_version": "7.1.5",
+        "via_device_id": null
+      },
+      {
+        "area_id": "officer_s_deck",
+        "config_entries": [
+          "a1f46f7f4c41396700bd52fafb544d7d"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "mac",
+            "e6:9e:87:fa:5c:c3"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "b598c634e74888fe5566e1dcad30079e",
+        "identifiers": [
+          [
+            "homekit",
+            "a1f46f7f4c41396700bd52fafb544d7d",
+            "homekit.bridge"
+          ]
+        ],
+        "manufacturer": "Home Assistant",
+        "model": "HomeKit Accessory",
+        "name_by_user": null,
+        "name": "Nanoleaf Shapes (shapes ab03)",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "officer_s_deck",
+        "config_entries": [
+          "b34f0bf3ca81eb6d75f0cffdc8aa3afb"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "e76eaa4cf94a61bfb8831d935ecc6469",
+        "identifiers": [
+          [
+            "govee",
+            "govee_govee_31:CE:38:33:33:69:67:FF"
+          ]
+        ],
+        "manufacturer": "Govee",
+        "model": "H61A5",
+        "name_by_user": null,
+        "name": "RGBIC Neon Rope Lights",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "officer_s_deck",
+        "config_entries": [
+          "7adb9df26149d5c362a2e660ad7fb1c2"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "mac",
+            "02:01:e0:d3:d9:d6"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "769ee2e2d21398f5925137407758705e",
+        "identifiers": [
+          [
+            "homekit",
+            "7adb9df26149d5c362a2e660ad7fb1c2",
+            "homekit.bridge"
+          ]
+        ],
+        "manufacturer": "Home Assistant",
+        "model": "HomeKit Accessory",
+        "name_by_user": null,
+        "name": "HASS Bridge B8:21068 (RGBIC Neon Rope Lights)",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "6c7feb1d3c7fd907f9051cc1fefcaac2"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "ff5705152ae4b6405da725bfe6c2aa9d",
+        "identifiers": [
+          [
+            "mobile_app",
+            "D58B2993-5365-44DC-BE33-9CC73462CBCD"
+          ]
+        ],
+        "manufacturer": "Apple",
+        "model": "iPad8,1",
+        "name_by_user": null,
+        "name": "Spock",
+        "sw_version": "17.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "e660a8932adf58a01df0ec52120bb98c"
+        ],
+        "configuration_url": "homeassistant://hassio/addon/a0d7b954_vscode",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "a001b61f719153d3c6691ead7e75f9fc",
+        "identifiers": [
+          [
+            "hassio",
+            "a0d7b954_vscode"
+          ]
+        ],
+        "manufacturer": "Home Assistant Community Add-ons",
+        "model": "Home Assistant Add-on",
+        "name_by_user": null,
+        "name": "Studio Code Server",
+        "sw_version": "5.10.1",
+        "via_device_id": null
+      },
+      {
+        "area_id": "officer_s_deck",
+        "config_entries": [
+          "ab9a81bf2e5a52e27e7d1b72f920e1bb"
+        ],
+        "configuration_url": "https://open.spotify.com",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "46feb7a6232f750c7ae0d398bed996e2",
+        "identifiers": [
+          [
+            "spotify",
+            "6ha0rp4863p9le0ruyqkg43ru"
+          ]
+        ],
+        "manufacturer": "Spotify AB",
+        "model": "Spotify premium",
+        "name_by_user": null,
+        "name": "Spotify Vibhor",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "living_room",
+        "config_entries": [
+          "fc5e10a877b5c2939fdc7d479643b91d"
+        ],
+        "configuration_url": "https://www.speedtest.net/",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "90443b85b26d57aa9640e05b1d3f3ad3",
+        "identifiers": [
+          [
+            "speedtestdotnet",
+            "fc5e10a877b5c2939fdc7d479643b91d"
+          ]
+        ],
+        "manufacturer": null,
+        "model": null,
+        "name_by_user": null,
+        "name": "SpeedTest",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "0807e676549d6df56ce254840e370551"
+        ],
+        "configuration_url": "homeassistant://hacs",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "c1f6a2f4df582f0009b937fa27835c4c",
+        "identifiers": [
+          [
+            "hacs",
+            "444350375"
+          ]
+        ],
+        "manufacturer": "",
+        "model": "plugin",
+        "name_by_user": null,
+        "name": "Mushroom",
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "officer_s_deck",
+        "config_entries": [
+          "c0f756c393744b7dd947eb189dbc11d4"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "mac",
+            "ac:bc:b5:e1:1b:2f"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "81216a9bfc88e4b193add445ca118caa",
+        "identifiers": [
+          [
+            "apple_tv",
+            "AC:BC:B5:E1:1B:2F"
+          ]
+        ],
+        "manufacturer": "Apple",
+        "model": "HomePod (gen 2)",
+        "name_by_user": null,
+        "name": "Officers deck",
+        "sw_version": "17.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "0807e676549d6df56ce254840e370551"
+        ],
+        "configuration_url": "homeassistant://hacs",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "0c92b345ed564b40033195e2166e574b",
+        "identifiers": [
+          [
+            "hacs",
+            "458636658"
+          ]
+        ],
+        "manufacturer": "",
+        "model": "theme",
+        "name_by_user": null,
+        "name": "iOS Theme - Based on the system-wide light and dark mode UI",
+        "sw_version": null,
+        "via_device_id": null
+      }
+    ],
+    "deleted_devices": [
+      {
+        "config_entries": [],
+        "connections": [
+          [
+            "mac",
+            "06:57:7c:9f:f3:ef"
+          ]
+        ],
+        "identifiers": [
+          [
+            "homekit",
+            "78d5bca0dbd8cd475a299baaae902d7f",
+            "homekit.bridge"
+          ]
+        ],
+        "id": "fdfee66fda39889aa2b0351e7906e062",
+        "orphaned_timestamp": 1692495027.3212812
+      },
+      {
+        "config_entries": [],
+        "connections": [
+          [
+            "mac",
+            "b2:57:d0:60:96:de"
+          ]
+        ],
+        "identifiers": [
+          [
+            "homekit",
+            "1ba8869cb55628db8f50db5eaa2baff6",
+            "homekit.bridge"
+          ]
+        ],
+        "id": "bbe3101d0bd18609562e2c4d983d22b0",
+        "orphaned_timestamp": 1692495029.9849749
+      },
+      {
+        "config_entries": [],
+        "connections": [
+          [
+            "mac",
+            "38:f1:6d:c0:8e:9c"
+          ]
+        ],
+        "identifiers": [
+          [
+            "homekit",
+            "8704ea11e96e5c1a60d28b6b43317044",
+            "homekit.bridge"
+          ]
+        ],
+        "id": "2f60fc50d31f3dc198a17e76e5fb367a",
+        "orphaned_timestamp": 1692588238.6099358
+      },
+      {
+        "config_entries": [],
+        "connections": [],
+        "identifiers": [
+          [
+            "homekit_controller:accessory-id",
+            "D8:57:5B:63:70:0D:aid:1"
+          ]
+        ],
+        "id": "676bfcad0433a8f1b6e7d1729125bf0e",
+        "orphaned_timestamp": 1692588719.0389884
+      },
+      {
+        "config_entries": [],
+        "connections": [
+          [
+            "mac",
+            "11:f9:6a:b2:8c:a1"
+          ]
+        ],
+        "identifiers": [
+          [
+            "homekit",
+            "155ed882dcf089e4a5b26c9c34a72d13",
+            "homekit.bridge"
+          ]
+        ],
+        "id": "73e3d1106500cfcfaef4c0cec8717774",
+        "orphaned_timestamp": 1692590364.1871748
+      },
+      {
+        "config_entries": [],
+        "connections": [
+          [
+            "mac",
+            "ef:f7:08:3b:7f:65"
+          ]
+        ],
+        "identifiers": [
+          [
+            "homekit",
+            "cbeb2f3cdfe018a66f5d3d60f315f695",
+            "homekit.bridge"
+          ]
+        ],
+        "id": "afaba34d9fe51de08d898f0e406431ae",
+        "orphaned_timestamp": 1692590636.0168886
+      },
+      {
+        "config_entries": [
+          "0807e676549d6df56ce254840e370551"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "hacs",
+            "222422187"
+          ]
+        ],
+        "id": "2f6c986b4a6fab2e185ff69ffe16710e",
+        "orphaned_timestamp": null
+      },
+      {
+        "config_entries": [
+          "0807e676549d6df56ce254840e370551"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "hacs",
+            "236318024"
+          ]
+        ],
+        "id": "9c31a8ae87bdc2dce15f618d296b04d1",
+        "orphaned_timestamp": null
+      }
+    ]
+  }
+}

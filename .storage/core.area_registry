@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "minor_version": 3,
+  "key": "core.area_registry",
+  "data": {
+    "areas": [
+      {
+        "aliases": [],
+        "name": "Living Room",
+        "id": "living_room",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "Officer's Deck",
+        "id": "officer_s_deck",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "Officers deck",
+        "id": "officers_deck",
+        "picture": null
+      }
+    ]
+  }
+}

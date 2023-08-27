@@ -1,0 +1,3979 @@
+{
+  "version": 1,
+  "minor_version": 11,
+  "key": "core.entity_registry",
+  "data": {
+    "entities": [
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "c1f9047a6e8b022981c914e6838394dc",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "update.home_assistant_supervisor_update",
+        "hidden_by": null,
+        "icon": null,
+        "id": "788c562f2f693c25619d4c85bd3af6d9",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Update",
+        "platform": "hassio",
+        "supported_features": 1,
+        "translation_key": null,
+        "unique_id": "home_assistant_supervisor_version_latest",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "6dfd7f1e7ec50f81af883324714688de",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "update.home_assistant_core_update",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9f6b643a03e29792125dd2937e697d5c",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Update",
+        "platform": "hassio",
+        "supported_features": 11,
+        "translation_key": null,
+        "unique_id": "home_assistant_core_version_latest",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "39e2d069450154f8338399dab05ad412",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "update.home_assistant_operating_system_update",
+        "hidden_by": null,
+        "icon": null,
+        "id": "090d1c40fd60eadd4d26dd3c1b750484",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Update",
+        "platform": "hassio",
+        "supported_features": 3,
+        "translation_key": null,
+        "unique_id": "home_assistant_os_version_latest",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "6dfd7f1e7ec50f81af883324714688de",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.home_assistant_core_cpu_percent",
+        "hidden_by": null,
+        "icon": null,
+        "id": "276722eccab7e3a976dd82890dfa9abe",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cpu-64-bit",
+        "original_name": "CPU percent",
+        "platform": "hassio",
+        "supported_features": 0,
+        "translation_key": "cpu_percent",
+        "unique_id": "home_assistant_core_cpu_percent",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "6dfd7f1e7ec50f81af883324714688de",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.home_assistant_core_memory_percent",
+        "hidden_by": null,
+        "icon": null,
+        "id": "6a5081ab7f07909dd2b8d7960b1ff244",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:memory",
+        "original_name": "Memory percent",
+        "platform": "hassio",
+        "supported_features": 0,
+        "translation_key": "memory_percent",
+        "unique_id": "home_assistant_core_memory_percent",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "c1f9047a6e8b022981c914e6838394dc",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.home_assistant_supervisor_cpu_percent",
+        "hidden_by": null,
+        "icon": null,
+        "id": "1090e8167e878f00bb4d38cb027c1adf",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cpu-64-bit",
+        "original_name": "CPU percent",
+        "platform": "hassio",
+        "supported_features": 0,
+        "translation_key": "cpu_percent",
+        "unique_id": "home_assistant_supervisor_cpu_percent",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "c1f9047a6e8b022981c914e6838394dc",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.home_assistant_supervisor_memory_percent",
+        "hidden_by": null,
+        "icon": null,
+        "id": "61d84d2558ee87f24b5b6d3f4df78dfe",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:memory",
+        "original_name": "Memory percent",
+        "platform": "hassio",
+        "supported_features": 0,
+        "translation_key": "memory_percent",
+        "unique_id": "home_assistant_supervisor_memory_percent",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "977f94f4598d123788f02b0b0750717e",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.home_assistant_host_os_agent_version",
+        "hidden_by": null,
+        "icon": null,
+        "id": "5487876b300bd221729616c3b9ef98a9",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "OS Agent version",
+        "platform": "hassio",
+        "supported_features": 0,
+        "translation_key": "agent_version",
+        "unique_id": "home_assistant_host_agent_version",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "977f94f4598d123788f02b0b0750717e",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.home_assistant_host_apparmor_version",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c3fbcb7f5fe8e94dffc2f0002a0ab12e",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Apparmor version",
+        "platform": "hassio",
+        "supported_features": 0,
+        "translation_key": "apparmor_version",
+        "unique_id": "home_assistant_host_apparmor_version",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "977f94f4598d123788f02b0b0750717e",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.home_assistant_host_disk_total",
+        "hidden_by": null,
+        "icon": null,
+        "id": "422afba212540fc96cb0f8d379b70142",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "data_size",
+        "original_icon": null,
+        "original_name": "Disk total",
+        "platform": "hassio",
+        "supported_features": 0,
+        "translation_key": "disk_total",
+        "unique_id": "home_assistant_host_disk_total",
+        "unit_of_measurement": "GB"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "977f94f4598d123788f02b0b0750717e",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.home_assistant_host_disk_used",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d31f5724318e3baf014042fc4e6eabcc",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "data_size",
+        "original_icon": null,
+        "original_name": "Disk used",
+        "platform": "hassio",
+        "supported_features": 0,
+        "translation_key": "disk_used",
+        "unique_id": "home_assistant_host_disk_used",
+        "unit_of_measurement": "GB"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "977f94f4598d123788f02b0b0750717e",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.home_assistant_host_disk_free",
+        "hidden_by": null,
+        "icon": null,
+        "id": "5b4bb8a0ed6a14bdff37407f63f840db",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "data_size",
+        "original_icon": null,
+        "original_name": "Disk free",
+        "platform": "hassio",
+        "supported_features": 0,
+        "translation_key": "disk_free",
+        "unique_id": "home_assistant_host_disk_free",
+        "unit_of_measurement": "GB"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "39e2d069450154f8338399dab05ad412",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.home_assistant_operating_system_version",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e1301fc04be4b5a68348324915c105c7",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Version",
+        "platform": "hassio",
+        "supported_features": 0,
+        "translation_key": "version",
+        "unique_id": "home_assistant_os_version",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "39e2d069450154f8338399dab05ad412",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.home_assistant_operating_system_newest_version",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c6ef497d818a074233c4b346912df4e9",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Newest version",
+        "platform": "hassio",
+        "supported_features": 0,
+        "translation_key": "version_latest",
+        "unique_id": "home_assistant_os_version_latest",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "dc6ee843829d385984264c9c278be52c",
+        "device_class": null,
+        "device_id": "4ff50eb29776e5e1af04034617c7011d",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.sun_next_dawn",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b66cb633fce5b883676e05fb155cf783",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "timestamp",
+        "original_icon": "mdi:sun-clock",
+        "original_name": "Next dawn",
+        "platform": "sun",
+        "supported_features": 0,
+        "translation_key": "next_dawn",
+        "unique_id": "dc6ee843829d385984264c9c278be52c-next_dawn",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "dc6ee843829d385984264c9c278be52c",
+        "device_class": null,
+        "device_id": "4ff50eb29776e5e1af04034617c7011d",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.sun_next_dusk",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ef57fe6afb4e90d715637c0dfdbbc400",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "timestamp",
+        "original_icon": "mdi:sun-clock",
+        "original_name": "Next dusk",
+        "platform": "sun",
+        "supported_features": 0,
+        "translation_key": "next_dusk",
+        "unique_id": "dc6ee843829d385984264c9c278be52c-next_dusk",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "dc6ee843829d385984264c9c278be52c",
+        "device_class": null,
+        "device_id": "4ff50eb29776e5e1af04034617c7011d",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.sun_next_midnight",
+        "hidden_by": null,
+        "icon": null,
+        "id": "51d5754e3d40c0124a808431c0329de4",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "timestamp",
+        "original_icon": "mdi:sun-clock",
+        "original_name": "Next midnight",
+        "platform": "sun",
+        "supported_features": 0,
+        "translation_key": "next_midnight",
+        "unique_id": "dc6ee843829d385984264c9c278be52c-next_midnight",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "dc6ee843829d385984264c9c278be52c",
+        "device_class": null,
+        "device_id": "4ff50eb29776e5e1af04034617c7011d",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.sun_next_noon",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c1e832761788ec876cc3cb0b5b8ee6e2",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "timestamp",
+        "original_icon": "mdi:sun-clock",
+        "original_name": "Next noon",
+        "platform": "sun",
+        "supported_features": 0,
+        "translation_key": "next_noon",
+        "unique_id": "dc6ee843829d385984264c9c278be52c-next_noon",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "dc6ee843829d385984264c9c278be52c",
+        "device_class": null,
+        "device_id": "4ff50eb29776e5e1af04034617c7011d",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.sun_next_rising",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e6ba5fabedacf25587569c93885e258d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "timestamp",
+        "original_icon": "mdi:sun-clock",
+        "original_name": "Next rising",
+        "platform": "sun",
+        "supported_features": 0,
+        "translation_key": "next_rising",
+        "unique_id": "dc6ee843829d385984264c9c278be52c-next_rising",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "dc6ee843829d385984264c9c278be52c",
+        "device_class": null,
+        "device_id": "4ff50eb29776e5e1af04034617c7011d",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.sun_next_setting",
+        "hidden_by": null,
+        "icon": null,
+        "id": "79d234037be1c46defa87ae986c52ea1",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "timestamp",
+        "original_icon": "mdi:sun-clock",
+        "original_name": "Next setting",
+        "platform": "sun",
+        "supported_features": 0,
+        "translation_key": "next_setting",
+        "unique_id": "dc6ee843829d385984264c9c278be52c-next_setting",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "dc6ee843829d385984264c9c278be52c",
+        "device_class": null,
+        "device_id": "4ff50eb29776e5e1af04034617c7011d",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.sun_solar_elevation",
+        "hidden_by": null,
+        "icon": null,
+        "id": "5c2f91e679bae219dce9ae55dafb938f",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:theme-light-dark",
+        "original_name": "Solar elevation",
+        "platform": "sun",
+        "supported_features": 0,
+        "translation_key": "solar_elevation",
+        "unique_id": "dc6ee843829d385984264c9c278be52c-solar_elevation",
+        "unit_of_measurement": "°"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "dc6ee843829d385984264c9c278be52c",
+        "device_class": null,
+        "device_id": "4ff50eb29776e5e1af04034617c7011d",
+        "disabled_by": "integration",
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.sun_solar_azimuth",
+        "hidden_by": null,
+        "icon": null,
+        "id": "11b219f6b3a6b2c348b803fbdf6b8b10",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:sun-angle",
+        "original_name": "Solar azimuth",
+        "platform": "sun",
+        "supported_features": 0,
+        "translation_key": "solar_azimuth",
+        "unique_id": "dc6ee843829d385984264c9c278be52c-solar_azimuth",
+        "unit_of_measurement": "°"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c8f96dd036c9eff32f5d7e89a94f8c31",
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.rpi_power_status",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f450b7a9701a21ebc6fb4e5856c0edc8",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "problem",
+        "original_icon": "mdi:raspberry-pi",
+        "original_name": "RPi Power status",
+        "platform": "rpi_power",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "rpi_power",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "person.vibhore",
+        "hidden_by": null,
+        "icon": null,
+        "id": "5f8ea3d25c5dd03314d5d339b00890bf",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Vibhore",
+        "platform": "person",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "vibhore",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "9d6a4612c5a70962c0514c01dcc3573d",
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "tts.google_en_com",
+        "hidden_by": null,
+        "icon": null,
+        "id": "6721d65ec50f6a6010f21e0b9288de7c",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Google en com",
+        "platform": "google_translate",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "9d6a4612c5a70962c0514c01dcc3573d",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d1c6773020a22dbac8e3ba50dc58b538",
+        "device_class": null,
+        "device_id": "eefe8a186bd91fc798008bbcf8397992",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "weather.forecast_stardestroyer",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2ea825178ff06badd741ea7afbafb448",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "StarDestroyer",
+        "platform": "met",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "home",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "d1c6773020a22dbac8e3ba50dc58b538",
+        "device_class": null,
+        "device_id": "eefe8a186bd91fc798008bbcf8397992",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "weather.forecast_stardestroyer_hourly",
+        "hidden_by": null,
+        "icon": null,
+        "id": "1674ec6f70071d1cd8eb456ca2e80207",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "StarDestroyer hourly",
+        "platform": "met",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "home-hourly",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "24d5a0a6b615350175d6664e8fd885c1",
+        "device_class": null,
+        "device_id": "71b874252c2f7ed4751a1c47a0087791",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "device_tracker.bb8",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b436016172f936d978e386d88ac46ba9",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "BB8",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "9DF233D3-ABAE-5DE7-B6A5-0CCA8D63A2EA",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "13801cd544da55f8fab13ca699315d48",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "binary_sensor.advanced_ssh_web_terminal_running",
+        "hidden_by": null,
+        "icon": null,
+        "id": "dc42e9d8d4a3151e1aa44353f178746f",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "running",
+        "original_icon": null,
+        "original_name": "Running",
+        "platform": "hassio",
+        "supported_features": 0,
+        "translation_key": "state",
+        "unique_id": "a0d7b954_ssh_state",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "13801cd544da55f8fab13ca699315d48",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.advanced_ssh_web_terminal_version",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f360d137e272ef24ddc041a45dc049b1",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Version",
+        "platform": "hassio",
+        "supported_features": 0,
+        "translation_key": "version",
+        "unique_id": "a0d7b954_ssh_version",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "13801cd544da55f8fab13ca699315d48",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.advanced_ssh_web_terminal_newest_version",
+        "hidden_by": null,
+        "icon": null,
+        "id": "cec1af825dbc11881fca0510a04073db",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Newest version",
+        "platform": "hassio",
+        "supported_features": 0,
+        "translation_key": "version_latest",
+        "unique_id": "a0d7b954_ssh_version_latest",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "13801cd544da55f8fab13ca699315d48",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.advanced_ssh_web_terminal_cpu_percent",
+        "hidden_by": null,
+        "icon": null,
+        "id": "3f0ab68e9d5009ab59eb687d43ba723d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cpu-64-bit",
+        "original_name": "CPU percent",
+        "platform": "hassio",
+        "supported_features": 0,
+        "translation_key": "cpu_percent",
+        "unique_id": "a0d7b954_ssh_cpu_percent",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "13801cd544da55f8fab13ca699315d48",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.advanced_ssh_web_terminal_memory_percent",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0e5b7f716ca1a6045c5e90b97cdf639d",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:memory",
+        "original_name": "Memory percent",
+        "platform": "hassio",
+        "supported_features": 0,
+        "translation_key": "memory_percent",
+        "unique_id": "a0d7b954_ssh_memory_percent",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "13801cd544da55f8fab13ca699315d48",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "update.advanced_ssh_web_terminal_update",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2a91faf643176a83eac421eba4f9b2f3",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Update",
+        "platform": "hassio",
+        "supported_features": 25,
+        "translation_key": null,
+        "unique_id": "a0d7b954_ssh_version_latest",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "24d5a0a6b615350175d6664e8fd885c1",
+        "device_class": null,
+        "device_id": "71b874252c2f7ed4751a1c47a0087791",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.bb8_internal_battery_level",
+        "hidden_by": null,
+        "icon": null,
+        "id": "130bb97dbe2c12e85c1df1410068df9b",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "battery",
+        "original_icon": "mdi:battery",
+        "original_name": "BB8 Internal Battery Level",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "553273d5b5a582018b9ecaa5696676a6a1b73176b22dd999a91a6fe621c6dbd2_F8Y20350C9QQ1LTAW_level",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "24d5a0a6b615350175d6664e8fd885c1",
+        "device_class": null,
+        "device_id": "71b874252c2f7ed4751a1c47a0087791",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.bb8_connection_type",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d0abf651f414b3576ac12cc170e25ba0",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:ethernet",
+        "original_name": "BB8 Connection Type",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "553273d5b5a582018b9ecaa5696676a6a1b73176b22dd999a91a6fe621c6dbd2_connectivity_connection_type",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "24d5a0a6b615350175d6664e8fd885c1",
+        "device_class": null,
+        "device_id": "71b874252c2f7ed4751a1c47a0087791",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.bb8_internal_battery_state",
+        "hidden_by": null,
+        "icon": null,
+        "id": "1c86b8cc75091e1ae0889fbb715c0525",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:battery",
+        "original_name": "BB8 Internal Battery State",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "553273d5b5a582018b9ecaa5696676a6a1b73176b22dd999a91a6fe621c6dbd2_F8Y20350C9QQ1LTAW_state",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "24d5a0a6b615350175d6664e8fd885c1",
+        "device_class": null,
+        "device_id": "71b874252c2f7ed4751a1c47a0087791",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.bb8_storage",
+        "hidden_by": null,
+        "icon": null,
+        "id": "47ed63f82bc3580d1c8000379817dba4",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:database",
+        "original_name": "BB8 Storage",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "553273d5b5a582018b9ecaa5696676a6a1b73176b22dd999a91a6fe621c6dbd2_storage",
+        "unit_of_measurement": "% available"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "24d5a0a6b615350175d6664e8fd885c1",
+        "device_class": null,
+        "device_id": "71b874252c2f7ed4751a1c47a0087791",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.bb8_ssid",
+        "hidden_by": null,
+        "icon": null,
+        "id": "35c2acdc7a20f19ab525dfaea902301c",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:wifi",
+        "original_name": "BB8 SSID",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "553273d5b5a582018b9ecaa5696676a6a1b73176b22dd999a91a6fe621c6dbd2_connectivity_ssid",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "24d5a0a6b615350175d6664e8fd885c1",
+        "device_class": null,
+        "device_id": "71b874252c2f7ed4751a1c47a0087791",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.bb8_bssid",
+        "hidden_by": null,
+        "icon": null,
+        "id": "392100a952c0efa85ae0488cf2a1773d",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:wifi-star",
+        "original_name": "BB8 BSSID",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "553273d5b5a582018b9ecaa5696676a6a1b73176b22dd999a91a6fe621c6dbd2_connectivity_bssid",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "24d5a0a6b615350175d6664e8fd885c1",
+        "device_class": null,
+        "device_id": "71b874252c2f7ed4751a1c47a0087791",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.bb8_geocoded_location",
+        "hidden_by": null,
+        "icon": null,
+        "id": "adf8064d81e0fa36c3bf26c85ad2d65f",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:map",
+        "original_name": "BB8 Geocoded Location",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "553273d5b5a582018b9ecaa5696676a6a1b73176b22dd999a91a6fe621c6dbd2_geocoded_location",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "24d5a0a6b615350175d6664e8fd885c1",
+        "device_class": null,
+        "device_id": "71b874252c2f7ed4751a1c47a0087791",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.bb8_camera_in_use",
+        "hidden_by": null,
+        "icon": null,
+        "id": "95f31758e2d57139265c32a1168d4758",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:camera-off",
+        "original_name": "BB8 Camera In Use",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "553273d5b5a582018b9ecaa5696676a6a1b73176b22dd999a91a6fe621c6dbd2_camera_in_use",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "24d5a0a6b615350175d6664e8fd885c1",
+        "device_class": null,
+        "device_id": "71b874252c2f7ed4751a1c47a0087791",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.bb8_active_camera",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ae0056be63975fab91615bd272c36526",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:camera-off",
+        "original_name": "BB8 Active Camera",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "553273d5b5a582018b9ecaa5696676a6a1b73176b22dd999a91a6fe621c6dbd2_active_camera",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "24d5a0a6b615350175d6664e8fd885c1",
+        "device_class": null,
+        "device_id": "71b874252c2f7ed4751a1c47a0087791",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.bb8_audio_input_in_use",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d6376a38ad163e1dfe3d9f9b41439e6f",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:microphone-off",
+        "original_name": "BB8 Audio Input In Use",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "553273d5b5a582018b9ecaa5696676a6a1b73176b22dd999a91a6fe621c6dbd2_microphone_in_use",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "24d5a0a6b615350175d6664e8fd885c1",
+        "device_class": null,
+        "device_id": "71b874252c2f7ed4751a1c47a0087791",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.bb8_active_audio_input",
+        "hidden_by": null,
+        "icon": null,
+        "id": "cced2a79a7d49b1409e70ae099420e9b",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:microphone-off",
+        "original_name": "BB8 Active Audio Input",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "553273d5b5a582018b9ecaa5696676a6a1b73176b22dd999a91a6fe621c6dbd2_active_microphone",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "24d5a0a6b615350175d6664e8fd885c1",
+        "device_class": null,
+        "device_id": "71b874252c2f7ed4751a1c47a0087791",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.bb8_audio_output_in_use",
+        "hidden_by": null,
+        "icon": null,
+        "id": "15bc4b69c32af2fa234e6eebe32517f2",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:volume-high",
+        "original_name": "BB8 Audio Output In Use",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "553273d5b5a582018b9ecaa5696676a6a1b73176b22dd999a91a6fe621c6dbd2_audio_output_in_use",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "24d5a0a6b615350175d6664e8fd885c1",
+        "device_class": null,
+        "device_id": "71b874252c2f7ed4751a1c47a0087791",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.bb8_active_audio_output",
+        "hidden_by": null,
+        "icon": null,
+        "id": "66bcd02b24078f35295f70a227e67f26",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:volume-high",
+        "original_name": "BB8 Active Audio Output",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "553273d5b5a582018b9ecaa5696676a6a1b73176b22dd999a91a6fe621c6dbd2_active_audio_output",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "24d5a0a6b615350175d6664e8fd885c1",
+        "device_class": null,
+        "device_id": "71b874252c2f7ed4751a1c47a0087791",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.bb8_displays",
+        "hidden_by": null,
+        "icon": null,
+        "id": "348b01c99a77b419dc2fc5c0856506e1",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:monitor-multiple",
+        "original_name": "BB8 Displays",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "553273d5b5a582018b9ecaa5696676a6a1b73176b22dd999a91a6fe621c6dbd2_displays_count",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "24d5a0a6b615350175d6664e8fd885c1",
+        "device_class": null,
+        "device_id": "71b874252c2f7ed4751a1c47a0087791",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.bb8_primary_display_name",
+        "hidden_by": null,
+        "icon": null,
+        "id": "99cf4db79ccc6471df3757f47d8e5f9e",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:monitor-star",
+        "original_name": "BB8 Primary Display Name",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "553273d5b5a582018b9ecaa5696676a6a1b73176b22dd999a91a6fe621c6dbd2_primary_display_name",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "24d5a0a6b615350175d6664e8fd885c1",
+        "device_class": null,
+        "device_id": "71b874252c2f7ed4751a1c47a0087791",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.bb8_primary_display_id",
+        "hidden_by": null,
+        "icon": null,
+        "id": "fe4b94bfa46c260502ae041ca8c958b5",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:monitor-star",
+        "original_name": "BB8 Primary Display ID",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "553273d5b5a582018b9ecaa5696676a6a1b73176b22dd999a91a6fe621c6dbd2_primary_display_id",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "24d5a0a6b615350175d6664e8fd885c1",
+        "device_class": null,
+        "device_id": "71b874252c2f7ed4751a1c47a0087791",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.bb8_active",
+        "hidden_by": null,
+        "icon": null,
+        "id": "499ba76c9736a7f2db7588fdb70f7517",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:monitor",
+        "original_name": "BB8 Active",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "553273d5b5a582018b9ecaa5696676a6a1b73176b22dd999a91a6fe621c6dbd2_active",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "24d5a0a6b615350175d6664e8fd885c1",
+        "device_class": null,
+        "device_id": "71b874252c2f7ed4751a1c47a0087791",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.bb8_frontmost_app",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a9a0ba859bb363e65324cecbc140936b",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:traffic-light",
+        "original_name": "BB8 Frontmost App",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "553273d5b5a582018b9ecaa5696676a6a1b73176b22dd999a91a6fe621c6dbd2_frontmost_app",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "24d5a0a6b615350175d6664e8fd885c1",
+        "device_class": null,
+        "device_id": "71b874252c2f7ed4751a1c47a0087791",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.bb8_focus",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b22d13317b74479ea53d37fd831a38fe",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:moon-waning-crescent",
+        "original_name": "BB8 Focus",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "553273d5b5a582018b9ecaa5696676a6a1b73176b22dd999a91a6fe621c6dbd2_focus",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "24d5a0a6b615350175d6664e8fd885c1",
+        "device_class": null,
+        "device_id": "71b874252c2f7ed4751a1c47a0087791",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.bb8_last_update_trigger",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d8874adf6200db2d9a67e3e69a810a26",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:laptop",
+        "original_name": "BB8 Last Update Trigger",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "553273d5b5a582018b9ecaa5696676a6a1b73176b22dd999a91a6fe621c6dbd2_last_update_trigger",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "69cfc87e9b32268c0a3e39717eaf8a31",
+        "device_class": null,
+        "device_id": "3445085f0e48471a10293c1d6a3de2a9",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.tp_link_smart_plug_ea20_current_consumption",
+        "hidden_by": null,
+        "icon": null,
+        "id": "53d10768cdbd9a859f73f188267169c2",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "power",
+        "original_icon": null,
+        "original_name": "Current consumption",
+        "platform": "tplink",
+        "supported_features": 0,
+        "translation_key": "current_consumption",
+        "unique_id": "B0:A7:B9:64:EA:20_current_power_w",
+        "unit_of_measurement": "W"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total_increasing"
+        },
+        "config_entry_id": "69cfc87e9b32268c0a3e39717eaf8a31",
+        "device_class": null,
+        "device_id": "3445085f0e48471a10293c1d6a3de2a9",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.tp_link_smart_plug_ea20_total_consumption",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b17835546e0053b63007459b6079ad2c",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "energy",
+        "original_icon": null,
+        "original_name": "Total consumption",
+        "platform": "tplink",
+        "supported_features": 0,
+        "translation_key": "total_consumption",
+        "unique_id": "B0:A7:B9:64:EA:20_total_energy_kwh",
+        "unit_of_measurement": "kWh"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "total_increasing"
+        },
+        "config_entry_id": "69cfc87e9b32268c0a3e39717eaf8a31",
+        "device_class": null,
+        "device_id": "3445085f0e48471a10293c1d6a3de2a9",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.tp_link_smart_plug_ea20_today_s_consumption",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b26afc77a376c64bf8612805c89c51e4",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "energy",
+        "original_icon": null,
+        "original_name": "Today's consumption",
+        "platform": "tplink",
+        "supported_features": 0,
+        "translation_key": "today_consumption",
+        "unique_id": "B0:A7:B9:64:EA:20_today_energy_kwh",
+        "unit_of_measurement": "kWh"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "69cfc87e9b32268c0a3e39717eaf8a31",
+        "device_class": null,
+        "device_id": "3445085f0e48471a10293c1d6a3de2a9",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.tp_link_smart_plug_ea20_voltage",
+        "hidden_by": null,
+        "icon": null,
+        "id": "043e0c4ca23a848d78102fdf396f6615",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "voltage",
+        "original_icon": null,
+        "original_name": "Voltage",
+        "platform": "tplink",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "B0:A7:B9:64:EA:20_voltage",
+        "unit_of_measurement": "V"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "69cfc87e9b32268c0a3e39717eaf8a31",
+        "device_class": null,
+        "device_id": "3445085f0e48471a10293c1d6a3de2a9",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.tp_link_smart_plug_ea20_current",
+        "hidden_by": null,
+        "icon": null,
+        "id": "30099491089445ccb79450405694f8ad",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "current",
+        "original_icon": null,
+        "original_name": "Current",
+        "platform": "tplink",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "B0:A7:B9:64:EA:20_current_a",
+        "unit_of_measurement": "A"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "69cfc87e9b32268c0a3e39717eaf8a31",
+        "device_class": null,
+        "device_id": "3445085f0e48471a10293c1d6a3de2a9",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "switch.tp_link_smart_plug_ea20",
+        "hidden_by": null,
+        "icon": null,
+        "id": "74d3c96dcbc6c4d28dcea818e7aba87c",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": true
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "cloud.alexa": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": null,
+        "platform": "tplink",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "B0:A7:B9:64:EA:20",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "69cfc87e9b32268c0a3e39717eaf8a31",
+        "device_class": null,
+        "device_id": "3445085f0e48471a10293c1d6a3de2a9",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "switch.tp_link_smart_plug_ea20_led",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4a846a8b13ce5c99338a92e46d8b89cc",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "cloud.alexa": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:led-on",
+        "original_name": "LED",
+        "platform": "tplink",
+        "supported_features": 0,
+        "translation_key": "led",
+        "unique_id": "B0:A7:B9:64:EA:20_led",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "ee632917ecf210831f9e2d73accc8e09",
+        "device_class": null,
+        "device_id": "ef2c01e05f4a99dcf625045e45c6d9d4",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "device_tracker.r4_d4",
+        "hidden_by": null,
+        "icon": null,
+        "id": "1800b517dcc9fb6387d5e76532d0b102",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "R4-D4",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "11513FC2-E75A-48ED-A46F-84732C306D1D",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "ee632917ecf210831f9e2d73accc8e09",
+        "device_class": null,
+        "device_id": "ef2c01e05f4a99dcf625045e45c6d9d4",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.r4_d4_floors_descended",
+        "hidden_by": null,
+        "icon": null,
+        "id": "80350a266871db6b1ab7acef75972874",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:stairs-down",
+        "original_name": "R4-D4 Floors Descended",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "cfe59d942ea92d63098041b83e9be7379b2944c056272b422857090c2793fb27_pedometer_floors_descended",
+        "unit_of_measurement": "floors"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "ee632917ecf210831f9e2d73accc8e09",
+        "device_class": null,
+        "device_id": "ef2c01e05f4a99dcf625045e45c6d9d4",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.r4_d4_distance",
+        "hidden_by": null,
+        "icon": null,
+        "id": "cbcd0d93aada67947832d0d8c43f6c30",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:hiking",
+        "original_name": "R4-D4 Distance",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "cfe59d942ea92d63098041b83e9be7379b2944c056272b422857090c2793fb27_pedometer_distance",
+        "unit_of_measurement": "m"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "ee632917ecf210831f9e2d73accc8e09",
+        "device_class": null,
+        "device_id": "ef2c01e05f4a99dcf625045e45c6d9d4",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.r4_d4_floors_ascended",
+        "hidden_by": null,
+        "icon": null,
+        "id": "84601f9458db1d6be98e02131dccb1fa",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:stairs-up",
+        "original_name": "R4-D4 Floors Ascended",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "cfe59d942ea92d63098041b83e9be7379b2944c056272b422857090c2793fb27_pedometer_floors_ascended",
+        "unit_of_measurement": "floors"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "ee632917ecf210831f9e2d73accc8e09",
+        "device_class": null,
+        "device_id": "ef2c01e05f4a99dcf625045e45c6d9d4",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.r4_d4_battery_level",
+        "hidden_by": null,
+        "icon": null,
+        "id": "969f4e7b11c8727e20c12b96d2a43cbe",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "battery",
+        "original_icon": "mdi:battery-30",
+        "original_name": "R4-D4 Battery Level",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "cfe59d942ea92d63098041b83e9be7379b2944c056272b422857090c2793fb27_battery_level",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "ee632917ecf210831f9e2d73accc8e09",
+        "device_class": null,
+        "device_id": "ef2c01e05f4a99dcf625045e45c6d9d4",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.r4_d4_battery_state",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e3e8c2b652888fe093899ac03cfd4209",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:battery-30",
+        "original_name": "R4-D4 Battery State",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "cfe59d942ea92d63098041b83e9be7379b2944c056272b422857090c2793fb27_battery_state",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "ee632917ecf210831f9e2d73accc8e09",
+        "device_class": null,
+        "device_id": "ef2c01e05f4a99dcf625045e45c6d9d4",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.r4_d4_storage",
+        "hidden_by": null,
+        "icon": null,
+        "id": "5170ddce0cafade60f9bc7d41e2d284b",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:database",
+        "original_name": "R4-D4 Storage",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "cfe59d942ea92d63098041b83e9be7379b2944c056272b422857090c2793fb27_storage",
+        "unit_of_measurement": "% available"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "ee632917ecf210831f9e2d73accc8e09",
+        "device_class": null,
+        "device_id": "ef2c01e05f4a99dcf625045e45c6d9d4",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.r4_d4_ssid",
+        "hidden_by": null,
+        "icon": null,
+        "id": "507b5a8f744e5466483a48f0bc517b01",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:wifi",
+        "original_name": "R4-D4 SSID",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "cfe59d942ea92d63098041b83e9be7379b2944c056272b422857090c2793fb27_connectivity_ssid",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "ee632917ecf210831f9e2d73accc8e09",
+        "device_class": null,
+        "device_id": "ef2c01e05f4a99dcf625045e45c6d9d4",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.r4_d4_bssid",
+        "hidden_by": null,
+        "icon": null,
+        "id": "5a02c97bc1ea6283c07ffc01f88edc2c",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:wifi-star",
+        "original_name": "R4-D4 BSSID",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "cfe59d942ea92d63098041b83e9be7379b2944c056272b422857090c2793fb27_connectivity_bssid",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "ee632917ecf210831f9e2d73accc8e09",
+        "device_class": null,
+        "device_id": "ef2c01e05f4a99dcf625045e45c6d9d4",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.r4_d4_connection_type",
+        "hidden_by": null,
+        "icon": null,
+        "id": "451ef936bd65dafd8b3ffd51e3b2808a",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:signal",
+        "original_name": "R4-D4 Connection Type",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "cfe59d942ea92d63098041b83e9be7379b2944c056272b422857090c2793fb27_connectivity_connection_type",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "ee632917ecf210831f9e2d73accc8e09",
+        "device_class": null,
+        "device_id": "ef2c01e05f4a99dcf625045e45c6d9d4",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.r4_d4_sim_1",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a4899080c47a2cc1db7ac2f9a556184c",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:sim",
+        "original_name": "R4-D4 SIM 1",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "cfe59d942ea92d63098041b83e9be7379b2944c056272b422857090c2793fb27_connectivity_sim_1",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "ee632917ecf210831f9e2d73accc8e09",
+        "device_class": null,
+        "device_id": "ef2c01e05f4a99dcf625045e45c6d9d4",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.r4_d4_sim_2",
+        "hidden_by": null,
+        "icon": null,
+        "id": "22658f0ef2d75b633238f004bf401dcb",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:sim",
+        "original_name": "R4-D4 SIM 2",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "cfe59d942ea92d63098041b83e9be7379b2944c056272b422857090c2793fb27_connectivity_sim_2",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "ee632917ecf210831f9e2d73accc8e09",
+        "device_class": null,
+        "device_id": "ef2c01e05f4a99dcf625045e45c6d9d4",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.r4_d4_geocoded_location",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b06590f319b8f8a6d838df1693cf1b5c",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:map",
+        "original_name": "R4-D4 Geocoded Location",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "cfe59d942ea92d63098041b83e9be7379b2944c056272b422857090c2793fb27_geocoded_location",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "ee632917ecf210831f9e2d73accc8e09",
+        "device_class": null,
+        "device_id": "ef2c01e05f4a99dcf625045e45c6d9d4",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.r4_d4_focus",
+        "hidden_by": null,
+        "icon": null,
+        "id": "bae7cdd63ed56888a5bde373991ee836",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:moon-waning-crescent",
+        "original_name": "R4-D4 Focus",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "cfe59d942ea92d63098041b83e9be7379b2944c056272b422857090c2793fb27_focus",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "ee632917ecf210831f9e2d73accc8e09",
+        "device_class": null,
+        "device_id": "ef2c01e05f4a99dcf625045e45c6d9d4",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.r4_d4_last_update_trigger",
+        "hidden_by": null,
+        "icon": null,
+        "id": "870605ba2e31bfd84acd804b7afa5edb",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cellphone-wireless",
+        "original_name": "R4-D4 Last Update Trigger",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "cfe59d942ea92d63098041b83e9be7379b2944c056272b422857090c2793fb27_last_update_trigger",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "ee632917ecf210831f9e2d73accc8e09",
+        "device_class": null,
+        "device_id": "ef2c01e05f4a99dcf625045e45c6d9d4",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.r4_d4_activity",
+        "hidden_by": null,
+        "icon": null,
+        "id": "43f1cf00b66f007de611b880aeb4c42b",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:help-circle",
+        "original_name": "R4-D4 Activity",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "cfe59d942ea92d63098041b83e9be7379b2944c056272b422857090c2793fb27_activity",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "ee632917ecf210831f9e2d73accc8e09",
+        "device_class": null,
+        "device_id": "ef2c01e05f4a99dcf625045e45c6d9d4",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.r4_d4_steps",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a8af8eaa34851e7bc1bced6d18df4102",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:walk",
+        "original_name": "R4-D4 Steps",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "cfe59d942ea92d63098041b83e9be7379b2944c056272b422857090c2793fb27_pedometer_steps",
+        "unit_of_measurement": "steps"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "ee632917ecf210831f9e2d73accc8e09",
+        "device_class": null,
+        "device_id": "ef2c01e05f4a99dcf625045e45c6d9d4",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.r4_d4_average_active_pace",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2ad9251277b56e5c5bcf4ccaf8d56e49",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:speedometer",
+        "original_name": "R4-D4 Average Active Pace",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "cfe59d942ea92d63098041b83e9be7379b2944c056272b422857090c2793fb27_pedometer_avg_active_pace",
+        "unit_of_measurement": "m/s"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "0807e676549d6df56ce254840e370551",
+        "device_class": null,
+        "device_id": "cf0b512861af335dd988c51265a2172f",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.hacs",
+        "hidden_by": null,
+        "icon": null,
+        "id": "93932ffcf38da3a7e8f1626e3ede7f0e",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "hacs:hacs",
+        "original_name": "hacs",
+        "platform": "hacs",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "0717a0cd-745c-48fd-9b16-c8534c9704f9-bc944b0f-fd42-4a58-a072-ade38d1444cd",
+        "unit_of_measurement": "pending update(s)"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "0807e676549d6df56ce254840e370551",
+        "device_class": null,
+        "device_id": "cf0b512861af335dd988c51265a2172f",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "update.hacs_update",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c01f4e0aaf4974692504ab9f749c4103",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "HACS update",
+        "platform": "hacs",
+        "supported_features": 21,
+        "translation_key": null,
+        "unique_id": "172733314",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "0807e676549d6df56ce254840e370551",
+        "device_class": null,
+        "device_id": "b5619dd3157c4434da59caeb171592d2",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "update.govee_update",
+        "hidden_by": null,
+        "icon": null,
+        "id": "50c4a87433a3fbbdf9974dd4b8ebb268",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "govee update",
+        "platform": "hacs",
+        "supported_features": 21,
+        "translation_key": null,
+        "unique_id": "312080478",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "binary_sensor.remote_ui",
+        "hidden_by": null,
+        "icon": null,
+        "id": "3eb2ea2f69240b430b43fadf3701703f",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "connectivity",
+        "original_icon": null,
+        "original_name": "Remote UI",
+        "platform": "cloud",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "cloud-remote-ui-connectivity",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "hvac_modes": [
+            "off",
+            "heat_cool",
+            "cool",
+            "heat"
+          ],
+          "min_temp": 69,
+          "max_temp": 99,
+          "fan_modes": [
+            "on",
+            "auto"
+          ],
+          "preset_modes": [
+            "none",
+            "away",
+            "Hold"
+          ]
+        },
+        "config_entry_id": "6ce83334e6428e8d94d88f3a2d053fc6",
+        "device_class": null,
+        "device_id": "f0055ac907cd19d715c0b7b00cb2916c",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "climate.thermostat",
+        "hidden_by": null,
+        "icon": "mdi:thermostat-box",
+        "id": "8acad64e8fb608f67b78b6600e824d3d",
+        "has_entity_name": true,
+        "name": "Honeywell Thermostat",
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": null,
+        "platform": "honeywell",
+        "supported_features": 91,
+        "translation_key": null,
+        "unique_id": 8448652,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "42cef9d17a235f3d2a1cdf80fdff0e58",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "binary_sensor.file_editor_running",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a8343827a0af89c7730cf6a86908c21a",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "running",
+        "original_icon": null,
+        "original_name": "Running",
+        "platform": "hassio",
+        "supported_features": 0,
+        "translation_key": "state",
+        "unique_id": "core_configurator_state",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "42cef9d17a235f3d2a1cdf80fdff0e58",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.file_editor_version",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9076ab22ecaec8e9b167b2702693c2a5",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Version",
+        "platform": "hassio",
+        "supported_features": 0,
+        "translation_key": "version",
+        "unique_id": "core_configurator_version",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "42cef9d17a235f3d2a1cdf80fdff0e58",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.file_editor_newest_version",
+        "hidden_by": null,
+        "icon": null,
+        "id": "38728a18d895d3e94a23d3bef2aceb6f",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Newest version",
+        "platform": "hassio",
+        "supported_features": 0,
+        "translation_key": "version_latest",
+        "unique_id": "core_configurator_version_latest",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "42cef9d17a235f3d2a1cdf80fdff0e58",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.file_editor_cpu_percent",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ad85f10c005cad75fe5851ded9de6d2e",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cpu-64-bit",
+        "original_name": "CPU percent",
+        "platform": "hassio",
+        "supported_features": 0,
+        "translation_key": "cpu_percent",
+        "unique_id": "core_configurator_cpu_percent",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "42cef9d17a235f3d2a1cdf80fdff0e58",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.file_editor_memory_percent",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b0974d020a38df2fbd38565f4581c44b",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:memory",
+        "original_name": "Memory percent",
+        "platform": "hassio",
+        "supported_features": 0,
+        "translation_key": "memory_percent",
+        "unique_id": "core_configurator_memory_percent",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "42cef9d17a235f3d2a1cdf80fdff0e58",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "update.file_editor_update",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b7092f2347fab39599d31bd9405e4bac",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Update",
+        "platform": "hassio",
+        "supported_features": 25,
+        "translation_key": null,
+        "unique_id": "core_configurator_version_latest",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min_color_temp_kelvin": 1200,
+          "max_color_temp_kelvin": 6493,
+          "min_mireds": 154,
+          "max_mireds": 833,
+          "effect_list": [
+            "Beatdrop",
+            "Blaze",
+            "Cocoa Beach",
+            "Cotton Candy",
+            "Date Night",
+            "Hip Hop",
+            "Hot Sauce",
+            "Jungle",
+            "Lightscape",
+            "Morning Sky",
+            "Northern Lights",
+            "Pop Rocks",
+            "Prism",
+            "Starlight",
+            "Sundown",
+            "Waterfall"
+          ],
+          "supported_color_modes": [
+            "color_temp",
+            "hs"
+          ]
+        },
+        "config_entry_id": "367c0c56830ab8a2ffa5e893ceacc6d2",
+        "device_class": null,
+        "device_id": "4961d10a489d5486f7388275ddfd1d0b",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "light.shapes_ab03",
+        "hidden_by": null,
+        "icon": null,
+        "id": "5b193ce5580ef8ed1d20b7e2ce2c1a87",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:triangle-outline",
+        "original_name": null,
+        "platform": "nanoleaf",
+        "supported_features": 36,
+        "translation_key": null,
+        "unique_id": "S21270HD504",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "367c0c56830ab8a2ffa5e893ceacc6d2",
+        "device_class": null,
+        "device_id": "4961d10a489d5486f7388275ddfd1d0b",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "button.shapes_ab03_identify",
+        "hidden_by": null,
+        "icon": null,
+        "id": "cfd9495f2c36304830cac1a84d4f1939",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "identify",
+        "original_icon": null,
+        "original_name": "Identify",
+        "platform": "nanoleaf",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "S21270HD504_identify",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min_color_temp_kelvin": 2000,
+          "max_color_temp_kelvin": 9009,
+          "min_mireds": 111,
+          "max_mireds": 500,
+          "supported_color_modes": [
+            "color_temp",
+            "hs"
+          ]
+        },
+        "config_entry_id": "b34f0bf3ca81eb6d75f0cffdc8aa3afb",
+        "device_class": null,
+        "device_id": "e76eaa4cf94a61bfb8831d935ecc6469",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "light.rgbic_neon_rope_lights",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f6bb43e9b00588f24fa639e6c1217a13",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "RGBIC Neon Rope Lights",
+        "platform": "govee",
+        "supported_features": 19,
+        "translation_key": null,
+        "unique_id": "govee_govee_31:CE:38:33:33:69:67:FF",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": "officer_s_deck",
+        "capabilities": null,
+        "config_entry_id": null,
+        "device_class": null,
+        "device_id": null,
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "scene.warm_light",
+        "hidden_by": null,
+        "icon": null,
+        "id": "afb946c11ed72acc7d517c58c3472281",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:light-recessed",
+        "original_name": "Warm Light",
+        "platform": "homeassistant",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "1692666065451",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "6c7feb1d3c7fd907f9051cc1fefcaac2",
+        "device_class": null,
+        "device_id": "ff5705152ae4b6405da725bfe6c2aa9d",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "device_tracker.spock",
+        "hidden_by": null,
+        "icon": null,
+        "id": "51345cdc23b69f271068256b938e5546",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Spock",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "D58B2993-5365-44DC-BE33-9CC73462CBCD",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "6c7feb1d3c7fd907f9051cc1fefcaac2",
+        "device_class": null,
+        "device_id": "ff5705152ae4b6405da725bfe6c2aa9d",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.spock_activity",
+        "hidden_by": null,
+        "icon": null,
+        "id": "60a231ebf552d7aa384a11f1fbc5a380",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:help-circle",
+        "original_name": "Spock Activity",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3966e82f8e7c843eea6d6a3646c2b6f7a46034af71e4cf259b8ba987310360ce_activity",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "6c7feb1d3c7fd907f9051cc1fefcaac2",
+        "device_class": null,
+        "device_id": "ff5705152ae4b6405da725bfe6c2aa9d",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.spock_battery_level",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f2f297f50d068004cb9734e1fbd8c53f",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "battery",
+        "original_icon": "mdi:battery-60",
+        "original_name": "Spock Battery Level",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3966e82f8e7c843eea6d6a3646c2b6f7a46034af71e4cf259b8ba987310360ce_battery_level",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "6c7feb1d3c7fd907f9051cc1fefcaac2",
+        "device_class": null,
+        "device_id": "ff5705152ae4b6405da725bfe6c2aa9d",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.spock_battery_state",
+        "hidden_by": null,
+        "icon": null,
+        "id": "48ec260bb62c98540aeeea1fc24361d1",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:battery-60",
+        "original_name": "Spock Battery State",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3966e82f8e7c843eea6d6a3646c2b6f7a46034af71e4cf259b8ba987310360ce_battery_state",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "6c7feb1d3c7fd907f9051cc1fefcaac2",
+        "device_class": null,
+        "device_id": "ff5705152ae4b6405da725bfe6c2aa9d",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.spock_connection_type",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9d1698ab55145f09807ff97623cccfe3",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:wifi",
+        "original_name": "Spock Connection Type",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3966e82f8e7c843eea6d6a3646c2b6f7a46034af71e4cf259b8ba987310360ce_connectivity_connection_type",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "6c7feb1d3c7fd907f9051cc1fefcaac2",
+        "device_class": null,
+        "device_id": "ff5705152ae4b6405da725bfe6c2aa9d",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.spock_geocoded_location",
+        "hidden_by": null,
+        "icon": null,
+        "id": "839c600dd82b14e64e3ac2fe1ea6d5b9",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:map",
+        "original_name": "Spock Geocoded Location",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3966e82f8e7c843eea6d6a3646c2b6f7a46034af71e4cf259b8ba987310360ce_geocoded_location",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "6c7feb1d3c7fd907f9051cc1fefcaac2",
+        "device_class": null,
+        "device_id": "ff5705152ae4b6405da725bfe6c2aa9d",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "binary_sensor.spock_focus",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e2c5367ff0e0ac053a82fd916c7c4eff",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:moon-waning-crescent",
+        "original_name": "Spock Focus",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3966e82f8e7c843eea6d6a3646c2b6f7a46034af71e4cf259b8ba987310360ce_focus",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "6c7feb1d3c7fd907f9051cc1fefcaac2",
+        "device_class": null,
+        "device_id": "ff5705152ae4b6405da725bfe6c2aa9d",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.spock_last_update_trigger",
+        "hidden_by": null,
+        "icon": null,
+        "id": "254423b2038b15a17dc2bbe1dc0e63ee",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cellphone-wireless",
+        "original_name": "Spock Last Update Trigger",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3966e82f8e7c843eea6d6a3646c2b6f7a46034af71e4cf259b8ba987310360ce_last_update_trigger",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "6c7feb1d3c7fd907f9051cc1fefcaac2",
+        "device_class": null,
+        "device_id": "ff5705152ae4b6405da725bfe6c2aa9d",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.spock_bssid",
+        "hidden_by": null,
+        "icon": null,
+        "id": "aa1c5c2e89d1af6928071fac9b2d9722",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:wifi-star",
+        "original_name": "Spock BSSID",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3966e82f8e7c843eea6d6a3646c2b6f7a46034af71e4cf259b8ba987310360ce_connectivity_bssid",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "6c7feb1d3c7fd907f9051cc1fefcaac2",
+        "device_class": null,
+        "device_id": "ff5705152ae4b6405da725bfe6c2aa9d",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.spock_ssid",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0686db75a7cb1cffd2b16a5306a3d917",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:wifi",
+        "original_name": "Spock SSID",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3966e82f8e7c843eea6d6a3646c2b6f7a46034af71e4cf259b8ba987310360ce_connectivity_ssid",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "6c7feb1d3c7fd907f9051cc1fefcaac2",
+        "device_class": null,
+        "device_id": "ff5705152ae4b6405da725bfe6c2aa9d",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.spock_storage",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a348816f7e64e27af0cf262451c40c0f",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:database",
+        "original_name": "Spock Storage",
+        "platform": "mobile_app",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "3966e82f8e7c843eea6d6a3646c2b6f7a46034af71e4cf259b8ba987310360ce_storage",
+        "unit_of_measurement": "% available"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "a001b61f719153d3c6691ead7e75f9fc",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "binary_sensor.studio_code_server_running",
+        "hidden_by": null,
+        "icon": null,
+        "id": "35e04d31c634c2062d4b866f47ab6037",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "running",
+        "original_icon": null,
+        "original_name": "Running",
+        "platform": "hassio",
+        "supported_features": 0,
+        "translation_key": "state",
+        "unique_id": "a0d7b954_vscode_state",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "a001b61f719153d3c6691ead7e75f9fc",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.studio_code_server_version",
+        "hidden_by": null,
+        "icon": null,
+        "id": "28fedea2ddf5d88905aec5d62637b2d4",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Version",
+        "platform": "hassio",
+        "supported_features": 0,
+        "translation_key": "version",
+        "unique_id": "a0d7b954_vscode_version",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "a001b61f719153d3c6691ead7e75f9fc",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.studio_code_server_newest_version",
+        "hidden_by": null,
+        "icon": null,
+        "id": "cb62880bdc9c83e8fc36620f98bf7d22",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Newest version",
+        "platform": "hassio",
+        "supported_features": 0,
+        "translation_key": "version_latest",
+        "unique_id": "a0d7b954_vscode_version_latest",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "a001b61f719153d3c6691ead7e75f9fc",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.studio_code_server_cpu_percent",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4a8dac0e1b5d4ea6ab4beb65291f3898",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:cpu-64-bit",
+        "original_name": "CPU percent",
+        "platform": "hassio",
+        "supported_features": 0,
+        "translation_key": "cpu_percent",
+        "unique_id": "a0d7b954_vscode_cpu_percent",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "a001b61f719153d3c6691ead7e75f9fc",
+        "disabled_by": "integration",
+        "entity_category": null,
+        "entity_id": "sensor.studio_code_server_memory_percent",
+        "hidden_by": null,
+        "icon": null,
+        "id": "ed2b1c1febfd2ca8b82d1055cf230112",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:memory",
+        "original_name": "Memory percent",
+        "platform": "hassio",
+        "supported_features": 0,
+        "translation_key": "memory_percent",
+        "unique_id": "a0d7b954_vscode_memory_percent",
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "e660a8932adf58a01df0ec52120bb98c",
+        "device_class": null,
+        "device_id": "a001b61f719153d3c6691ead7e75f9fc",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "update.studio_code_server_update",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9217fee6a356b3827a718f595d687761",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Update",
+        "platform": "hassio",
+        "supported_features": 25,
+        "translation_key": null,
+        "unique_id": "a0d7b954_vscode_version_latest",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {},
+        "config_entry_id": "ab9a81bf2e5a52e27e7d1b72f920e1bb",
+        "device_class": null,
+        "device_id": "46feb7a6232f750c7ae0d398bed996e2",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "media_player.spotify_vibhor",
+        "hidden_by": null,
+        "icon": null,
+        "id": "e9d8da6df590e569e98f91135c0b4191",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:spotify",
+        "original_name": null,
+        "platform": "spotify",
+        "supported_features": 2048,
+        "translation_key": null,
+        "unique_id": "6ha0rp4863p9le0ruyqkg43ru",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "fc5e10a877b5c2939fdc7d479643b91d",
+        "device_class": null,
+        "device_id": "90443b85b26d57aa9640e05b1d3f3ad3",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.speedtest_ping",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f1181ab67d3f1e2b42789e002dceef54",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:speedometer",
+        "original_name": "Ping",
+        "platform": "speedtestdotnet",
+        "supported_features": 0,
+        "translation_key": "ping",
+        "unique_id": "ping",
+        "unit_of_measurement": "ms"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "fc5e10a877b5c2939fdc7d479643b91d",
+        "device_class": null,
+        "device_id": "90443b85b26d57aa9640e05b1d3f3ad3",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.speedtest_download",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b61f76181fb6e0e65c7f8ce7c9c490c4",
+        "has_entity_name": true,
+        "name": "Speed Test",
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          },
+          "sensor": {
+            "display_precision": 1
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:speedometer",
+        "original_name": "Download",
+        "platform": "speedtestdotnet",
+        "supported_features": 0,
+        "translation_key": "download",
+        "unique_id": "download",
+        "unit_of_measurement": "Mbit/s"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "fc5e10a877b5c2939fdc7d479643b91d",
+        "device_class": null,
+        "device_id": "90443b85b26d57aa9640e05b1d3f3ad3",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.speedtest_upload",
+        "hidden_by": null,
+        "icon": null,
+        "id": "64f17fff4a335bf1a30e74db8506d121",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:speedometer",
+        "original_name": "Upload",
+        "platform": "speedtestdotnet",
+        "supported_features": 0,
+        "translation_key": "upload",
+        "unique_id": "upload",
+        "unit_of_measurement": "Mbit/s"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "0807e676549d6df56ce254840e370551",
+        "device_class": null,
+        "device_id": "c1f6a2f4df582f0009b937fa27835c4c",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "update.mushroom_update",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c0bae3a2d171c2e5faea5c44a7109439",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Mushroom update",
+        "platform": "hacs",
+        "supported_features": 21,
+        "translation_key": null,
+        "unique_id": "444350375",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {},
+        "config_entry_id": "c0f756c393744b7dd947eb189dbc11d4",
+        "device_class": null,
+        "device_id": "81216a9bfc88e4b193add445ca118caa",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "media_player.officers_deck",
+        "hidden_by": null,
+        "icon": null,
+        "id": "7463d66e92ab1e4e2b3d7583f6d44763",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": null,
+        "platform": "apple_tv",
+        "supported_features": 448439,
+        "translation_key": null,
+        "unique_id": "AC:BC:B5:E1:1B:2F",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "c0f756c393744b7dd947eb189dbc11d4",
+        "device_class": null,
+        "device_id": "81216a9bfc88e4b193add445ca118caa",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "remote.officers_deck",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0f3c07044dd49432f0d785039d5e7674",
+        "has_entity_name": true,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": null,
+        "platform": "apple_tv",
+        "supported_features": 0,
+        "translation_key": null,
+        "unique_id": "AC:BC:B5:E1:1B:2F",
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "0807e676549d6df56ce254840e370551",
+        "device_class": null,
+        "device_id": "0c92b345ed564b40033195e2166e574b",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "update.ios_theme_based_on_the_system_wide_light_and_dark_mode_ui_update",
+        "hidden_by": null,
+        "icon": null,
+        "id": "311569e4f10efacbd5451ff0515426c6",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "cloud.alexa": {
+            "should_expose": false
+          },
+          "cloud.google_assistant": {
+            "should_expose": false
+          },
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "iOS Theme - Based on the system-wide light and dark mode UI update",
+        "platform": "hacs",
+        "supported_features": 21,
+        "translation_key": null,
+        "unique_id": "458636658",
+        "unit_of_measurement": null
+      }
+    ],
+    "deleted_entities": [
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.bb8_internal_battery_level",
+        "id": "d157e62c8369dbf80ee87ff6b886b5f4",
+        "orphaned_timestamp": 1692496819.7500598,
+        "platform": "mobile_app",
+        "unique_id": "ef49be24050317b73f4e1f1914afa50169582442f517fa1bae1db9dffc659f52_F8Y20350C9QQ1LTAW_level"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.bb8_internal_battery_state",
+        "id": "53ff033cff6614c03e48e47212d4c17d",
+        "orphaned_timestamp": 1692496819.7500598,
+        "platform": "mobile_app",
+        "unique_id": "ef49be24050317b73f4e1f1914afa50169582442f517fa1bae1db9dffc659f52_F8Y20350C9QQ1LTAW_state"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.bb8_storage",
+        "id": "f1eb53147088f6c8048234b2dc216913",
+        "orphaned_timestamp": 1692496819.7500598,
+        "platform": "mobile_app",
+        "unique_id": "ef49be24050317b73f4e1f1914afa50169582442f517fa1bae1db9dffc659f52_storage"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.bb8_geocoded_location",
+        "id": "67dae930c8575789415bbce1b521d572",
+        "orphaned_timestamp": 1692496819.7500598,
+        "platform": "mobile_app",
+        "unique_id": "ef49be24050317b73f4e1f1914afa50169582442f517fa1bae1db9dffc659f52_geocoded_location"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.bb8_ssid",
+        "id": "bf132bf030945c844c29b23f7d0d8a64",
+        "orphaned_timestamp": 1692496819.7500598,
+        "platform": "mobile_app",
+        "unique_id": "ef49be24050317b73f4e1f1914afa50169582442f517fa1bae1db9dffc659f52_connectivity_ssid"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.bb8_bssid",
+        "id": "47666623ed1ad03ce6a20c3acd563387",
+        "orphaned_timestamp": 1692496819.7500598,
+        "platform": "mobile_app",
+        "unique_id": "ef49be24050317b73f4e1f1914afa50169582442f517fa1bae1db9dffc659f52_connectivity_bssid"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.bb8_connection_type",
+        "id": "0c43f71314bc571ac60c887c148abcd7",
+        "orphaned_timestamp": 1692496819.7500598,
+        "platform": "mobile_app",
+        "unique_id": "ef49be24050317b73f4e1f1914afa50169582442f517fa1bae1db9dffc659f52_connectivity_connection_type"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "binary_sensor.bb8_camera_in_use",
+        "id": "db87d54c5a712d9083b599f308d83d50",
+        "orphaned_timestamp": 1692496819.7500598,
+        "platform": "mobile_app",
+        "unique_id": "ef49be24050317b73f4e1f1914afa50169582442f517fa1bae1db9dffc659f52_camera_in_use"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.bb8_active_camera",
+        "id": "ee3835a11f53c186af137ad100e7f26e",
+        "orphaned_timestamp": 1692496819.7500598,
+        "platform": "mobile_app",
+        "unique_id": "ef49be24050317b73f4e1f1914afa50169582442f517fa1bae1db9dffc659f52_active_camera"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "binary_sensor.bb8_audio_input_in_use",
+        "id": "774662ff61cdbe6006c50609480f8761",
+        "orphaned_timestamp": 1692496819.7500598,
+        "platform": "mobile_app",
+        "unique_id": "ef49be24050317b73f4e1f1914afa50169582442f517fa1bae1db9dffc659f52_microphone_in_use"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.bb8_active_audio_input",
+        "id": "63a1cfcf168214cbc3e7f4d2a1e517ad",
+        "orphaned_timestamp": 1692496819.7500598,
+        "platform": "mobile_app",
+        "unique_id": "ef49be24050317b73f4e1f1914afa50169582442f517fa1bae1db9dffc659f52_active_microphone"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "binary_sensor.bb8_audio_output_in_use",
+        "id": "e298c5f3332d5178ecb8631e87107d7d",
+        "orphaned_timestamp": 1692496819.7500598,
+        "platform": "mobile_app",
+        "unique_id": "ef49be24050317b73f4e1f1914afa50169582442f517fa1bae1db9dffc659f52_audio_output_in_use"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.bb8_active_audio_output",
+        "id": "aaf8d9a6827c0281549d37dfd9ff2c97",
+        "orphaned_timestamp": 1692496819.7500598,
+        "platform": "mobile_app",
+        "unique_id": "ef49be24050317b73f4e1f1914afa50169582442f517fa1bae1db9dffc659f52_active_audio_output"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.bb8_displays",
+        "id": "89857ff0301d984df53e1e460173cbc2",
+        "orphaned_timestamp": 1692496819.7500598,
+        "platform": "mobile_app",
+        "unique_id": "ef49be24050317b73f4e1f1914afa50169582442f517fa1bae1db9dffc659f52_displays_count"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.bb8_primary_display_name",
+        "id": "9705fb1316d92cd748edbf61efd9a51c",
+        "orphaned_timestamp": 1692496819.7500598,
+        "platform": "mobile_app",
+        "unique_id": "ef49be24050317b73f4e1f1914afa50169582442f517fa1bae1db9dffc659f52_primary_display_name"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.bb8_primary_display_id",
+        "id": "745eadc28b1db3694429fb910a7b899a",
+        "orphaned_timestamp": 1692496819.7500598,
+        "platform": "mobile_app",
+        "unique_id": "ef49be24050317b73f4e1f1914afa50169582442f517fa1bae1db9dffc659f52_primary_display_id"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "binary_sensor.bb8_active",
+        "id": "0606b513f352777c6994e33010a4cdb2",
+        "orphaned_timestamp": 1692496819.7500598,
+        "platform": "mobile_app",
+        "unique_id": "ef49be24050317b73f4e1f1914afa50169582442f517fa1bae1db9dffc659f52_active"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.bb8_frontmost_app",
+        "id": "8fa4cbd7b67ae58463ed59876f5c1682",
+        "orphaned_timestamp": 1692496819.7500598,
+        "platform": "mobile_app",
+        "unique_id": "ef49be24050317b73f4e1f1914afa50169582442f517fa1bae1db9dffc659f52_frontmost_app"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "binary_sensor.bb8_focus",
+        "id": "6dd2e7df6b9ab14275c868b0845ac370",
+        "orphaned_timestamp": 1692496819.7500598,
+        "platform": "mobile_app",
+        "unique_id": "ef49be24050317b73f4e1f1914afa50169582442f517fa1bae1db9dffc659f52_focus"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.bb8_last_update_trigger",
+        "id": "c29fc320843e40508eca792f7d0a6f57",
+        "orphaned_timestamp": 1692496819.7500598,
+        "platform": "mobile_app",
+        "unique_id": "ef49be24050317b73f4e1f1914afa50169582442f517fa1bae1db9dffc659f52_last_update_trigger"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "switch.tplink_smart_plug_ea20_outlet",
+        "id": "69f9739ab4bc721282d617adf32cd697",
+        "orphaned_timestamp": 1692588719.0400488,
+        "platform": "homekit_controller",
+        "unique_id": "D8:57:5B:63:70:0D_1_48"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "button.tplink_smart_plug_ea20_identify",
+        "id": "3e5d0951094464099e2c650abbdef03a",
+        "orphaned_timestamp": 1692588719.0400488,
+        "platform": "homekit_controller",
+        "unique_id": "D8:57:5B:63:70:0D_1_1_2"
+      },
+      {
+        "config_entry_id": "0807e676549d6df56ce254840e370551",
+        "entity_id": "update.ios_dark_mode_theme_update",
+        "id": "c2df45fb1eb4e6c0c6379282a4185b33",
+        "orphaned_timestamp": null,
+        "platform": "hacs",
+        "unique_id": "222422187"
+      },
+      {
+        "config_entry_id": "0807e676549d6df56ce254840e370551",
+        "entity_id": "update.ios_themes_dark_mode_and_light_mode_update",
+        "id": "bab691502953470845b63c07074ea845",
+        "orphaned_timestamp": null,
+        "platform": "hacs",
+        "unique_id": "236318024"
+      }
+    ]
+  }
+}

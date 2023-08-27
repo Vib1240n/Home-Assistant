@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "auth_provider.homeassistant",
+  "data": {
+    "users": [
+      {
+        "username": "vib1240n",
+        "password": "JDJiJDEyJC5NcUZDb3p2QUdva3R5NDhDcjByS09yb1N6RWg4VmR1TmFjUXJsaGV5c2NkdXJSRWlBb3VP"
+      }
+    ]
+  }
+}

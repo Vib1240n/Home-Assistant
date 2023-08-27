@@ -1,0 +1,1758 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.restore_state",
+  "data": [
+    {
+      "state": {
+        "entity_id": "person.vibhore",
+        "state": "not_home",
+        "attributes": {
+          "editable": true,
+          "id": "vibhore",
+          "latitude": 38.54777034286275,
+          "longitude": -121.42028741457057,
+          "gps_accuracy": 35,
+          "source": "device_tracker.bb8",
+          "user_id": "2f1ff103c793419caddb354ff027fb83",
+          "device_trackers": [
+            "device_tracker.bb8",
+            "device_tracker.r4_d4",
+            "device_tracker.spock"
+          ],
+          "friendly_name": "Vibhore"
+        },
+        "last_changed": "2023-08-27T00:17:49.669672+00:00",
+        "last_updated": "2023-08-27T04:39:57.330446+00:00",
+        "context": {
+          "id": "01H8TMN7MJD7HC1WZWCJ5Z2GRB",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.home_assistant_supervisor_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": true,
+          "installed_version": "2023.08.1",
+          "in_progress": false,
+          "latest_version": "2023.08.1",
+          "release_summary": null,
+          "release_url": "https://github.com/home-assistant/supervisor/releases/tag/2023.08.1",
+          "skipped_version": null,
+          "title": "Home Assistant Supervisor",
+          "entity_picture": "https://brands.home-assistant.io/hassio/icon.png",
+          "friendly_name": "Home Assistant Supervisor Update",
+          "supported_features": 1
+        },
+        "last_changed": "2023-08-27T00:18:01.303265+00:00",
+        "last_updated": "2023-08-27T00:18:01.303265+00:00",
+        "context": {
+          "id": "01H8T5NKYQ7NB81X6Q6F9WQTCW",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.home_assistant_core_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "2023.8.4",
+          "in_progress": false,
+          "latest_version": "2023.8.4",
+          "release_summary": null,
+          "release_url": "https://www.home-assistant.io/latest-release-notes/",
+          "skipped_version": null,
+          "title": "Home Assistant Core",
+          "entity_picture": "https://brands.home-assistant.io/homeassistant/icon.png",
+          "friendly_name": "Home Assistant Core Update",
+          "supported_features": 11
+        },
+        "last_changed": "2023-08-27T00:18:01.304143+00:00",
+        "last_updated": "2023-08-27T00:18:01.304143+00:00",
+        "context": {
+          "id": "01H8T5NKYR8B1A1SCJR1YCSPPH",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.advanced_ssh_web_terminal_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": true,
+          "installed_version": "15.0.7",
+          "in_progress": false,
+          "latest_version": "15.0.7",
+          "release_summary": "## What’s changed\n\n## 🐛 Bug fixes\n\n- Update protection mode error message @kcpants ([#602](https://github.com/hassio-addons/addon-ssh/pull/602))\n\n## ⬆️ Dependency updates\n\n- ⬆️ Update OpenSSL to v3.1.2-r0 @renovate ([#597](https://github.com/hassio-addons",
+          "release_url": null,
+          "skipped_version": null,
+          "title": "Advanced SSH & Web Terminal",
+          "entity_picture": "/api/hassio/addons/a0d7b954_ssh/icon",
+          "friendly_name": "Advanced SSH & Web Terminal Update",
+          "supported_features": 25
+        },
+        "last_changed": "2023-08-27T00:18:01.304897+00:00",
+        "last_updated": "2023-08-27T00:18:01.304897+00:00",
+        "context": {
+          "id": "01H8T5NKYRSHEEBQT59ZMDHE5R",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.file_editor_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": true,
+          "installed_version": "5.6.0",
+          "in_progress": false,
+          "latest_version": "5.6.0",
+          "release_summary": "# Changelog\n\n## 5.6.0\n\n- Update base image to Alpine 3.17\n- Migrate old style S6 Overlay service scripts to new `s6-rc.d` style\n- Add Docker healthchecks\n\n## 5.5.1\n\n- Fix Home Assistant wheels path\n\n## 5.5.0\n\n- Update base image to Alpine 3.16\n  - Bumps `",
+          "release_url": null,
+          "skipped_version": null,
+          "title": "File editor",
+          "entity_picture": "/api/hassio/addons/core_configurator/icon",
+          "friendly_name": "File editor Update",
+          "supported_features": 25
+        },
+        "last_changed": "2023-08-27T00:18:01.305564+00:00",
+        "last_updated": "2023-08-27T00:18:01.305564+00:00",
+        "context": {
+          "id": "01H8T5NKYSFZXJQWECG2TP9MWV",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.studio_code_server_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": true,
+          "installed_version": "5.10.1",
+          "in_progress": false,
+          "latest_version": "5.10.1",
+          "release_summary": "## What’s changed\n\n## ⬆️ Dependency updates\n\n- ⬆️ Update esphome to v2023.8.0 @renovate ([#690](https://github.com/hassio-addons/addon-vscode/pull/690))\n",
+          "release_url": null,
+          "skipped_version": null,
+          "title": "Studio Code Server",
+          "entity_picture": "/api/hassio/addons/a0d7b954_vscode/icon",
+          "friendly_name": "Studio Code Server Update",
+          "supported_features": 25
+        },
+        "last_changed": "2023-08-27T00:18:01.306271+00:00",
+        "last_updated": "2023-08-27T00:18:01.306271+00:00",
+        "context": {
+          "id": "01H8T5NKYTDGDDCPZB3D3YEENF",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.home_assistant_operating_system_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "10.5",
+          "in_progress": false,
+          "latest_version": "10.5",
+          "release_summary": null,
+          "release_url": "https://github.com/home-assistant/operating-system/releases/tag/10.5",
+          "skipped_version": null,
+          "title": "Home Assistant Operating System",
+          "entity_picture": "https://brands.home-assistant.io/homeassistant/icon.png",
+          "friendly_name": "Home Assistant Operating System Update",
+          "supported_features": 3
+        },
+        "last_changed": "2023-08-27T00:18:01.306999+00:00",
+        "last_updated": "2023-08-27T00:18:01.306999+00:00",
+        "context": {
+          "id": "01H8T5NKYT3A99VGHNT4G1EX4Y",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "scene.warm_light",
+        "state": "2023-08-22T01:01:13.972787+00:00",
+        "attributes": {
+          "entity_id": [
+            "light.shapes_ab03",
+            "light.rgbic_neon_rope_lights"
+          ],
+          "id": "1692666065451",
+          "icon": "mdi:light-recessed",
+          "friendly_name": "Warm Light"
+        },
+        "last_changed": "2023-08-27T02:17:51.846221+00:00",
+        "last_updated": "2023-08-27T02:17:51.846221+00:00",
+        "context": {
+          "id": "01H8TCH1Z6BAXRK2FBCDEGVKQM",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "tts.google_en_com",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Google en com"
+        },
+        "last_changed": "2023-08-27T00:18:03.202690+00:00",
+        "last_updated": "2023-08-27T00:18:03.202690+00:00",
+        "context": {
+          "id": "01H8T5NNT2E2KKRRK2Q78AJ4WK",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.mushroom_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "v3.0.5",
+          "in_progress": false,
+          "latest_version": "v3.0.5",
+          "release_summary": null,
+          "release_url": "https://github.com/piitaya/lovelace-mushroom/releases/v3.0.5",
+          "skipped_version": null,
+          "title": null,
+          "friendly_name": "Mushroom update",
+          "supported_features": 21
+        },
+        "last_changed": "2023-08-27T02:21:30.255873+00:00",
+        "last_updated": "2023-08-27T02:21:30.255873+00:00",
+        "context": {
+          "id": "01H8TCQQ8FXWAR2HXCMBD5J64S",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.hacs_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "1.32.1",
+          "in_progress": false,
+          "latest_version": "1.32.1",
+          "release_summary": null,
+          "release_url": "https://github.com/hacs/integration/releases/1.32.1",
+          "skipped_version": null,
+          "title": null,
+          "entity_picture": "https://brands.home-assistant.io/_/hacs/icon.png",
+          "friendly_name": "HACS update",
+          "supported_features": 21
+        },
+        "last_changed": "2023-08-27T02:21:30.256734+00:00",
+        "last_updated": "2023-08-27T02:21:30.256734+00:00",
+        "context": {
+          "id": "01H8TCQQ8G0NNKJYE77Q6N9QW7",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.govee_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "0.2.2",
+          "in_progress": false,
+          "latest_version": "0.2.2",
+          "release_summary": null,
+          "release_url": "https://github.com/LaggAt/hacs-govee/releases/0.2.2",
+          "skipped_version": null,
+          "title": null,
+          "entity_picture": "https://brands.home-assistant.io/_/govee/icon.png",
+          "friendly_name": "govee update",
+          "supported_features": 21
+        },
+        "last_changed": "2023-08-27T02:21:30.257387+00:00",
+        "last_updated": "2023-08-27T02:21:30.257387+00:00",
+        "context": {
+          "id": "01H8TCQQ8HSBTGYF43B6FMYRH7",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.speedtest_ping",
+        "state": "29",
+        "attributes": {
+          "state_class": "measurement",
+          "server_name": "Rancho Murieta, CA",
+          "server_country": "United States",
+          "server_id": "7977",
+          "unit_of_measurement": "ms",
+          "attribution": "Data retrieved from Speedtest.net by Ookla",
+          "icon": "mdi:speedometer",
+          "friendly_name": "SpeedTest Ping"
+        },
+        "last_changed": "2023-08-27T03:19:40.033043+00:00",
+        "last_updated": "2023-08-27T04:20:03.091309+00:00",
+        "context": {
+          "id": "01H8TKGSCK7RH53XF2C0SPZ088",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.speedtest_download",
+        "state": "297.72",
+        "attributes": {
+          "state_class": "measurement",
+          "server_name": "Rancho Murieta, CA",
+          "server_country": "United States",
+          "server_id": "7977",
+          "bytes_received": 372470722,
+          "unit_of_measurement": "Mbit/s",
+          "attribution": "Data retrieved from Speedtest.net by Ookla",
+          "icon": "mdi:speedometer",
+          "friendly_name": "Speed Test"
+        },
+        "last_changed": "2023-08-27T04:20:03.091518+00:00",
+        "last_updated": "2023-08-27T04:20:03.091518+00:00",
+        "context": {
+          "id": "01H8TKGSCK7B6T0QPT67VA337P",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.speedtest_upload",
+        "state": "41.27",
+        "attributes": {
+          "state_class": "measurement",
+          "server_name": "Rancho Murieta, CA",
+          "server_country": "United States",
+          "server_id": "7977",
+          "bytes_sent": 51732480,
+          "unit_of_measurement": "Mbit/s",
+          "attribution": "Data retrieved from Speedtest.net by Ookla",
+          "icon": "mdi:speedometer",
+          "friendly_name": "SpeedTest Upload"
+        },
+        "last_changed": "2023-08-27T04:20:03.091643+00:00",
+        "last_updated": "2023-08-27T04:20:03.091643+00:00",
+        "context": {
+          "id": "01H8TKGSCKYY6SWKVTSGTX0GTD",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.bb8_internal_battery_level",
+        "state": "80",
+        "attributes": {
+          "Battery Provides Time Remaining": true,
+          "BatteryHealth": "Good",
+          "BatteryHealthCondition": "",
+          "Current": 0,
+          "Current Capacity": 80,
+          "DesignCycleCount": 1000,
+          "Hardware Serial Number": "F8Y20350C9QQ1LTAW",
+          "Is Charged": false,
+          "Is Charging": false,
+          "Is Present": true,
+          "LPM Active": false,
+          "Max Capacity": 100,
+          "Name": "InternalBattery-0",
+          "Optimized Battery Charging Engaged": true,
+          "Power Source ID": 20447331,
+          "Power Source State": "AC Power",
+          "Time to Empty": 0,
+          "Time to Full Charge": 0,
+          "Transport Type": "Internal",
+          "Type": "InternalBattery",
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "icon": "mdi:battery-80",
+          "friendly_name": "BB8 Internal Battery Level"
+        },
+        "last_changed": "2023-08-27T04:39:57.382484+00:00",
+        "last_updated": "2023-08-27T04:39:57.382484+00:00",
+        "context": {
+          "id": "01H8TMN7P6RYBGZBD5DYBHJ2R1",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 80,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.bb8_connection_type",
+        "state": "Ethernet",
+        "attributes": {
+          "Hardware Address": "64:4b:f0:37:76:23",
+          "Name": "Thunderbolt Ethernet Slot 0",
+          "icon": "mdi:ethernet",
+          "friendly_name": "BB8 Connection Type"
+        },
+        "last_changed": "2023-08-27T04:28:47.066072+00:00",
+        "last_updated": "2023-08-27T04:28:47.066072+00:00",
+        "context": {
+          "id": "01H8TM0S2T2WCQM4GQ1M6DM1Z4",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Ethernet",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.bb8_internal_battery_state",
+        "state": "Not Charging",
+        "attributes": {
+          "Battery Provides Time Remaining": true,
+          "BatteryHealth": "Good",
+          "BatteryHealthCondition": "",
+          "Current": 0,
+          "Current Capacity": 80,
+          "DesignCycleCount": 1000,
+          "Hardware Serial Number": "F8Y20350C9QQ1LTAW",
+          "Is Charged": false,
+          "Is Charging": false,
+          "Is Present": true,
+          "Low Power Mode": false,
+          "LPM Active": false,
+          "Max Capacity": 100,
+          "Name": "InternalBattery-0",
+          "Optimized Battery Charging Engaged": true,
+          "Power Source ID": 20447331,
+          "Power Source State": "AC Power",
+          "Time to Empty": 0,
+          "Time to Full Charge": 0,
+          "Transport Type": "Internal",
+          "Type": "InternalBattery",
+          "icon": "mdi:battery-80",
+          "friendly_name": "BB8 Internal Battery State"
+        },
+        "last_changed": "2023-08-27T04:39:57.383621+00:00",
+        "last_updated": "2023-08-27T04:39:57.383621+00:00",
+        "context": {
+          "id": "01H8TMN7P7GX37HC02JJ79X6BX",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Not Charging",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.bb8_storage",
+        "state": "68.95",
+        "attributes": {
+          "Available": "317.14 GB",
+          "Available (Important)": "380.62 GB",
+          "Available (Opportunistic)": "340.89 GB",
+          "Total": "494.38 GB",
+          "unit_of_measurement": "% available",
+          "icon": "mdi:database",
+          "friendly_name": "BB8 Storage"
+        },
+        "last_changed": "2023-08-27T05:16:34.468467+00:00",
+        "last_updated": "2023-08-27T05:17:46.494913+00:00",
+        "context": {
+          "id": "01H8TPTFKYQDAJ126G0SW6VPMZ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "68.95",
+        "native_unit_of_measurement": "% available"
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.bb8_ssid",
+        "state": "1133@Lark_sacramento",
+        "attributes": {
+          "icon": "mdi:wifi",
+          "friendly_name": "BB8 SSID"
+        },
+        "last_changed": "2023-08-27T00:18:04.343195+00:00",
+        "last_updated": "2023-08-27T00:18:04.343195+00:00",
+        "context": {
+          "id": "01H8T5NPXQ7A7P9PYTX9CNQZ5P",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "1133@Lark_sacramento",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.bb8_bssid",
+        "state": "dc:ae:eb:26:fb:cc",
+        "attributes": {
+          "icon": "mdi:wifi-star",
+          "friendly_name": "BB8 BSSID"
+        },
+        "last_changed": "2023-08-27T00:20:17.467683+00:00",
+        "last_updated": "2023-08-27T00:20:17.467683+00:00",
+        "context": {
+          "id": "01H8T5SRXVQNKZ4F6CDBDWH2Y5",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "dc:ae:eb:26:fb:cc",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.bb8_geocoded_location",
+        "state": "3075 Redding Ave\nSacramento CA 95820\nUnited States",
+        "attributes": {
+          "Administrative Area": "CA",
+          "Areas Of Interest": "N/A",
+          "Country": "United States",
+          "Inland Water": "N/A",
+          "ISO Country Code": "US",
+          "Locality": "Sacramento",
+          "Location": [
+            38.54777034286275,
+            -121.42028741457057
+          ],
+          "Name": "3075 Redding Ave",
+          "Ocean": "N/A",
+          "Postal Code": "95820",
+          "Sub Administrative Area": "Sacramento County",
+          "Sub Locality": "Tahoe Park",
+          "Sub Thoroughfare": "3075",
+          "Thoroughfare": "Redding Ave",
+          "Time Zone": "America/Los_Angeles",
+          "Zones": [],
+          "icon": "mdi:map",
+          "friendly_name": "BB8 Geocoded Location"
+        },
+        "last_changed": "2023-08-27T00:18:04.344011+00:00",
+        "last_updated": "2023-08-27T04:39:57.386460+00:00",
+        "context": {
+          "id": "01H8TMN7PAFTN0C5KWT88CY0ZN",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "3075 Redding Ave\nSacramento CA 95820\nUnited States",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.bb8_active_camera",
+        "state": "Inactive",
+        "attributes": {
+          "Active Camera": [],
+          "All Camera": [
+            "R4-D4 Camera",
+            "R4-D4 Desk View Camera",
+            "FaceTime HD Camera"
+          ],
+          "icon": "mdi:camera-off",
+          "friendly_name": "BB8 Active Camera"
+        },
+        "last_changed": "2023-08-27T00:18:04.344544+00:00",
+        "last_updated": "2023-08-27T04:39:57.387437+00:00",
+        "context": {
+          "id": "01H8TMN7PBRW5G6ZE26CZ0QJSK",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Inactive",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.bb8_active_audio_input",
+        "state": "Inactive",
+        "attributes": {
+          "Active Audio Input": [],
+          "All Audio Input": [
+            "R4-D4 Microphone",
+            "Razer Seiren Mini",
+            "MacBook Pro Microphone",
+            "BoomAudio"
+          ],
+          "icon": "mdi:microphone-off",
+          "friendly_name": "BB8 Active Audio Input"
+        },
+        "last_changed": "2023-08-27T02:10:47.070493+00:00",
+        "last_updated": "2023-08-27T04:39:57.389990+00:00",
+        "context": {
+          "id": "01H8TMN7PDD8FTHQTDS1MV96CV",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Inactive",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.bb8_active_audio_output",
+        "state": "LG HDR WQHD+",
+        "attributes": {
+          "Active Audio Output": [
+            "LG HDR WQHD+"
+          ],
+          "All Audio Output": [
+            "LG HDR WQHD+",
+            "MacBook Pro Speakers",
+            "BoomAudio"
+          ],
+          "icon": "mdi:volume-high",
+          "friendly_name": "BB8 Active Audio Output"
+        },
+        "last_changed": "2023-08-27T05:10:19.441196+00:00",
+        "last_updated": "2023-08-27T05:10:19.441196+00:00",
+        "context": {
+          "id": "01H8TPCV1HHKR6CNE8AJZRP6GF",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "LG HDR WQHD+",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.bb8_displays",
+        "state": "1",
+        "attributes": {
+          "Display IDs": [
+            "B20C0E0C-F439-4750-AAB4-AC1F477E94FE"
+          ],
+          "Display Names": [
+            "LG HDR WQHD+"
+          ],
+          "icon": "mdi:monitor-multiple",
+          "friendly_name": "BB8 Displays"
+        },
+        "last_changed": "2023-08-27T00:18:04.346121+00:00",
+        "last_updated": "2023-08-27T04:28:42.960418+00:00",
+        "context": {
+          "id": "01H8TM0N2GYDMF527QK7C3GMEB",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 1,
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.bb8_primary_display_name",
+        "state": "LG HDR WQHD+",
+        "attributes": {
+          "icon": "mdi:monitor-star",
+          "friendly_name": "BB8 Primary Display Name"
+        },
+        "last_changed": "2023-08-27T04:28:42.961468+00:00",
+        "last_updated": "2023-08-27T04:28:42.961468+00:00",
+        "context": {
+          "id": "01H8TM0N2HSBQZ8BXDNEY4PEM3",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "LG HDR WQHD+",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.bb8_primary_display_id",
+        "state": "B20C0E0C-F439-4750-AAB4-AC1F477E94FE",
+        "attributes": {
+          "icon": "mdi:monitor-star",
+          "friendly_name": "BB8 Primary Display ID"
+        },
+        "last_changed": "2023-08-27T04:28:43.362983+00:00",
+        "last_updated": "2023-08-27T04:28:43.362983+00:00",
+        "context": {
+          "id": "01H8TM0NF2X3E2R900MMKD8VTN",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "B20C0E0C-F439-4750-AAB4-AC1F477E94FE",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.bb8_frontmost_app",
+        "state": "iTerm2",
+        "attributes": {
+          "Bundle Identifier": "com.googlecode.iterm2",
+          "Is Hidden": false,
+          "Launch Date": "2023-08-27T04:42:16Z",
+          "Owns Menu Bar": true,
+          "icon": "mdi:traffic-light",
+          "friendly_name": "BB8 Frontmost App"
+        },
+        "last_changed": "2023-08-27T05:17:49.554430+00:00",
+        "last_updated": "2023-08-27T05:17:49.554430+00:00",
+        "context": {
+          "id": "01H8TPTJKJ600593HQ16WBAQ2B",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "iTerm2",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.bb8_last_update_trigger",
+        "state": "Signaled",
+        "attributes": {
+          "icon": "mdi:laptop",
+          "friendly_name": "BB8 Last Update Trigger"
+        },
+        "last_changed": "2023-08-27T05:17:49.555621+00:00",
+        "last_updated": "2023-08-27T05:17:49.555621+00:00",
+        "context": {
+          "id": "01H8TPTJKKWEGN2BBBTG2BX89C",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Signaled",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.bb8_camera_in_use",
+        "state": "off",
+        "attributes": {
+          "icon": "mdi:camera-off",
+          "friendly_name": "BB8 Camera In Use"
+        },
+        "last_changed": "2023-08-27T00:18:04.359060+00:00",
+        "last_updated": "2023-08-27T00:18:04.359060+00:00",
+        "context": {
+          "id": "01H8T5NPY7QM8D07E8FB4XW83N",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.bb8_audio_input_in_use",
+        "state": "off",
+        "attributes": {
+          "icon": "mdi:microphone-off",
+          "friendly_name": "BB8 Audio Input In Use"
+        },
+        "last_changed": "2023-08-27T02:10:47.069885+00:00",
+        "last_updated": "2023-08-27T02:10:47.069885+00:00",
+        "context": {
+          "id": "01H8TC434XNCQN3BQF2CT0T4AE",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.bb8_audio_output_in_use",
+        "state": "on",
+        "attributes": {
+          "icon": "mdi:volume-high",
+          "friendly_name": "BB8 Audio Output In Use"
+        },
+        "last_changed": "2023-08-27T05:10:19.439972+00:00",
+        "last_updated": "2023-08-27T05:10:19.439972+00:00",
+        "context": {
+          "id": "01H8TPCV1FPZHN48P2GB0AW4V0",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.bb8_active",
+        "state": "on",
+        "attributes": {
+          "Fast User Switched": false,
+          "Idle": false,
+          "Locked": false,
+          "Screen Off": false,
+          "Screensaver": false,
+          "Sleeping": false,
+          "Terminating": false,
+          "icon": "mdi:monitor",
+          "friendly_name": "BB8 Active"
+        },
+        "last_changed": "2023-08-27T04:39:57.394806+00:00",
+        "last_updated": "2023-08-27T04:39:57.394806+00:00",
+        "context": {
+          "id": "01H8TMN7PJR4MMT7PA79KHXMTD",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.bb8_focus",
+        "state": "on",
+        "attributes": {
+          "icon": "mdi:moon-waning-crescent",
+          "friendly_name": "BB8 Focus"
+        },
+        "last_changed": "2023-08-27T00:18:04.361108+00:00",
+        "last_updated": "2023-08-27T00:18:04.361108+00:00",
+        "context": {
+          "id": "01H8T5NPY9E3BAY1TW8F81K1T1",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.r4_d4_floors_descended",
+        "state": "2",
+        "attributes": {
+          "unit_of_measurement": "floors",
+          "icon": "mdi:stairs-down",
+          "friendly_name": "R4-D4 Floors Descended"
+        },
+        "last_changed": "2023-08-27T04:02:38.553188+00:00",
+        "last_updated": "2023-08-27T04:02:38.553188+00:00",
+        "context": {
+          "id": "01H8TJGXASR4ABFT4KC9BAHDYT",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 2,
+        "native_unit_of_measurement": "floors"
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.r4_d4_distance",
+        "state": "1027",
+        "attributes": {
+          "unit_of_measurement": "m",
+          "icon": "mdi:hiking",
+          "friendly_name": "R4-D4 Distance"
+        },
+        "last_changed": "2023-08-27T04:31:52.167717+00:00",
+        "last_updated": "2023-08-27T04:31:52.167717+00:00",
+        "context": {
+          "id": "01H8TM6DV7A4GH9TS4C31N3J1E",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 1027,
+        "native_unit_of_measurement": "m"
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.r4_d4_floors_ascended",
+        "state": "3",
+        "attributes": {
+          "unit_of_measurement": "floors",
+          "icon": "mdi:stairs-up",
+          "friendly_name": "R4-D4 Floors Ascended"
+        },
+        "last_changed": "2023-08-27T04:31:52.168889+00:00",
+        "last_updated": "2023-08-27T04:31:52.168889+00:00",
+        "context": {
+          "id": "01H8TM6DV8PVSXSP9BD0EAEFE5",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 3,
+        "native_unit_of_measurement": "floors"
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.r4_d4_battery_level",
+        "state": "30",
+        "attributes": {
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "icon": "mdi:battery-30",
+          "friendly_name": "R4-D4 Battery Level"
+        },
+        "last_changed": "2023-08-27T04:58:02.850080+00:00",
+        "last_updated": "2023-08-27T04:58:02.850080+00:00",
+        "context": {
+          "id": "01H8TNPBQ2M8MC819ZCYTA262X",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 30,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.r4_d4_battery_state",
+        "state": "Not Charging",
+        "attributes": {
+          "Low Power Mode": false,
+          "icon": "mdi:battery-30",
+          "friendly_name": "R4-D4 Battery State"
+        },
+        "last_changed": "2023-08-27T00:18:04.364767+00:00",
+        "last_updated": "2023-08-27T04:26:50.935248+00:00",
+        "context": {
+          "id": "01H8TKX7NQYB50M71248QSA6CG",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Not Charging",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.r4_d4_storage",
+        "state": "24.72",
+        "attributes": {
+          "Available": "7.80 GB",
+          "Available (Important)": "37.90 GB",
+          "Available (Opportunistic)": "31.61 GB",
+          "Total": "127.87 GB",
+          "unit_of_measurement": "% available",
+          "icon": "mdi:database",
+          "friendly_name": "R4-D4 Storage"
+        },
+        "last_changed": "2023-08-27T04:49:45.801856+00:00",
+        "last_updated": "2023-08-27T05:08:00.330505+00:00",
+        "context": {
+          "id": "01H8TP8K6ATE58YDEKJDJ0VZKM",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "24.72",
+        "native_unit_of_measurement": "% available"
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.r4_d4_ssid",
+        "state": "1133@Lark_sacramento",
+        "attributes": {
+          "icon": "mdi:wifi",
+          "friendly_name": "R4-D4 SSID"
+        },
+        "last_changed": "2023-08-27T04:26:50.936312+00:00",
+        "last_updated": "2023-08-27T04:26:50.936312+00:00",
+        "context": {
+          "id": "01H8TKX7NR7DJ292YYB1WYZ2ER",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "1133@Lark_sacramento",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.r4_d4_bssid",
+        "state": "dc:ae:eb:66:fb:c8",
+        "attributes": {
+          "icon": "mdi:wifi-star",
+          "friendly_name": "R4-D4 BSSID"
+        },
+        "last_changed": "2023-08-27T04:49:45.803302+00:00",
+        "last_updated": "2023-08-27T04:49:45.803302+00:00",
+        "context": {
+          "id": "01H8TN76ABYGP0JPVQENRYJQ9H",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "dc:ae:eb:66:fb:c8",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.r4_d4_connection_type",
+        "state": "Wi-Fi",
+        "attributes": {
+          "icon": "mdi:wifi",
+          "friendly_name": "R4-D4 Connection Type"
+        },
+        "last_changed": "2023-08-27T04:26:50.945393+00:00",
+        "last_updated": "2023-08-27T04:26:50.945393+00:00",
+        "context": {
+          "id": "01H8TKX7P1NDQ5ZMGH1844MHYK",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Wi-Fi",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.r4_d4_sim_1",
+        "state": "AT&T",
+        "attributes": {
+          "Allows VoIP": true,
+          "Carrier ID": "0000000100000001",
+          "Carrier Name": "AT&T",
+          "Current Radio Technology": "5G Non-Standalone",
+          "ISO Country Code": "us",
+          "Mobile Country Code": "310",
+          "Mobile Network Code": "280",
+          "icon": "mdi:sim",
+          "friendly_name": "R4-D4 SIM 1"
+        },
+        "last_changed": "2023-08-27T00:18:04.367035+00:00",
+        "last_updated": "2023-08-27T00:18:04.367035+00:00",
+        "context": {
+          "id": "01H8T5NPYFG1WJRBV8H4KA875K",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "AT&T",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.r4_d4_sim_2",
+        "state": "N/A",
+        "attributes": {
+          "Allows VoIP": true,
+          "Carrier ID": "0000000100000002",
+          "Carrier Name": "N/A",
+          "ISO Country Code": "N/A",
+          "Mobile Country Code": "N/A",
+          "Mobile Network Code": "N/A",
+          "icon": "mdi:sim",
+          "friendly_name": "R4-D4 SIM 2"
+        },
+        "last_changed": "2023-08-27T00:18:04.367682+00:00",
+        "last_updated": "2023-08-27T00:18:04.367682+00:00",
+        "context": {
+          "id": "01H8T5NPYFRJXEAW856ZVDEFRF",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "N/A",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.r4_d4_geocoded_location",
+        "state": "3075 Redding Ave\nSacramento CA 95820\nUnited States",
+        "attributes": {
+          "Administrative Area": "CA",
+          "Areas Of Interest": "N/A",
+          "Country": "United States",
+          "Inland Water": "N/A",
+          "ISO Country Code": "US",
+          "Locality": "Sacramento",
+          "Location": [
+            38.54779052734375,
+            -121.42033075434352
+          ],
+          "Name": "3075 Redding Ave",
+          "Ocean": "N/A",
+          "Postal Code": "95820",
+          "Sub Administrative Area": "Sacramento County",
+          "Sub Locality": "Tahoe Park",
+          "Sub Thoroughfare": "3075",
+          "Thoroughfare": "Redding Ave",
+          "Time Zone": "America/Los_Angeles",
+          "Zones": [],
+          "icon": "mdi:map",
+          "friendly_name": "R4-D4 Geocoded Location"
+        },
+        "last_changed": "2023-08-27T00:18:04.368095+00:00",
+        "last_updated": "2023-08-27T04:33:43.577407+00:00",
+        "context": {
+          "id": "01H8TM9TMS8MMG0RGK3K5JP2MB",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "3075 Redding Ave\nSacramento CA 95820\nUnited States",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.r4_d4_last_update_trigger",
+        "state": "Periodic",
+        "attributes": {
+          "icon": "mdi:cellphone-wireless",
+          "friendly_name": "R4-D4 Last Update Trigger"
+        },
+        "last_changed": "2023-08-27T04:37:34.441809+00:00",
+        "last_updated": "2023-08-27T04:37:34.441809+00:00",
+        "context": {
+          "id": "01H8TMGW394VSJ428E1AYAVTXK",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Periodic",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.r4_d4_activity",
+        "state": "Unknown",
+        "attributes": {
+          "Confidence": "High",
+          "Types": [
+            "Unknown"
+          ],
+          "icon": "mdi:help-circle",
+          "friendly_name": "R4-D4 Activity"
+        },
+        "last_changed": "2023-08-27T05:08:00.325402+00:00",
+        "last_updated": "2023-08-27T05:08:00.325402+00:00",
+        "context": {
+          "id": "01H8TP8K65GM3TTBA1W8142GAZ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Unknown",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.r4_d4_steps",
+        "state": "1427",
+        "attributes": {
+          "unit_of_measurement": "steps",
+          "icon": "mdi:walk",
+          "friendly_name": "R4-D4 Steps"
+        },
+        "last_changed": "2023-08-27T04:31:52.175739+00:00",
+        "last_updated": "2023-08-27T04:31:52.175739+00:00",
+        "context": {
+          "id": "01H8TM6DVFJ897FTF6MFD5H59A",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 1427,
+        "native_unit_of_measurement": "steps"
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.r4_d4_average_active_pace",
+        "state": "1",
+        "attributes": {
+          "unit_of_measurement": "m/s",
+          "icon": "mdi:speedometer",
+          "friendly_name": "R4-D4 Average Active Pace"
+        },
+        "last_changed": "2023-08-27T00:18:04.370377+00:00",
+        "last_updated": "2023-08-27T00:18:04.370377+00:00",
+        "context": {
+          "id": "01H8T5NPYJPF52R4PANJ061J92",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 1,
+        "native_unit_of_measurement": "m/s"
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.r4_d4_focus",
+        "state": "on",
+        "attributes": {
+          "icon": "mdi:moon-waning-crescent",
+          "friendly_name": "R4-D4 Focus"
+        },
+        "last_changed": "2023-08-27T00:18:04.374098+00:00",
+        "last_updated": "2023-08-27T00:18:04.374098+00:00",
+        "context": {
+          "id": "01H8T5NPYPQ5QW3PB53KVXSEK3",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.spock_activity",
+        "state": "Stationary",
+        "attributes": {
+          "Confidence": "High",
+          "Types": [
+            "Stationary"
+          ],
+          "icon": "mdi:human-male",
+          "friendly_name": "Spock Activity"
+        },
+        "last_changed": "2023-08-27T00:18:04.375901+00:00",
+        "last_updated": "2023-08-27T00:18:04.375901+00:00",
+        "context": {
+          "id": "01H8T5NPYQC5NZQ0109CDRPSYD",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Stationary",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.spock_battery_level",
+        "state": "35",
+        "attributes": {
+          "unit_of_measurement": "%",
+          "device_class": "battery",
+          "icon": "mdi:battery-30",
+          "friendly_name": "Spock Battery Level"
+        },
+        "last_changed": "2023-08-27T01:15:05.573896+00:00",
+        "last_updated": "2023-08-27T01:15:05.573896+00:00",
+        "context": {
+          "id": "01H8T8Y3Z5V3W95DDGSH2F0ZQY",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": 35,
+        "native_unit_of_measurement": "%"
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.spock_battery_state",
+        "state": "Not Charging",
+        "attributes": {
+          "Low Power Mode": false,
+          "icon": "mdi:battery-30",
+          "friendly_name": "Spock Battery State"
+        },
+        "last_changed": "2023-08-27T00:18:04.377242+00:00",
+        "last_updated": "2023-08-27T01:15:05.574939+00:00",
+        "context": {
+          "id": "01H8T8Y3Z63ED0820YJ0JVTCJY",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Not Charging",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.spock_connection_type",
+        "state": "Wi-Fi",
+        "attributes": {
+          "icon": "mdi:wifi",
+          "friendly_name": "Spock Connection Type"
+        },
+        "last_changed": "2023-08-27T00:18:04.377697+00:00",
+        "last_updated": "2023-08-27T00:18:04.377697+00:00",
+        "context": {
+          "id": "01H8T5NPYS00TVBT5K8RB4269V",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Wi-Fi",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.spock_geocoded_location",
+        "state": "Unknown",
+        "attributes": {
+          "icon": "mdi:map",
+          "friendly_name": "Spock Geocoded Location"
+        },
+        "last_changed": "2023-08-27T00:18:04.378085+00:00",
+        "last_updated": "2023-08-27T00:18:04.378085+00:00",
+        "context": {
+          "id": "01H8T5NPYTE4V0TPBVTSFTD8QX",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Unknown",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.spock_last_update_trigger",
+        "state": "Periodic",
+        "attributes": {
+          "icon": "mdi:cellphone-wireless",
+          "friendly_name": "Spock Last Update Trigger"
+        },
+        "last_changed": "2023-08-27T00:18:04.378552+00:00",
+        "last_updated": "2023-08-27T00:18:04.378552+00:00",
+        "context": {
+          "id": "01H8T5NPYTWNV245TYTTBQ0C6R",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Periodic",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.spock_bssid",
+        "state": "Not Connected",
+        "attributes": {
+          "icon": "mdi:wifi-off",
+          "friendly_name": "Spock BSSID"
+        },
+        "last_changed": "2023-08-27T00:18:04.385081+00:00",
+        "last_updated": "2023-08-27T00:18:04.385081+00:00",
+        "context": {
+          "id": "01H8T5NPZ1EWDJHWGYGHBGCBT8",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Not Connected",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.spock_ssid",
+        "state": "Not Connected",
+        "attributes": {
+          "icon": "mdi:wifi-off",
+          "friendly_name": "Spock SSID"
+        },
+        "last_changed": "2023-08-27T00:18:04.385508+00:00",
+        "last_updated": "2023-08-27T00:18:04.385508+00:00",
+        "context": {
+          "id": "01H8T5NPZ1Y1HVKT1PW9H0GCAA",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "Not Connected",
+        "native_unit_of_measurement": null
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "sensor.spock_storage",
+        "state": "11.35",
+        "attributes": {
+          "Available": "3.27 GB",
+          "Available (Important)": "9.11 GB",
+          "Available (Opportunistic)": "7.26 GB",
+          "Total": "63.95 GB",
+          "unit_of_measurement": "% available",
+          "icon": "mdi:database",
+          "friendly_name": "Spock Storage"
+        },
+        "last_changed": "2023-08-27T04:51:25.393630+00:00",
+        "last_updated": "2023-08-27T05:10:17.227108+00:00",
+        "context": {
+          "id": "01H8TPCRWBC8R2SVNV8FN4804F",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_value": "11.35",
+        "native_unit_of_measurement": "% available"
+      },
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "binary_sensor.spock_focus",
+        "state": "on",
+        "attributes": {
+          "icon": "mdi:moon-waning-crescent",
+          "friendly_name": "Spock Focus"
+        },
+        "last_changed": "2023-08-27T00:18:04.391208+00:00",
+        "last_updated": "2023-08-27T00:18:04.391208+00:00",
+        "context": {
+          "id": "01H8T5NPZ7JNEQBV0F7AQJH3HE",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "device_tracker.bb8",
+        "state": "not_home",
+        "attributes": {
+          "source_type": "gps",
+          "battery_level": 80,
+          "latitude": 38.54777034286275,
+          "longitude": -121.42028741457057,
+          "gps_accuracy": 35,
+          "altitude": 0,
+          "friendly_name": "BB8"
+        },
+        "last_changed": "2023-08-27T04:39:57.329886+00:00",
+        "last_updated": "2023-08-27T04:39:57.329886+00:00",
+        "context": {
+          "id": "01H8TMN7MHT8AWF88RCHNPCF9G",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "device_tracker.r4_d4",
+        "state": "not_home",
+        "attributes": {
+          "source_type": "gps",
+          "battery_level": 35,
+          "latitude": 38.54779052734375,
+          "longitude": -121.42033075434352,
+          "gps_accuracy": 35,
+          "altitude": 14.999734878540039,
+          "vertical_accuracy": 20.048202514648438,
+          "friendly_name": "R4-D4"
+        },
+        "last_changed": "2023-08-27T04:33:43.379256+00:00",
+        "last_updated": "2023-08-27T04:33:43.379256+00:00",
+        "context": {
+          "id": "01H8TM9TEK02Y0H1JSHJK8WTZQ",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "device_tracker.spock",
+        "state": "unknown",
+        "attributes": {
+          "source_type": "gps",
+          "friendly_name": "Spock"
+        },
+        "last_changed": "2023-08-27T00:18:04.409282+00:00",
+        "last_updated": "2023-08-27T00:18:04.409282+00:00",
+        "context": {
+          "id": "01H8T5NPZSTKVGEHECTBQHG21S",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.ios_theme_based_on_the_system_wide_light_and_dark_mode_ui_update",
+        "state": "off",
+        "attributes": {
+          "auto_update": false,
+          "installed_version": "v.14",
+          "in_progress": false,
+          "latest_version": "v.14",
+          "release_summary": null,
+          "release_url": "https://github.com/JuanMTech/ios-theme/releases/v.14",
+          "skipped_version": null,
+          "title": null,
+          "friendly_name": "iOS Theme - Based on the system-wide light and dark mode UI update",
+          "supported_features": 21
+        },
+        "last_changed": "2023-08-27T02:21:30.259347+00:00",
+        "last_updated": "2023-08-27T02:22:59.065490+00:00",
+        "context": {
+          "id": "01H8TCTDZS520WKKY2TRNHEVTV",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-08-27T05:18:08.386428+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.ios_dark_mode_theme_update",
+        "state": "unavailable",
+        "attributes": {
+          "friendly_name": "iOS Dark Mode Theme update",
+          "supported_features": 21
+        },
+        "last_changed": "2023-08-27T02:19:48.973618+00:00",
+        "last_updated": "2023-08-27T02:19:48.973618+00:00",
+        "context": {
+          "id": "01H8TCMMBD8N7B676EB8V55X6C",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-08-27T02:19:49.008229+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.ios_themes_dark_mode_and_light_mode_update",
+        "state": "unavailable",
+        "attributes": {
+          "friendly_name": "iOS Themes - Dark Mode and Light Mode update",
+          "supported_features": 21
+        },
+        "last_changed": "2023-08-27T02:23:15.872745+00:00",
+        "last_updated": "2023-08-27T02:23:15.872745+00:00",
+        "context": {
+          "id": "01H8TCTYD0DF3K742SHR7Y31HS",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-08-27T02:23:15.893151+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "button.shapes_ab03_identify",
+        "state": "unavailable",
+        "attributes": {
+          "device_class": "identify",
+          "friendly_name": "Shapes AB03 Identify"
+        },
+        "last_changed": "2023-08-25T07:19:08.369697+00:00",
+        "last_updated": "2023-08-25T07:19:08.369697+00:00",
+        "context": {
+          "id": "01H8NRZ8THEYBWYFT19N2KKV64",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-08-25T23:49:31.091423+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "button.tplink_smart_plug_ea20_identify",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "TPLINK Smart Plug EA20 Identify"
+        },
+        "last_changed": "2023-08-21T03:23:09.343485+00:00",
+        "last_updated": "2023-08-21T03:23:09.343485+00:00",
+        "context": {
+          "id": "01H8B1W9MZ07BQGBAJ9ZEPQ738",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-08-21T03:31:58.527036+00:00"
+    }
+  ]
+}

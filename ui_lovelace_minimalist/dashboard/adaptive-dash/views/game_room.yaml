@@ -1,0 +1,60 @@
+---
+type: "custom:layout-card"
+layout_type: "custom:grid-layout"
+layout:
+  grid-template-columns: "1fr 1fr 1fr 1fr"
+  grid-template-rows: "auto"
+  grid-template-areas: |
+    "title1 title1 title1 title1"
+    "shapeslight shapeslight darthvader darthvader"
+    "mediaplayer . . ."
+  mediaquery:
+    # Mobile
+    "(max-width: 1300px)":
+      grid-template-columns: "50% 1fr"
+      grid-template-areas: |
+        "title1 title1"
+        "shapeslight darthvader"
+        "mediaplayer mediaplayer"
+view_layout:
+  grid-area: "gameroom"
+cards:
+  - view_layout:
+      grid-area: "title1"
+    type: "custom:button-card"
+    template: "card_title"
+    name: "Game Room"
+  - view_layout:
+      grid-area: "shapeslight"
+    type: "custom:button-card"
+    template: card_light
+    entity: light.shapes_ffe8
+    variables:
+      ulm_card_light_enable_slider: true
+      ulm_card_light_enable_color: true
+      ulm_card_light_force_background_color: true
+      ulm_card_enable_popup: true
+      ulm_card_light_enable_collapse: true
+  - view_layout:
+      grid-area: "darthvader"
+    type: "custom:button-card"
+    template: card_vertical_button
+    entity: switch.mini_smart_plug_tp_link
+    name: Darth Vader
+    icon: mdi:floor-lamp
+    variables:
+      ulm_card_vertical_button_state: Away
+      ulm_card_vertical_button_color: green
+
+  # - view_layout:
+  #     grid-area: "mediaplayer"
+  #   type: "custom:button-card"
+  #   template: card_media_player
+  #   entity: media_player.game_room
+  #   variables:
+  #     ulm_card_media_player_name: "Game Room"
+  #     ulm_card_media_player_enable_volume_slider: true
+  #     ulm_card_media_player_icon: "mdi:cast-variant"
+  #     ulm_card_media_player_collapsable: true
+  #     ulm_card_media_player_controls: true
+  #     ulm_card_media_player_more_info: true

@@ -1,0 +1,26 @@
+type: "custom:layout-card"
+layout_type: "custom:grid-layout"
+background: >-
+  center / cover no-repeat
+  url("/local/images/hk-House.jpg")
+  fixed
+layout:
+  # Tablet portrait
+  grid-template-columns: "1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr"
+  grid-template-areas: |
+    "text text text text text text text text"
+  view_layout:
+    grid-area: "ipad upstairs"
+  cards:
+    - view_layout:
+        grid-area: "text"
+      type: "custom:button-card"
+      template: card_weather
+      entity: weather.forecast_stardestroyer
+      variables:
+        ulm_card_weather_name: "Weather"
+        ulm_card_weather_primary_info:
+          - extrema
+        ulm_card_weather_backdrop:
+          fade: true
+        ulm_card_weather_tap_action: "more-info"

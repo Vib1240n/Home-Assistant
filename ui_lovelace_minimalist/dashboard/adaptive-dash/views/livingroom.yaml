@@ -1,0 +1,89 @@
+---
+type: "custom:layout-card"
+layout_type: "custom:grid-layout"
+layout:
+  grid-template-columns: "100% 1fr 1fr 1fr 1fr 1fr 1fr"
+  grid-template-areas: |
+    "title1 title1 title1 title1 title1 title1 title1"
+    "occupancy occupancy occupancy occupancy occupancy occupancy occupancy"
+    "card1 card1 card1 card1 card1 card1 card1"
+    "card2 card2 card2  card2 card2 card2 card2"
+    "card3 card3 card3 card3 card3 card3 card3"
+    "card7 card8 card9 card10 card11 card12 card13"
+  mediaquery:
+    # Mobile
+    "(max-width: 800px)":
+      grid-template-columns: "100% 1fr"
+      grid-template-areas: |
+        "title1 title1"
+        "occupancy occupancy"
+        "card1 card1 card1"
+        "card2 card2"
+        "card3 card3"
+
+view_layout:
+  grid-area: "livingroom"
+cards:
+  - view_layout:
+      grid-area: "title1"
+    type: "custom:button-card"
+    template: "card_title"
+    name: "Living Room"
+
+  - view_layout:
+      grid-area: "occupancy"
+    type: "custom:button-card"
+    template: chip_presence_detection
+    tap_action:
+      action: more-info
+    variables:
+      ulm_chip_presence_counter_residents: binary_sensor.presence_fp2_presence_sensor_2
+
+  - view-layout:
+      grid-area: "card1"
+    type: "custom:button-card"
+    template: card_thermostat
+    entity: climate.downstairs_thermostat_thermostat
+    variables:
+      ulm_card_thermostat_enable_collapse: true
+      ulm_card_thermostat_enable_controls: true
+      ulm_card_thermostat_enable_hvac_modes: true
+      ulm_card_thermostat_enable_popup: true
+      ulm_card_thermostat_enable_background_color: true
+      ulm_card_thermostat_enable_display_temperature: true
+
+  - view-layout:
+      gird-area: "card2"
+    type: "custom:button-card"
+    template: "custom_card_haven_washer"
+    variables:
+      ulm_custom_card_washer_power: switch.washer
+      ulm_custom_card_washer_machine_state: sensor.washer_washer_machine_state
+      ulm_custom_card_washer_job_state: sensor.washer_washer_job_state
+      ulm_custom_card_washer_job_states:
+        state1:
+          name: "weight Sensing"
+          icon: "mdi:scale"
+        state2:
+          name: "wash"
+          icon: "mdi:waves"
+        state3:
+          name: "rinse"
+          icon: "mdi:water"
+        state4:
+          name: "spin"
+          icon: "mdi:fan"
+      ulm_custom_card_washer_label_idle: >
+        [[[
+          var name = states["sensor.washer_powerenergy"].attributes.friendly_name;
+          var value = states["sensor.washer_powerenergy"].state;
+          var measurement = states["sensor.washer_powerenergy"].attributes.unit_of_measurement;
+          return name + " • " + value + " " + measurement;
+        ]]]
+      ulm_custom_card_washer_label_running: "[[[ return states['sensor.washer_washer_completion_time'].state; ]]]"
+      ulm_custom_card_washer_label_configuring: >
+        [[[
+            var name = states["sensor.washer_actual_starttime"].attributes.friendly_name;
+            var time = states["sensor.washer_actual_starttime"].attributes.display_time;
+            return name + " • " + time;
+        ]]]

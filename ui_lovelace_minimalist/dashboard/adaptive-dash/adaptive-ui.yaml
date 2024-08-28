@@ -1,0 +1,195 @@
+---
+button_card_templates: !include_dir_merge_named "../../../custom_components/ui_lovelace_minimalist/__ui_minimalist__/ulm_templates/"
+
+button_card_template_custom: !include_dir_merge_named "../../../ui_lovelace_minimalist/custom_cards/"
+
+title: "Home"
+theme: "minimalist-ios-tapbar"
+background: "center / cover no-repeat fixed url('/local/homekit-bg-4.jpeg') fixed"
+views:
+  - type: "custom:grid-layout"
+    title: "home"
+    icon: "mdi:home"
+    path: "0"
+    layout:
+      grid-template-columns: "1fr"
+      grid-template-rows: "min-content"
+      grid-template-areas: |
+        "main popup"
+      mediaquery:
+        "(max-width: 3000px), (orientation: portrait)":
+          grid-template-columns: "100%"
+          grid-template-areas: "main"
+    cards:
+      - !include "views/main.yaml"
+      - !include "popup/popup.yaml"
+
+  - type: "custom:grid-layout"
+    title: "Livingroom"
+    icon: "mdi:sofa"
+    path: "Livingroom"
+    layout:
+      grid-template-columns: "1fr"
+      grid-template-rows: "min-content"
+      grid-template-areas: |
+        "livingroom popup"
+      mediaquery:
+        "(max-width: 3000px), (orientation: portrait)":
+          grid-template-columns: "100%"
+          grid-template-areas: "livingroom"
+    cards:
+      - !include "views/livingroom.yaml"
+      - !include "popup/popup.yaml"
+
+  - type: "custom:grid-layout"
+    title: "Game Room"
+    icon: "mdi:controller-classic"
+    path: "game room"
+    layout:
+      grid-template-columns: "1fr"
+      grid-template-rows: "min-content"
+      grid-template-areas: |
+        "gameroom popup"
+      mediaquery:
+        "(max-width: 30000px), (orientation: portrait)":
+          grid-template-columns: "100%"
+          grid-template-areas: "gameroom"
+    cards:
+      - !include "views/game_room.yaml"
+      - !include "popup/popup.yaml"
+
+  - type: "custom:grid-layout"
+    title: "Front Door"
+    icon: "mdi:door"
+    path: "front door"
+    layout:
+      grid-template-columns: "1fr 1fr"
+      grid-template-rows: "min-content"
+      grid-template-areas: |
+        "frontdoor popup"
+      mediaquery:
+        "(max-width: 1100px), (orientation: portrait)":
+          grid-template-columns: "100%"
+          grid-template-areas: "frontdoor"
+    cards:
+      - !include "views/front_door.yaml"
+      - !include "popup/popup.yaml"
+
+  - type: "custom:grid-layout"
+    title: "Garage"
+    icon: "mdi:garage"
+    path: "garage"
+    layout:
+      grid-template-columns: "1fr 1fr"
+      grid-template-rows: "min-content"
+      grid-template-areas: |
+        "garage popup"
+      mediaquery:
+        "(max-width: 1100px), (orientation: portrait)":
+          grid-template-columns: "100%"
+          grid-template-areas: "garage"
+    cards:
+      - !include "views/garage.yaml"
+      - !include "popup/popup.yaml"
+
+  - type: "custom:grid-layout"
+    title: "kitchen"
+    icon: "mdi:stove"
+    path: "kitchen"
+    layout:
+      grid-template-columns: "1fr 1fr"
+      grid-template-rows: "min-content"
+      grid-template-areas: |
+        "kitchen popup"
+      mediaquery:
+        "(max-width: 1100px), (orientation: portrait)":
+          grid-template-columns: "100%"
+          grid-template-areas: "kitchen"
+    cards:
+      - !include "views/kitchen.yaml"
+      - !include "popup/popup.yaml"
+
+  - type: "custom:grid-layout"
+    title: "Laundry Room"
+    icon: "mdi:washing-machine"
+    path: "laundry room"
+    layout:
+      grid-template-columns: "1fr 1fr"
+      grid-template-rows: "min-content"
+      grid-template-areas: |
+        "laundryroom popup"
+      mediaquery:
+        "(max-width: 1100px), (orientation: portrait)":
+          grid-template-columns: "100%"
+          grid-template-areas: "laundryroom"
+    cards:
+      - !include "views/laundry_room.yaml"
+      - !include "popup/popup.yaml"
+
+  - type: "custom:grid-layout"
+    title: "Master Bedroom"
+    icon: "mdi:bed-king"
+    path: "master bedroom"
+    layout:
+      grid-template-columns: "1fr 1fr"
+      grid-template-rows: "min-content"
+      grid-template-areas: |
+        "masterbedroom popup"
+      mediaquery:
+        "(max-width: 1100px), (orientation: portrait)":
+          grid-template-columns: "100%"
+          grid-template-areas: "masterbedroom"
+    cards:
+      - !include "views/master_bedroom.yaml"
+      - !include "popup/popup.yaml"
+
+  - type: "custom:grid-layout"
+    title: "Upstairs Hallway"
+    icon: "mdi:stairs"
+    path: "upstairs hallway"
+    layout:
+      grid-template-columns: "1fr 1fr"
+      grid-template-rows: "min-content"
+      grid-template-areas: |
+        "UHallway popup"
+      mediaquery:
+        "(max-width: 1100px), (orientation: portrait)":
+          grid-template-columns: "100%"
+          grid-template-areas: "UHallway"
+    cards:
+      - !include "views/upstairs_hallway.yaml"
+      - !include "popup/popup.yaml"
+
+  - type: "custom:grid-layout"
+    title: "Ipad Downstairs"
+    icon: "mdi:tablet-dashboard"
+    path: "ipad downstairs"
+    layout:
+      grid-template-columns: "1fr"
+      grid-template-rows: "min-content"
+      grid-template-areas: |
+        "ipadDownstairs popup"
+      mediaquery:
+        "(max-width: 3000px), (orientation: portrait)":
+          grid-template-columns: "100%"
+          grid-template-areas: "ipadDownstairs"
+    cards:
+      - !include "views/ipad_downstairs.yaml"
+      - !include "popup/popup.yaml"
+
+  - type: "custom:grid-layout"
+    title: "Ipad Upstairs"
+    icon: "mdi:tablet"
+    path: "ipad upstairs"
+    layout:
+      grid-template-columns: "1fr"
+      grid-template-rows: "min-content"
+      grid-template-areas: |
+        "iPadUpstairs popup"
+      mediaquery:
+        "(max-width: 3000px), (orientation: portrait)":
+          grid-template-columns: "100%"
+          grid-template-areas: "iPadUpstairs"
+    cards:
+      - !include "views/ipad_upstairs.yaml"
+      - !include "popup/popup.yaml"

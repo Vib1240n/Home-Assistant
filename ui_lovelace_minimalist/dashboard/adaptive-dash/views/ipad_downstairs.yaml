@@ -1,0 +1,394 @@
+type: "custom:layout-card"
+layout_type: "custom:grid-layout"
+background: 'center / cover no-repeat url("/local/hk-House.jpg") fixed'
+layout:
+  # Tablet portrait
+  grid-template-columns: "1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr"
+  grid-template-areas: |
+    "text text text text text text text text text"
+    "welcome welcome welcome welcome welcome welcome welcome welcome welcome"
+    "blank5 blank5 scenes scenes scenes scenes scenes blank6 blank6"
+    "thermostat1 thermostat1 thermostat1 thermostat1 thermostat1 thermostat1 thermostat1 thermostat1 thermostat1"
+    "blank1 blank1 title1 title1 title1 title1 title1 blank7 blank7"
+    "livingRoom livingRoom livingRoom kitchen kitchen kitchen diningRoom diningRoom diningRoom"
+
+view_layout:
+  grid-area: "ipadDownstairs"
+cards:
+  - view_layout:
+      grid-area: "blank"
+    type: "custom:button-card"
+    color_type: blank-card
+
+  - view_layout:
+      grid-area: "blank1"
+    type: "custom:button-card"
+    color_type: blank-card
+
+  - view_layout:
+      grid-area: "blank2"
+    type: "custom:button-card"
+    color_type: blank-card
+  - view_layout:
+      grid-area: "blank3"
+    type: "custom:button-card"
+    color_type: blank-card
+  - view_layout:
+      grid-area: "blank4"
+    type: "custom:button-card"
+    color_type: blank-card
+  - view_layout:
+      grid-area: "blank5"
+    type: "custom:button-card"
+    color_type: blank-card
+  - view_layout:
+      grid-area: "blank6"
+    type: "custom:button-card"
+    color_type: blank-card
+  - view_layout:
+      grid-area: "blank7"
+    type: "custom:button-card"
+    color_type: blank-card
+
+  - view_layout:
+      grid-area: "text"
+    type: "custom:button-card"
+    template: card_weather
+    entity: weather.forecast_stardestroyer
+    variables:
+      ulm_card_weather_name: "Weather"
+      ulm_card_weather_primary_info:
+        - extrema
+        - precipitation_probability
+        - wind_speed
+      ulm_card_weather_backdrop:
+        fade: true
+      ulm_card_weather_custom:
+        - backdrop:
+            day: "#40445a"
+            night: "rgba(0, 0, 0, 0.5)"
+    tap_action:
+      action: more-info
+      entity: weather.forecast_stardestroyer
+
+  - view_layout:
+      grid-area: "welcome"
+      show:
+        mediaquery: "(max-width: 1300px)"
+    type: "horizontal-stack"
+    cards:
+      # - type: "custom:button-card"
+      #   template: "chip_icon_state"
+      #   variables:
+      #     ulm_chip_icon_state_icon: " 🚨House Alarm "
+      #     ulm_chip_icon_state_entity: alarm_control_panel.alarm
+      #   tap_action:
+      #     action: more-info
+      #     entity: alarm_control_panel.alarm
+      #   card_mod:
+      #     style: |
+      #       ha-card {
+      #         background: rgba(106, 106, 106, 0.3);
+      #         border-radius: 20px;
+      #         box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+      #         backdrop-filter: blur(50px);
+      #       }
+      - type: horizontal-stack
+        cards:
+          - type: "custom:button-card"
+            color_type: blank-card
+          - type: "custom:button-card"
+            template: chip_alarm
+            entity: alarm_control_panel.alarm
+          - type: "custom:button-card"
+            template: chip_mdi_icon_state
+            variables:
+              ulm_chip_mdi_icon_state_entity: binary_sensor.front_door_contact_sensor
+              ulm_chip_mdi_icon_state_icon: mdi:door
+          - type: "custom:button-card"
+            template: chip_mdi_icon_state
+            variables:
+              ulm_chip_mdi_icon_state_entity: binary_sensor.side_door_contact_sensor
+              ulm_chip_mdi_icon_state_icon: mdi:door
+          - type: "custom:button-card"
+            template: chip_mdi_icon_state
+            variables:
+              ulm_chip_mdi_icon_state_entity: binary_sensor.garage_door_contact_sensor
+              ulm_chip_mdi_icon_state_icon: mdi:door
+          - type: "custom:button-card"
+            color_type: blank-card
+  - view_layout:
+      grid-area: "thermostat1"
+    type: horizontal-stack
+    cards:
+      - type: "custom:button-card"
+        color_type: blank-card
+        styles:
+          card:
+            - width: 150px
+      - type: "custom:button-card"
+        template: card_thermostat
+        entity: climate.downstairs_thermostat
+        variables:
+          ulm_card_thermostat_enable_collapse: true
+          ulm_card_thermostat_enable_controls: true
+          ulm_card_thermostat_enable_hvac_modes: true
+          ulm_card_thermostat_enable_popup: true
+
+      - type: "custom:button-card"
+        color_type: blank-card
+        styles:
+          card:
+            - width: 150px
+
+  #============================================================================
+
+  #=================Living Room=================================================
+  - view_layout:
+      grid-area: "scenes"
+    type: "custom:button-card"
+    template: "card_scenes_welcome"
+    variables:
+      entity_1:
+        entity_id: "scene.cooking"
+        icon: "mdi:stove" #OPTIONAL
+        name: "Cooking" #OPTIONAL
+        color: "blue"
+        _state: "input_select.scenes_input_select"
+      entity_2:
+        entity_id: "scene.dinner_time"
+        icon: "mdi:pasta" #OPTIONAL
+        name: "Dinner" #/OPTIONAL
+        color: "red"
+        _state: "input_select.scenes_input_select"
+      entity_3:
+        entity_id: "scene.theater_mode"
+        icon: "mdi:movie-check" #OPTIONAL
+        name: "Theater Mode" #OPTIONAL
+        color: "green"
+        _state: "input_select.scenes_input_select"
+
+  - view_layout:
+      grid-area: "livingRoom"
+    type: "custom:button-card"
+    template:
+      - card_esh_room
+    name: Living Room
+    entity: light.kitchen_lights
+    icon: mdi:sofa
+    tap_action:
+      action: none
+    variables:
+      ulm_custom_card_esh_room_light_entity: light.kitchen_lights
+      ulm_custom_card_esh_room_climate_entity: climate.downstairs_thermostat
+    styles:
+      card:
+        - background: "#96419d"
+        - --mdc-ripple-color: "#03aecf"
+        - --mdc-ripple-press-opacity: 0.5
+      icon:
+        - color: "#000000"
+        - background: "#f46aff"
+      label:
+        - color: "#000000"
+      name:
+        - color: "#000000"
+      img_cell:
+        - background: "#f46aff"
+      custom_fields:
+        climate:
+          - background: "#f46aff"
+          - border-radius: "20px"
+          - margin-top: "5px"
+
+        light:
+          - background: "#f46aff"
+          - border-radius: "20px"
+
+      state:
+        - value: "off"
+          styles:
+            card:
+              - background: "#f46aff"
+              - filter: opacity(50%)
+            icon:
+              - color: "#000000"
+              - background: "#f46aff"
+            label:
+              - color: "#000000"
+            name:
+              - color: "#000000"
+            img_cell:
+              - background: "#f46aff"
+        - value: "on"
+          styles:
+            card:
+              - background: "#f46aff"
+            icon:
+              - color: "#000000"
+              - background: "#f46aff"
+            label:
+              - color: "#000000"
+            name:
+              - color: "#000000"
+            img_cell:
+              - background: "#f46aff"
+          custom_fields:
+            climate:
+              - background: "#f46aff"
+              - border-radius: "20px"
+              - margin-top: "5px"
+
+            light:
+              - background: "#ebc162"
+              - border-radius: "20px"
+
+  - view_layout:
+      grid-area: "kitchen"
+    type: "custom:button-card"
+    template:
+      - card_esh_room
+    name: Kitchen
+    entity: light.kitchen_lights
+    icon: mdi:stove
+    tap_action:
+      action: none
+    variables:
+      ulm_custom_card_esh_room_light_entity: light.island_lights
+      ulm_custom_card_esh_room_climate_entity: light.kitchen_lights
+    styles:
+      card:
+        - background: "#923d3d"
+        - --mdc-ripple-color: "#03aecf"
+        - --mdc-ripple-press-opacity: 0.5
+      icon:
+        - color: "#000000"
+        - background: "#ff6a6a"
+      label:
+        - color: "#000000"
+      name:
+        - color: "#000000"
+      img_cell:
+        - background: "#ff6a6a"
+      custom_fields:
+        climate:
+          - background: "#ff6a6a"
+          - border-radius: "20px"
+          - margin-top: "5px"
+
+        light:
+          - background: "#ff6a6a"
+          - border-radius: "20px"
+
+      state:
+        - value: "off"
+          styles:
+            card:
+              - background: "#ff6a6a"
+              - filter: opacity(50%)
+            icon:
+              - color: "#000000"
+              - background: "#ff6a6a"
+            label:
+              - color: "#000000"
+            name:
+              - color: "#000000"
+            img_cell:
+              - background: "#ff6a6a"
+        - value: "on"
+          styles:
+            card:
+              - background: "#ff6a6a"
+            icon:
+              - color: "#000000"
+              - background: "#ff6a6a"
+            label:
+              - color: "#000000"
+            name:
+              - color: "#000000"
+            img_cell:
+              - background: "#ff6a6a"
+          custom_fields:
+            climate:
+              - background: "#ff6a6a"
+              - border-radius: "20px"
+              - margin-top: "5px"
+            light:
+              - background: "#ebc162"
+              - border-radius: "20px"
+
+  - view_layout:
+      grid-area: "diningRoom"
+    type: "custom:button-card"
+    template:
+      - card_esh_room
+    name: Dining Room
+    entity: binary_sensor.presence_fp2_presence_sensor_4
+    icon: mdi:silverware
+    tap_action:
+      action: none
+    variables:
+      ulm_custom_card_esh_room_light_entity: light.kitchen_lights
+      ulm_custom_card_esh_room_climate_entity: climate.downstairs_thermostat
+      ulm_card_dynamic_color: true
+    styles:
+      card:
+        - background: "#04d6ff"
+        - --mdc-ripple-color: "#03aecf"
+        - --mdc-ripple-press-opacity: 0.5
+      icon:
+        - color: "#000000"
+        - background: "#03aecf"
+      label:
+        - color: "#000000"
+      name:
+        - color: "#000000"
+      img_cell:
+        - background: "#03aecf"
+      custom_fields:
+        climate:
+          - background: "#03aecf"
+          - border-radius: "20px"
+          - margin-top: "5px"
+
+        light:
+          - background: "#03aecf"
+          - border-radius: "20px"
+
+      state:
+        - value: "off"
+          styles:
+            card:
+              - background: "#03aecf"
+              - filter: opacity(50%)
+            icon:
+              - color: "#000000"
+              - background: "#03aecf"
+            label:
+              - color: "#000000"
+            name:
+              - color: "#000000"
+            img_cell:
+              - background: "#03aecf"
+        - value: "on"
+          styles:
+            card:
+              - background: "#03aecf"
+            icon:
+              - color: "#000000"
+              - background: "#03aecf"
+            label:
+              - color: "#000000"
+            name:
+              - color: "#000000"
+            img_cell:
+              - background: "#03aecf"
+          custom_fields:
+            climate:
+              - background: "#03aecf"
+              - border-radius: "20px"
+              - margin-top: "5px"
+
+            light:
+              - background: "#ebc162"
+              - border-radius: "20px"

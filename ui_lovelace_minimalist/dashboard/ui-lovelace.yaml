@@ -1,0 +1,1560 @@
+---
+button_card_templates: !include_dir_merge_named "../../custom_components/ui_lovelace_minimalist/__ui_minimalist__/ulm_templates/"
+
+images: !include_dir_merge_named "../../local/images/"
+
+resources:
+  - url: /config/www/community/apexcharts-card/apexcharts-card.js
+    type: module
+  - url: www/community/button-card/button-card.js
+    type: module
+  - url: /config/www/community/apexcharts-card/light-entity-card.js
+    type: module
+  - url: /config/www/community/apexcharts-card/auto-entities-card.js
+    type: module
+  - url: /config/www/community/apexcharts-card/card-mod.js
+    type: module
+  - url: /config/www/community/apexcharts-card/bar-card.js
+    type: module
+  - url: /config/www/community/apexcharts-card/mini-graph-card-bundle.js
+    type: module
+  - url: /config/www/community/apexcharts-card/mini-media-player-bundle.js
+    type: module
+  - url: /config/www/community/apexcharts-card/simple-weather-card-bundle.js
+    type: module
+  - url: /config/themes/Wallpapers/hk-House.jpg
+    type: background
+
+background: center / cover no-repeat url("/local/bg/hk-House.jpeg")
+title: "Home"
+theme: "minimalist-ios-tapbar"
+# views: !include_dir_merge_list "views/"
+views:
+  - title: "Home"
+    path: 0
+    icon: "mdi:flower"
+    cards:
+      - type: "custom:button-card"
+        template: "card_welcome_scenes"
+        triggers_update: input_boolean.ui_toggle
+        entity: input_boolean.ui_toggle
+        variables:
+          ulm_card_welcome_scenes_collapse: input_boolean.ui_toggle
+          ulm_weather: "weather.stardestroyer"
+          entity_1:
+            nav: ""
+            icon: "mdi:silverware-fork-knife"
+            name: "Dinner"
+            color: "blue"
+            entity_id: "scene.dinner_time"
+          entity_2:
+            nav: ""
+            icon: "mdi:stove"
+            name: "Cooking "
+            color: "yellow"
+            entity_id: "scene.cooking"
+          entity_3:
+            nav: ""
+            icon: "mdi:movie"
+            name: Theater Mode
+            color: "green"
+            entity_id: "scene.theater_mode"
+        card_mod:
+          style: |
+            ha-card {
+              background-color: transparent !important;
+              backdrop-filter: blur(50px);
+            }
+            :host {
+              --ha-card-background: rgba(255,255,255,0.15) !important;
+              border-radius: 20px;
+              box-shadow: none;
+            }
+
+      - type: "vertical-stack"
+        cards:
+          - type: custom:bubble-card
+            card_type: pop-up
+            hash: "#alarm"
+            name: Home Alarm
+            icon: mdi:alarm-panel
+            entity: alarm_control_panel.alarm
+            margin_top_mobile: calc(100vh - 300px)
+            margin_top_desktop: calc(100vh - 300px)
+            close_by_clicking_outside: true
+            tap_action:
+              action: more-info
+            bg_color: "rgba(255, 255, 255, 0.5)"
+            bg_opacity: "10"
+          - type: horizontal-stack
+            cards:
+              - type: custom:bubble-card
+                card_type: button
+                button_type: state
+                name: Disarm
+                entity: alarm_control_panel.alarm
+                icon: mdi:shield-off
+                card_layout: normal
+                tap_action:
+                  action: call-service
+                  service: alarm_control_panel.alarm_disarm
+              - type: custom:bubble-card
+                card_type: button
+                button_type: state
+                name: Arm away
+                entity: alarm_control_panel.alarm
+                icon: mdi:shield-lock
+                card_layout: normal
+                tap_action:
+                  action: call-service
+                  service: alarm_control_panel.alarm_arm_away
+              - type: custom:bubble-card
+                card_type: button
+                button_type: switch
+                name: Arm home
+                entity: alarm_control_panel.alarm
+                icon: mdi:shield-home
+                card_layout: normal
+                show_state: true
+                button_action:
+                  action: toggle
+                tap_action:
+                  action: call-service
+                  service: alarm_control_panel.alarm_arm_home
+                  service_data:
+                    entity_id: alarm_control_panel.alarm
+
+      - type: "vertical-stack"
+        cards:
+          - type: custom:bubble-card
+            card_type: pop-up
+            hash: "#front-door"
+            name: Entrance
+            icon: mdi:door
+            entity: binary_sensor.front_door_contact_sensor
+            margin_top_mobile: calc(100vh - 650px)
+            margin_top_desktop: calc(100vh - 650px)
+            close_by_clicking_outside: true
+            tap_action:
+              action: none
+            button_action:
+              action: none
+            bg_color: "rgba(255, 255, 255, 0.5)"
+            bg_opacity: "10"
+          - type: "custom:button-card"
+            template: card_binary_sensor
+            variables:
+              ulm_card_binary_sensor_alert: true
+              ulm_card_binary_sensor_show_last_changed: true
+            entity: binary_sensor.front_door_contact_sensor
+          - type: "custom:button-card"
+            entity: lock.front_door_lock_schlage
+            icon: "mdi:lock"
+            template: "custom_card_eraycetinay_lock"
+            name: "Front Door Lock"
+            variables:
+              ulm_custom_card_eraycetinay_lock_tap_control: true
+              ulm_custom_card_eraycetinay_lock_battery_level: sensor.front_door_lock_schlage_battery
+              ulm_custom_card_eraycetinay_lock_door_open: binary_sensor.front_door_contact_sensor
+            triggers_update:
+              - "sensor.front_door_lock_schlage_battery"
+              - "binary_sensor.front_door_contact_sensor"
+          - type: grid
+            columns: 2
+            cards:
+              - type: "custom:button-card"
+                entity: "camera.front_door_doorbell_pro_ring"
+                template: "custom_card_camera"
+                show_icon: True #True if you set ulm_custom_card_camera_title: true
+                variables:
+                  ulm_custom_card_camera_title: true
+                  ulm_custom_card_camera_name: "Front Door"
+                  ulm_custom_card_camera_label: "Doorbell Pro Ring"
+
+              - type: "custom:button-card"
+                entity: camera.front_camera_alley_spotlight_cam_plus
+                template: custom_card_camera
+                show_icon: True #True if you set ulm_custom_card_camera_title: true
+                variables:
+                  ulm_custom_card_camera_title: True
+                  ulm_custom_card_camera_name: "Front Alley"
+                  ulm_custom_card_camera_label: "Spotlight Cam Plus"
+
+      - type: "vertical-stack"
+        cards:
+          - type: custom:bubble-card
+            card_type: pop-up
+            hash: "#side-door"
+            name: Entrance
+            icon: mdi:door
+            entity: binary_sensor.side_door_contact_sensor
+            margin_top_mobile: calc(100vh - 650px)
+            margin_top_desktop: calc(100vh - 650px)
+            close_by_clicking_outside: true
+            tap_action:
+              action: none
+            button_action:
+              action: none
+            bg_color: "rgba(255, 255, 255, 0.5)"
+            bg_opacity: "10"
+          - type: "custom:button-card"
+            template: card_binary_sensor
+            variables:
+              ulm_card_binary_sensor_alert: true
+              ulm_card_binary_sensor_show_last_changed: true
+            entity: binary_sensor.side_door_contact_sensor
+          - type: "custom:button-card"
+            entity: camera.garden_camera
+            template: custom_card_camera
+            show_icon: True #True if you set ulm_custom_card_camera_title: true
+            variables:
+              ulm_custom_card_camera_title: True
+              ulm_custom_card_camera_name: "Garden"
+              ulm_custom_card_camera_label: "Spotlight Cam Plus"
+
+      - type: "vertical-stack"
+        cards:
+          - type: custom:bubble-card
+            card_type: pop-up
+            hash: "#garage-door"
+            name: Entrance
+            icon: mdi:door
+            entity: binary_sensor.garage_door_contact_sensor
+            margin_top_mobile: calc(100vh - 650px)
+            margin_top_desktop: calc(100vh - 650px)
+            close_by_clicking_outside: true
+            tap_action:
+              action: none
+            button_action:
+              action: none
+            bg_color: "rgba(255, 255, 255, 0.5)"
+            bg_opacity: "10"
+          - type: "custom:button-card"
+            template: card_binary_sensor
+            variables:
+              ulm_card_binary_sensor_alert: true
+              ulm_card_binary_sensor_show_last_changed: true
+            entity: binary_sensor.garage_door_contact_sensor
+          - type: grid
+            columns: 2
+            cards:
+              - type: "custom:button-card"
+                entity: "camera.garage_right_alley"
+                template: "custom_card_camera"
+                show_icon: True #True if you set ulm_custom_card_camera_title: true
+                variables:
+                  ulm_custom_card_camera_title: true
+                  ulm_custom_card_camera_name: "Right Garage Alley"
+                  ulm_custom_card_camera_label: "Spotlight Cam Plus"
+
+              - type: "custom:button-card"
+                entity: camera.garage_left_alley
+                template: custom_card_camera
+                show_icon: True #True if you set ulm_custom_card_camera_title: true
+                variables:
+                  ulm_custom_card_camera_title: True
+                  ulm_custom_card_camera_name: "Left Garage Alley"
+                  ulm_custom_card_camera_label: "Spotlight Cam Plus"
+
+      - type: "custom:bubble-card"
+        card_type: horizontal-buttons-stack
+        hide_gradient: true
+        auto_order: false
+        margin: 0px
+        1_name: Alarm
+        1_icon: mdi:alarm-panel
+        1_link: "#alarm"
+        1_entity: alarm_control_panel.alarm
+        2_name: Front Door
+        2_icon: mdi:door
+        2_link: "#front-door"
+        2_entity: binary_sensor.front_door_contact_sensor
+        3_name: Side Door
+        3_icon: mdi:door
+        3_link: "#side-door"
+        3_entity: binary_sensor.side_door_contact_sensor
+        4_name: Garage Door
+        4_icon: mdi:door
+        4_link: "#garage-door"
+        4_entity: binary_sensor.garage_door_contact_sensor
+        styles: |
+          .bubble-button-1 {
+            background-color: ${hass.states['alarm_control_panel.alarm'].state === 'disarmed' ? 'transparent' : hass.states['alarm_control_panel.alarm'].state === 'armed_home' ? 'rgba(0, 255, 4, 1.0)' : hass.states['alarm_control_panel.alarm'].state === 'armed_away' ? 'rgba(255, 0, 0, 1.0)' : '' } !important;
+          }
+          .bubble-button-2 {
+            background-color: ${hass.states['binary_sensor.front_door_contact_sensor'].state === 'on' ? 'rgba(0, 255, 4, 1.0)' : 'transparent'} !important;
+          }
+          .bubble-button-3 {
+            background-color: ${hass.states['binary_sensor.side_door_contact_sensor'].state === 'on' ? 'rgba(0, 255, 4, 1.0)' : 'transparent'} !important;
+          }
+          .bubble-button-4 {
+            background-color: ${hass.states['binary_sensor.garage_door_contact_sensor'].state === 'on' ? 'rgba(0, 255, 4, 1.0)' : 'transparent'} !important;
+          }
+
+      - type: "custom:bubble-card"
+        card_type: separator
+        name: "Downstairs"
+        icon: mdi:stairs-down
+
+      - type: grid
+        columns: 3
+        cards:
+          - type: "custom:button-card" # Garage Card
+            template:
+              - card_esh_room
+            name: Living Room
+            entity: binary_sensor.living_room_presence
+            icon: mdi:sofa
+            tap_action:
+              action: navigate
+              navigation_path: "#living-room"
+            variables:
+              ulm_custom_card_esh_room_climate_entity: climate.downstairs_thermostat
+              ulm_card_thermostat_enable_popup: true
+            card_mod:
+              style: |
+                ha-card {
+                  background-image: url('/local/bg/hk-Living\ Room.jpeg');
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  background-position: top;
+
+                  border-radius: 20px;
+                  box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+                  backdrop-filter: blur(50px);
+                }
+            styles:
+              icon:
+                - color: black
+                - opacity: 1
+              label:
+                - color: black
+              name:
+                - color: black
+
+          - type: "custom:button-card" # Garage Card
+            template:
+              - card_esh_room
+            name: Kitchen
+            entity: binary_sensor.living_room_presence
+            icon: mdi:stove
+            tap_action:
+              action: navigate
+              navigation_path: "#kitchen"
+            variables:
+              label_use_temperature: false
+              label_use_brightness: true
+            card_mod:
+              style: |
+                ha-card {
+                  background-image: url('/local/bg/hk-Kitchen.jpeg');
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  background-position: top;
+
+                  border-radius: 20px;
+                  box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+                  backdrop-filter: blur(50px);
+                }
+            styles:
+              icon:
+                - color: black
+                - opacity: 1
+              label:
+                - color: black
+              name:
+                - color: black
+
+          - type: "custom:button-card"
+            template:
+              - card_esh_room
+            name: Dining Room
+            entity: binary_sensor.living_room_presence
+            icon: mdi:silverware
+            tap_action:
+              action: navigate
+              navigation_path: "#dinig-room"
+            variables:
+              label_use_temperature: false
+              label_use_brightness: true
+              entity_1:
+                entity_id: binary_sensor.garage_motion_sensor
+                name: "Garage Motion"
+                icon: mdi:motion-sensor
+            card_mod:
+              style: |
+                ha-card {
+                  background-image: url('/local/bg/hk-Dining\ Room.jpeg');
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  background-position: top;
+                  backdrop-filter: blur(50px);
+                }
+            styles:
+              icon:
+                - color: black
+                - opacity: 1
+              label:
+                - color: black
+              name:
+                - color: black
+          - type: "custom:button-card" # Garage Card
+            template:
+              - card_esh_room
+            name: Guest Bathroom
+            icon: mdi:garage
+            tap_action:
+              action: navigate
+              navigation_path: "#guest-bathroom"
+            card_mod:
+              style: |
+                ha-card {
+                  background-image: url('/local/bg/hk-Bathroom.jpeg');
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  background-position: top;
+
+                  border-radius: 20px;
+                  box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+                  backdrop-filter: blur(50px);
+                }
+            styles:
+              icon:
+                - color: black
+                - opacity: 1
+              label:
+                - color: black
+              name:
+                - color: black
+
+          - type: "custom:button-card" # Garage Card
+            template:
+              - card_esh_room
+            name: Guest Room/ Cat Room
+            icon: mdi:bed-outline
+            tap_action:
+              action: navigate
+              navigation_path: "#guest-room"
+            card_mod:
+              style: |
+                ha-card {
+                  background-image: url('/local/bg/hk-Guest\ Room.jpeg');
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  background-position: top;
+
+                  border-radius: 20px;
+                  box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+                  backdrop-filter: blur(50px);
+                }
+            styles:
+              icon:
+                - color: black
+                - opacity: 1
+              label:
+                - color: black
+              name:
+                - color: black
+
+          - type: "custom:button-card" # Garage Card
+            template:
+              - card_esh_room
+            name: Garage
+            entity: binary_sensor.living_room_presence
+            icon: mdi:garage
+            card_mod:
+              style: |
+                ha-card {
+                  background-image: url('/local/bg/hk-Garage.jpeg');
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  background-position: top;
+
+                  border-radius: 20px;
+                  box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+                  backdrop-filter: blur(50px);
+                }
+            styles:
+              icon:
+                - color: black
+                - opacity: 1
+              label:
+                - color: black
+              name:
+                - color: black
+            tap_action:
+              action: navigate
+              navigation_path: "#garage"
+            variables:
+              label_use_temperature: false
+              label_use_brightness: true
+              entity_1:
+                entity_id: binary_sensor.garage_motion_sensor
+                name: "Garage Motion"
+                icon: mdi:motion-sensor
+
+      - type: "custom:bubble-card"
+        card_type: separator
+        name: "Upstairs"
+        icon: mdi:stairs-up
+
+      - type: grid
+        columns: 3
+        cards:
+          - type: "custom:button-card" # Garage Card
+            template:
+              - card_esh_room
+            name: Master Bedroom
+            entity: light.ceiling_lights
+            icon: mdi:bed-king
+            tap_action:
+              action: navigate
+              navigation_path: "#master-bedroom"
+            card_mod:
+              style: |
+                ha-card {
+                  background-image: url('/local/bg/hk-Bedroom.jpeg');
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  background-position: top;
+
+                  border-radius: 20px;
+                  box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+                  backdrop-filter: blur(50px);
+                }
+            styles:
+              icon:
+                - color: black
+                - opacity: 1
+              label:
+                - color: black
+              name:
+                - color: black
+
+          - type: "custom:button-card" # Garage Card
+            template:
+              - card_esh_room
+            name: Theater Room
+            entity: light.nanoleaf_lights
+            icon: mdi:sofa
+            tap_action:
+              action: navigate
+              navigation_path: "#theater-room"
+            card_mod:
+              style: |
+                ha-card {
+                  background-image: url('/local/bg/hk-Living\ Room.jpeg');
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  background-position: top;
+
+                  border-radius: 20px;
+                  box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+                  backdrop-filter: blur(50px);
+                }
+            styles:
+              icon:
+                - color: black
+                - opacity: 1
+              label:
+                - color: black
+              name:
+                - color: black
+
+          - type: "custom:button-card" # Garage Card
+            template:
+              - card_esh_room
+            name: Game Room
+            entity: light.rgbic_neon_rope_lights
+            icon: mdi:nintendo-game-boy
+            card_mod:
+              style: |
+                ha-card {
+                  background-image: url('/local/bg/hk-Office\ 2.jpeg');
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  background-position: top;
+
+                  border-radius: 20px;
+                  box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+                  backdrop-filter: blur(50px);
+                }
+            styles:
+              icon:
+                - color: black
+                - opacity: 1
+              label:
+                - color: black
+              name:
+                - color: black
+            tap_action:
+              action: navigate
+              navigation_path: "#game-room"
+
+      #------------------------------------------------------------------------
+      #Living Room Pop-up
+      #------------------------------------------------------------------------
+      - type: "vertical-stack"
+        cards:
+          - type: "custom:bubble-card"
+            card_type: pop-up
+            hash: "#living-room"
+            name: Living Room
+            icon: mdi:sofa
+            entity: binary_sensor.sofa_presence
+            margin_top_mobile: calc(100vh - 600px)
+            margin_top_desktop: calc(100vh - 600px)
+            close_by_clicking_outside: true
+            bg_color: "rgba(17, 17, 17, 0.7)"
+            bg_opacity: "20"
+            tap_action:
+              action: none
+            button_action:
+              action: none
+            styles: |
+              .bubble-button-card-container {
+                color: ${hass.states['binary_sensor.sofa_presence'].state === 'on' ? 'white' : 'white'} !important;
+                background: rgba(122, 122, 122, 0.53) !important;
+              }
+              .bubble-icon {
+                color: ${hass.states['binary_sensor.sofa_presence'].state === 'on' ? 'green' : 'white'} !important;
+              }
+              .bubble-button-background{
+                background-color: ${hass.states['binary_sensor.sofa_presence'].state === 'on' ? 'rgba(142, 189, 78, 0.308)' : 'transparent'} !important;
+              }
+              .bubble-icon-container {
+                background-color: transparent !important;
+              }
+
+          - type: "custom:bubble-card"
+            card_type: button
+            name: Living Room thermostat
+            entity: climate.downstairs_thermostat
+            button_type: name
+            icon: mdi:thermostat
+            card_layout: normal
+            tap_action:
+              action: none
+            button_action:
+              action: none
+            sub_button:
+              - name: "Current Temperature"
+                card_layout: normal
+                show_name: false
+                show_icon: false
+                show_background: false
+                show_attribute: true
+                attribute: current_temperature
+                tap_action:
+                  action: none
+              - name: "state"
+                card_layout: normal
+                show_name: false
+                show_icon: false
+                show_background: false
+                show_attribute: true
+                attribute: hvac_action
+                tap_action:
+                  action: none
+              - name: "fan_mode"
+                card_layout: normal
+                show_name: false
+                show_icon: false
+                show_background: false
+                show_attribute: true
+                attribute: fan_mode
+                tap_action:
+                  action: none
+            styles: |
+              .bubble-button-card-container {
+                background: rgba(122, 122, 122, 0.53) !important;
+                backdrop-filter: blur(100px);
+              }
+              .bubble-icon-container {
+                background: transparent !important;
+
+              }
+
+          - type: "custom:bubble-card"
+            card_type: button
+            name: "Mode"
+            entity: climate.downstairs_thermostat
+            button_type: state
+            icon:
+            card_layout: normal
+            tap_action:
+              action: none
+            button_action:
+              action: none
+            show_name: true
+            sub_button:
+              - name: "auto"
+                card_layout: normal
+                show_name: true
+                show_icon: false
+                show_background: true
+                tap_action:
+                  action: call-service
+                  service: climate.set_hvac_mode
+                  target:
+                    entity_id: climate.downstairs_thermostat
+                  data:
+                    hvac_mode: auto
+              - name: "Cool"
+                card_layout: normal
+                show_name: true
+                show_icon: false
+                show_background: true
+                tap_action:
+                  action: call-service
+                  service: climate.set_hvac_mode
+                  target:
+                    entity_id: climate.downstairs_thermostat
+                  data:
+                    hvac_mode: cool
+              - name: "heat"
+                card_layout: normal
+                show_name: true
+                show_icon: false
+                show_background: true
+                tap_action:
+                  action: call-service
+                  service: climate.set_hvac_mode
+                  target:
+                    entity_id: climate.downstairs_thermostat
+                  data:
+                    hvac_mode: heat
+              - name: "off"
+                card_layout: normal
+                show_name: true
+                show_icon: false
+                show_background: true
+                tap_action:
+                  action: call-service
+                  service: climate.set_hvac_mode
+                  target:
+                    entity_id: climate.downstairs_thermostat
+                  data:
+                    hvac_mode: "off"
+            styles: |
+              .bubble-sub-button-1 {
+                background-color: ${hass.states['climate.downstairs_thermostat'].state === 'auto' ? 'rgba(87, 211, 87, 1.0)' : 'transparent'} !important;
+                color: rgba(0, 0, 0, 1.0) !important;
+              }
+              .bubble-sub-button-2 {
+                background-color: ${hass.states['climate.downstairs_thermostat'].state === "cool" ? 'rgba(4, 214, 255, 1.0)' : 'transparent'} !important;
+                color: rgba(0, 0, 0, 1.0) !important;
+              }
+              .bubble-sub-button-3 {
+                background-color: ${hass.states['climate.downstairs_thermostat'].state === "heat" ? 'rgba(255, 100, 4, 1.0)' : 'transparent'} !important;
+                color: rgba(0, 0, 0, 1.0) !important;
+              }
+              .bubble-sub-button-4 {
+                background-color: ${hass.states['climate.downstairs_thermostat'].state === "off" ? 'white' : 'rgba(126, 126, 126, 1.0)'} !important;
+                color: rgba(0, 0, 0, 0.5) !important;
+              }
+              .bubble-button-card-container {
+                                background: rgba(122, 122, 122, 0.53) !important;
+
+              }
+              .bubble-icon-container {
+                background-color: transparent !important;
+              }
+          - type: custom:bubble-card
+            card_type: button
+            button_type: slider
+            entity: climate.downstairs_thermostat
+            name: "Temperature"
+            icon: mdi:thermostat
+            tap_action:
+              action: call-service
+              service: climate.set_temperature
+              target:
+                entity_id: climate.downstairs_thermostat
+              data:
+                temperature: "{{slider_value}}"
+            show_name: true
+            sub_button:
+              - name: "temperature"
+                card_layout: normal
+                show_icon: false
+                show_background: false
+                show_attribute: true
+                attribute: temperature
+                tap_action:
+                action: none
+                show_state: true
+                show_name: false
+                icon: mdi:thermostat
+            styles: |
+              .bubble-range-fill {
+                background: ${hass.states['climate.downstairs_thermostat'].state === "cool" ? 'rgba(4, 214, 255, 0.5)' : hass.states['climate.downstairs_thermostat'].state === "heat" ? 'rgba(255, 100, 4, 0.5)' : hass.states['climate.downstairs_thermostat'].state === "auto" ? 'rgba(87, 211, 87, 0.5)' : 'transparent'} !important;
+                color: black !important;
+              }
+              .bubble-icon {
+                color: ${hass.states['climate.downstairs_thermostat'].state === "cool" ? 'rgba(4, 214, 255,0.5)' : hass.states['climate.downstairs_thermostat'].state === "heat" ? 'rgba(255, 100, 4,0.5)' : hass.states['climate.downstairs_thermostat'].state === "auto" ? 'rgba(87, 211, 87,0.5)' : 'white'} !important;
+              }
+              .bubble-button-card-container {
+                color: white !important;
+                                background: rgba(122, 122, 122, 0.53) !important;
+
+              }
+              .bubble-icon-container {
+                background-color: transparent !important;
+              }
+
+      #------------------------------------------------------------------------
+      #Kitchen Pop-up
+      #------------------------------------------------------------------------
+      - type: "vertical-stack"
+        cards:
+          - type: "custom:bubble-card"
+            card_type: pop-up
+            hash: "#kitchen"
+            name: Kitchen
+            icon: mdi:stove
+            entity: binary_sensor.kitchen_zone
+            margin_top_mobile: calc(100vh - 650px)
+            margin_top_desktop: calc(100vh - 650px)
+            close_by_clicking_outside: true
+            bg_color: "rgba(255, 255, 255, 0.5)"
+            bg_opacity: "10"
+            styles: |
+              .bubble-button-card-container {
+                color: ${hass.states['binary_sensor.kitchen_zone'].state === 'on' ? 'white' : 'white'} !important;
+                background: rgba(122, 122, 122, 0.53) !important;
+              }
+              .bubble-icon {
+                color: ${hass.states['binary_sensor.kitchen_zone'].state === 'on' ? 'green' : 'white'} !important;
+              }
+              .bubble-button-background{
+                background-color: ${hass.states['binary_sensor.kitchen_zone'].state === 'on' ? 'rgba(142, 189, 78, 0.308)' : 'transparent'} !important;
+              }
+              .bubble-icon-container {
+                background-color: transparent !important;
+              }
+          - type: custom:bubble-card
+            card_type: empty-column
+          - type: custom:bubble-card
+            card_type: button
+            button_type: slider
+            entity: light.kitchen_lights
+            name: Kitchen Lights
+            icon: mdi:light-recessed
+            tap_action:
+              action: call-service
+              service: light.turn_on
+              target:
+                entity_id: light.kitchen_lights
+              data:
+                brightness: 100
+                transition: 0.5
+            double_tap_action:
+              action: call-service
+              service: light.turn_off
+              target:
+                entity_id: light.kitchen_lights
+              data:
+                transition: 0.5
+            styles: |
+              .bubble-button-card-container{
+                background-color: ${hass.states['light.kitchen_lights'].state === 'on' ? 'rgba(255, 183, 0, 1.0)' : 'transparent'} !important;
+              }
+              
+
+            button_action:
+              action: call-service
+              service: light.toggle
+              target:
+                entity_id: light.kitchen_lights
+          - type: custom:bubble-card
+            card_type: separator
+          - type: custom:bubble-card
+            card_type: button
+            button_type: switch
+            name: Island Lights
+            show_state: true
+            entity: light.island_lights
+            tap_action:
+              action: toggle
+            hold_action:
+              action: more-info
+            styles: |
+              .bubble-button-card-container{
+                background-color: ${hass.states['light.island_lights'].state === 'on' ? 'rgba(255, 183, 0, 1.0)' : 'transparent'} !important;
+              }
+              .bubble-icon-container {
+                background-color: ${hass.states['light.island_lights'].state === 'on' ? 'rgba(255, 183, 0, 1.0)' : 'transparent'} !important;
+                color: ${hass.states['light.island_lights'].state === 'on' ? 'black' : 'white'} !important;
+              }
+
+      #------------------------------------------------------------------------
+      #Dining Room Pop-up
+      #-----------------------------------------------------------------------
+      - type: "vertical-stack"
+        cards:
+          - type: "custom:bubble-card"
+            card_type: pop-up
+            hash: "#dinig-room"
+            name: Dining Room
+            icon: mdi:sofa
+            entity: binary_sensor.sofa_presence
+            margin_top_mobile: calc(100vh - 600px)
+            margin_top_desktop: calc(100vh - 600px)
+            close_by_clicking_outside: true
+            bg_color: "rgba(255, 255, 255, 0.5)"
+            bg_opacity: "10"
+            styles: |
+              .bubble-button-card-container {
+                color: ${hass.states['binary_sensor.dining_room_presence'].state === 'on' ? 'white' : 'white'} !important;
+                background: rgba(122, 122, 122, 0.53) !important;
+              }
+              .bubble-icon {
+                color: ${hass.states['binary_sensor.dining_room_presence'].state === 'on' ? 'green' : 'white'} !important;
+              }
+              .bubble-button-background{
+                background-color: ${hass.states['binary_sensor.dining_room_presence'].state === 'on' ? 'rgba(142, 189, 78, 0.308)' : 'transparent'} !important;
+              }
+              .bubble-icon-container {
+                background-color: transparent !important;
+              }
+      #------------------------------------------------------------------------
+      #Guest Room Pop-up
+      #-----------------------------------------------------------------------
+      - type: "vertical-stack"
+        cards:
+          - type: "custom:bubble-card"
+            card_type: pop-up
+            hash: "#guest-room"
+            name: Dining Room
+            icon: mdi:sofa
+            entity: binary_sensor.sofa_presence
+            margin_top_mobile: calc(100vh - 600px)
+            margin_top_desktop: calc(100vh - 600px)
+            close_by_clicking_outside: true
+            bg_color: "rgba(255, 255, 255, 0.5)"
+            bg_opacity: "10"
+            styles: |
+              .bubble-button-card-container {
+                color: ${hass.states['binary_sensor.dining_room_presence'].state === 'on' ? 'white' : 'white'} !important;
+                background: rgba(122, 122, 122, 0.53) !important;
+              }
+              .bubble-icon {
+                color: ${hass.states['binary_sensor.dining_room_presence'].state === 'on' ? 'green' : 'white'} !important;
+              }
+              .bubble-button-background{
+                background-color: ${hass.states['binary_sensor.dining_room_presence'].state === 'on' ? 'rgba(142, 189, 78, 0.308)' : 'transparent'} !important;
+              }
+              .bubble-icon-container {
+                background-color: transparent !important;
+              }
+      #------------------------------------------------------------------------
+      #Cat Room/ Guest Room Pop-up
+      #-----------------------------------------------------------------------
+      - type: "vertical-stack"
+        cards:
+          - type: "custom:bubble-card"
+            card_type: pop-up
+            hash: "#guest-bathroom"
+            name: Guest Bathroom
+            icon: mdi:sofa
+            entity: binary_sensor.sofa_presence
+            margin_top_mobile: calc(100vh - 600px)
+            margin_top_desktop: calc(100vh - 600px)
+            close_by_clicking_outside: true
+            bg_color: "rgba(255, 255, 255, 0.5)"
+            bg_opacity: "10"
+            styles: |
+              .bubble-button-card-container {
+                color: ${hass.states['binary_sensor.dining_room_presence'].state === 'on' ? 'white' : 'white'} !important;
+                background: rgba(122, 122, 122, 0.53) !important;
+              }
+              .bubble-icon {
+                color: ${hass.states['binary_sensor.dining_room_presence'].state === 'on' ? 'green' : 'white'} !important;
+              }
+              .bubble-button-background{
+                background-color: ${hass.states['binary_sensor.dining_room_presence'].state === 'on' ? 'rgba(142, 189, 78, 0.308)' : 'transparent'} !important;
+              }
+              .bubble-icon-container {
+                background-color: transparent !important;
+              }
+
+      #------------------------------------------------------------------------
+      #Master Bedroom Pop-up
+      #-----------------------------------------------------------------------
+      - type: "vertical-stack"
+        cards:
+          - type: "custom:bubble-card"
+            card_type: pop-up
+            hash: "#master-bedroom"
+            name: Master Bedroom
+            icon: mdi:bed-king
+            margin_top_mobile: calc(100vh - 650px)
+            margin_top_desktop: calc(100vh - 650px)
+            close_by_clicking_outside: true
+            close_on_click: false
+            bg_color: "rgba(255, 255, 255, 0.5)"
+            bg_opacity: "10"
+            styles: |
+              .bubble-button-card-container {
+                color: ${hass.states['binary_sensor.sofa_presence'].state === 'on' ? 'white' : 'white'} !important;
+                background: rgba(122, 122, 122, 0.53) !important;
+              }
+              .bubble-icon {
+                color: ${hass.states['binary_sensor.sofa_presence'].state === 'on' ? 'green' : 'white'} !important;
+              }
+              .bubble-button-background{
+                background-color: ${hass.states['binary_sensor.sofa_presence'].state === 'on' ? 'rgba(142, 189, 78, 0.308)' : 'transparent'} !important;
+              }
+              .bubble-icon-container {
+                background-color: transparent !important;
+              }
+          - type: custom:bubble-card
+            card_type: separator
+
+          - type: "custom:bubble-card"
+            card_type: button
+            name: Upstairs thermostat
+            entity: climate.upstairs_thermostat_thermostat
+            button_type: name
+            icon: mdi:thermostat
+            card_layout: normal
+            tap_action:
+              action: none
+            button_action:
+              action: none
+            sub_button:
+              - name: "Current Temperature"
+                card_layout: normal
+                show_name: false
+                show_icon: false
+                show_background: false
+                show_attribute: true
+                attribute: current_temperature
+                tap_action:
+                  action: none
+              - name: "state"
+                card_layout: normal
+                show_name: false
+                show_icon: false
+                show_background: false
+                show_attribute: true
+                attribute: hvac_action
+                tap_action:
+                  action: none
+              - name: "fan_mode"
+                card_layout: normal
+                show_name: false
+                show_icon: false
+                show_background: false
+                show_attribute: true
+                attribute: fan_mode
+                tap_action:
+                  action: none
+            styles: |
+              .bubble-button-card-container {
+                background: rgba(122, 122, 122, 0.53) !important;
+                backdrop-filter: blur(100px);
+              }
+              .bubble-icon-container {
+                background: transparent !important;
+
+              }
+          - type: "custom:bubble-card"
+            card_type: button
+            name: "Mode"
+            entity: climate.upstairs_thermostat_thermostat
+            button_type: state
+            icon:
+            card_layout: normal
+            tap_action:
+              action: none
+            button_action:
+              action: none
+            show_name: true
+            sub_button:
+              - name: "auto"
+                card_layout: normal
+                show_name: true
+                show_icon: false
+                show_background: true
+                tap_action:
+                  action: call-service
+                  service: climate.set_hvac_mode
+                  target:
+                    entity_id: climate.upstairs_thermostat_thermostat
+                  data:
+                    hvac_mode: auto
+              - name: "Cool"
+                card_layout: normal
+                show_name: true
+                show_icon: false
+                show_background: true
+                tap_action:
+                  action: call-service
+                  service: climate.set_hvac_mode
+                  target:
+                    entity_id: climate.upstairs_thermostat_thermostat
+                  data:
+                    hvac_mode: cool
+              - name: "heat"
+                card_layout: normal
+                show_name: true
+                show_icon: false
+                show_background: true
+                tap_action:
+                  action: call-service
+                  service: climate.set_hvac_mode
+                  target:
+                    entity_id: climate.upstairs_thermostat_thermostat
+                  data:
+                    hvac_mode: heat
+              - name: "off"
+                card_layout: normal
+                show_name: true
+                show_icon: false
+                show_background: true
+                tap_action:
+                  action: call-service
+                  service: climate.set_hvac_mode
+                  target:
+                    entity_id: climate.upstairs_thermostat_thermostat
+                  data:
+                    hvac_mode: "off"
+            styles: |
+              .bubble-sub-button-1 {
+                background-color: ${hass.states['climate.upstairs_thermostat_thermostat'].state === 'auto' ? 'rgba(87, 211, 87, 1.0)' : 'transparent'} !important;
+                color: rgba(0, 0, 0, 1.0) !important;
+              }
+              .bubble-sub-button-2 {
+                background-color: ${hass.states['climate.upstairs_thermostat_thermostat'].state === "cool" ? 'rgba(4, 214, 255, 1.0)' : 'transparent'} !important;
+                color: rgba(0, 0, 0, 1.0) !important;
+              }
+              .bubble-sub-button-3 {
+                background-color: ${hass.states['climate.upstairs_thermostat_thermostat'].state === "heat" ? 'rgba(255, 100, 4, 1.0)' : 'transparent'} !important;
+                color: rgba(0, 0, 0, 1.0) !important;
+              }
+              .bubble-sub-button-4 {
+                background-color: ${hass.states['climate.upstairs_thermostat_thermostat'].state === "off" ? 'white' : 'transparent'} !important;
+                color: rgba(0, 0, 0, 1.0) !important;
+              }
+              .bubble-button-card-container {
+                background: rgba(122, 122, 122, 0.53) !important;
+
+              }
+              .bubble-icon-container {
+                background-color: transparent !important;
+              }
+          - type: custom:bubble-card
+            card_type: button
+            button_type: slider
+            entity: climate.upstairs_thermostat_thermostat
+            name: "Temperature"
+            icon: mdi:thermostat
+            tap_action:
+              action: call-service
+              service: climate.set_temperature
+              target:
+                entity_id: climate.upstairs_thermostat_thermostat
+              data:
+                temperature: "{{slider_value}}"
+            sub_button:
+              - name: "temperature"
+                card_layout: normal
+                show_name: true
+                show_icon: false
+                show_background: false
+                show_attribute: true
+                attribute: temperature
+                tap_action:
+                action: none
+            styles: |
+              .bubble-range-fill {
+                background: ${hass.states['climate.upstairs_thermostat_thermostat'].state === "cool" ? 'rgba(4, 214, 255, 0.5)' : hass.states['climate.upstairs_thermostat_thermostat'].state === "heat" ? 'rgba(255, 100, 4, 0.5)' : hass.states['climate.upstairs_thermostat_thermostat'].state === "auto" ? 'rgba(87, 211, 87, 0.5)' : 'transparent'} !important;
+                color: black !important;
+              }
+              .bubble-icon {
+                color: ${hass.states['climate.upstairs_thermostat_thermostat'].state === "cool" ? 'rgba(4, 214, 255, 1.0)' : hass.states['climate.upstairs_thermostat_thermostat'].state === "heat" ? 'rgba(255, 100, 4, 1.0)' : hass.states['climate.upstairs_thermostat_thermostat'].state === "auto" ? 'rgba(87, 211, 87, 1.0)' : 'rgba(0, 0, 0, 1.0)'} !important;;
+              }
+              .bubble-button-card-container {
+                color: white !important;
+                background: rgba(122, 122, 122, 0.53) !important;
+
+              }
+              .bubble-icon-container {
+                background-color: transparent !important;
+              }
+          - type: custom:bubble-card
+            card_type: separator
+          - type: grid
+            columns: 2
+            cards:
+              - type: custom:bubble-card
+                card_type: button
+                button_type: slider
+                entity: light.ceiling_lights
+                name: Ceiling Lights
+                icon: mdi:dome-light
+                show_state: true
+                tap_action:
+                  action: call-service
+                  service: light.turn_on
+                  target:
+                    entity_id: light.ceiling_lights
+                  data:
+                    brightness: 100
+                    transition: 0.5
+                double_tap_action:
+                  action: call-service
+                  service: light.turn_off
+                  target:
+                    entity_id: light.ceiling_lights
+                  data:
+                    transition: 0.5
+                styles: |
+                  .bubble-button-background {
+                    opacity: 1 !important;
+                    background-color: ${state === 'on' ? 'rgba(255, 175, 0, 1.0)' : 'transparent'} !important;
+                    color: ${state === 'on' ? 'black' : 'white'} !important;
+                  }
+                  .bubble-button-card-container {
+                  color: ${state === 'on' ? 'black' : 'white'} !important;
+                  background-color: ${hass.states['light.ceiling_lights'].state === 'on' ? 'rgba(255, 183, 0, 1.0)' : 'transparent'} !important;
+                  }
+              - type: custom:bubble-card
+                card_type: button
+                button_type: switch
+                entity: light.bedroom_lamp
+                name: lamp
+                icon: mdi:lamp
+                show_state: true
+                tap_action:
+                  action: toggle
+                styles: |
+                  .bubble-button-background {
+                    opacity: 1 !important;
+                    background-color: ${state === 'on' ? 'rgba(255, 175, 0, 1.0)' : 'transparent'} !important;
+                    color: ${state === 'on' ? 'black' : 'white'} !important;
+                  }
+                  .bubble-button-card-container {
+                  color: ${state === 'on' ? 'black' : 'white'} !important;
+                  background-color: ${hass.states['light.bedroom_lamp'].state === 'on' ? 'rgba(255, 183, 0, 1.0)' : 'transparent'} !important;
+                  }
+
+      #------------------------------------------------------------------------
+      #Game Room Pop-up
+      #-----------------------------------------------------------------------
+      - type: "vertical-stack"
+        cards:
+          - type: "custom:bubble-card"
+            card_type: pop-up
+            hash: "#game-room"
+            name: Game Room
+            icon: mdi:nintendo-game-boy
+            entity:
+            margin_top_mobile: calc(100vh - 650px)
+            margin_top_desktop: calc(100vh - 650px)
+            close_by_clicking_outside: true
+          - type: grid
+            columns: 2
+            cards:
+              - type: custom:bubble-card
+                card_type: button
+                button_type: slider
+                entity: light.rgbic_neon_rope_lights
+                name: Rope Lights
+                icon: mdi:led-strip-variant
+                show_state: true
+                tap_action:
+                  action: call-service
+                  service: light.turn_on
+                  target:
+                    entity_id: light.rgbic_neon_rope_lights
+                  data:
+                    brightness: 100
+                    transition: 0.5
+                double_tap_action:
+                  action: call-service
+                  service: light.turn_off
+                  target:
+                    entity_id: light.rgbic_neon_rope_lights
+                  data:
+                    transition: 0.5
+
+              - type: custom:bubble-card
+                card_type: button
+                button_type: switch
+                entity: light.darth_vader
+                name: lamp
+                icon: mdi:lamp
+                show_state: true
+                styles: |
+                  .bubble-button-background {
+                    opacity: 1 !important;
+                    background-color: ${state === 'on' ? 'rgba(255, 175, 0, 1.0)' : ''} !important;
+                    color: ${state === 'on' ? 'black' : 'white'} !important;
+                  }
+                  .bubble-button-card-container {
+                  color: ${state === 'on' ? 'black' : 'white'} !important;
+                  }
+          - type: "custom:button-card"
+            entity: camera.3d_printer_v3se
+            template: custom_card_camera
+            show_icon: True #True if you set ulm_custom_card_camera_title: true
+            variables:
+              ulm_custom_card_camera_title: True
+              ulm_custom_card_camera_name: "3D Printer"
+              ulm_custom_card_camera_label: "Logitech C920s"
+
+      #------------------------------------------------------------------------
+      #Theater Room Pop-up
+      #-----------------------------------------------------------------------
+      - type: "vertical-stack"
+        cards:
+          - type: "custom:bubble-card"
+            card_type: pop-up
+            hash: "#theater-room"
+            name: Living Room
+            icon: mdi:sofa
+            entity: binary_sensor.sofa_presence
+            margin_top_mobile: calc(100vh - 600px)
+            margin_top_desktop: calc(100vh - 600px)
+            close_by_clicking_outside: true
+            styles: |
+              .bubble-button-card-container {
+                color: ${hass.states['binary_sensor.sofa_presence'].state === 'on' ? 'green' : 'white'} !important;
+              }
+              .bubble-icon {
+                color: ${hass.states['binary_sensor.sofa_presence'].state === 'on' ? 'green' : 'white'} !important;
+              }
+              .bubble-button-background{
+                background-color: ${hass.states['binary_sensor.sofa_presence'].state === 'on' ? 'rgba(142, 189, 78, 0.308)' : ''} !important;
+              }
+          - type: "custom:bubble-card"
+            card_type: button
+            name: Thermostat
+            entity: climate.downstairs_thermostat
+            button_type: name
+            icon: mdi:thermostat
+            card_layout: normal
+            tap_action:
+              action: none
+            button_action:
+              action: none
+            sub_button:
+              - name: "Current Temperature"
+                card_layout: normal
+                show_name: false
+                show_icon: false
+                show_background: false
+                show_attribute: true
+                attribute: current_temperature
+                tap_action:
+                  action: none
+            styles: |
+              .bubble-button-card-container {
+                color: ${(hass.states['climate.downstairs_thermostat'].state === 'on' && hass.states['climate.downstairs_thermostat'].attributes.hvac_mode == 'cool') ? 'rgba(0, 96, 209, 1.0)' : 'white'} !important;
+              }
+              .bubble-icon {
+                color: ${(hass.states['climate.downstairs_thermostat'].state === 'on' && hass.states['climate.downstairs_thermostat'].attributes.hvac_mode == 'cool') ? 'rgba(0, 96, 209, 1.0)' : 'white'} !important;
+              }
+              .bubble-button-background{
+                background-color: ${hass.states['binary_sensor.sofa_presence'].state === 'on' ? 'rgba(142, 189, 78, 0.308)' : ''} !important;
+              }
+          - type: custom:bubble-card
+            card_type: separator
+
+          - type: "custom:bubble-card"
+            card_type: button
+            name: "Mode"
+            entity: climate.downstairs_thermostat
+            button_type: state
+            icon:
+            card_layout: normal
+            tap_action:
+              action: none
+            button_action:
+              action: none
+            show_name: true
+            sub_button:
+              - name: "auto"
+                card_layout: normal
+                show_name: true
+                show_icon: false
+                show_background: true
+                tap_action:
+                  action: call-service
+                  service: climate.set_hvac_mode
+                  target:
+                    entity_id: climate.downstairs_thermostat
+                  data:
+                    hvac_mode: auto
+
+              - name: "Cold"
+                card_layout: normal
+                show_name: true
+                show_icon: false
+                show_background: true
+                tap_action:
+                  action: call-service
+                  service: climate.set_hvac_mode
+                  target:
+                    entity_id: climate.downstairs_thermostat
+                  data:
+                    hvac_mode: cool
+
+              - name: "heat"
+                card_layout: normal
+                show_name: true
+                show_icon: false
+                show_background: true
+                tap_action:
+                  action: call-service
+                  service: climate.set_hvac_mode
+                  target:
+                    entity_id: climate.downstairs_thermostat
+                  data:
+                    hvac_mode: heat
+
+              - name: "off"
+                card_layout: normal
+                show_name: true
+                show_icon: false
+                show_background: true
+                tap_action:
+                  action: call-service
+                  service: climate.set_hvac_mode
+                  target:
+                    entity_id: climate.downstairs_thermostat
+                  data:
+                    hvac_mode: "off"
+            styles: |
+              .bubble-sub-button-1 > ha-icon {
+                color: ${hass.states['climate.downstairs_thermostat'].state === 'on' ? 'rgba(0, 96, 209, 1.0)' : 'white'} !important;
+              }
+      #------------------------------------------------------------------------
+      #Garage Pop-up
+      #-----------------------------------------------------------------------
+      - type: "vertical-stack"
+        cards:
+          - type: "custom:bubble-card"
+            card_type: pop-up
+            hash: "#garage"
+            name: Living Room
+            icon: mdi:sofa
+            entity: binary_sensor.sofa_presence
+            margin_top_mobile: calc(100vh - 600px)
+            margin_top_desktop: calc(100vh - 600px)
+            close_by_clicking_outside: true
+            styles: |
+              .bubble-button-card-container {
+                color: ${hass.states['binary_sensor.sofa_presence'].state === 'on' ? 'green' : 'white'} !important;
+              }
+              .bubble-icon {
+                color: ${hass.states['binary_sensor.sofa_presence'].state === 'on' ? 'green' : 'white'} !important;
+              }
+              .bubble-button-background{
+                background-color: ${hass.states['binary_sensor.sofa_presence'].state === 'on' ? 'rgba(142, 189, 78, 0.308)' : ''} !important;
+              }
+          - type: "custom:bubble-card"
+            card_type: button
+            name: Thermostat
+            entity: climate.downstairs_thermostat
+            button_type: name
+            icon: mdi:thermostat
+            card_layout: normal
+            tap_action:
+              action: none
+            button_action:
+              action: none
+            sub_button:
+              - name: "Current Temperature"
+                card_layout: normal
+                show_name: false
+                show_icon: false
+                show_background: false
+                show_attribute: true
+                attribute: current_temperature
+                tap_action:
+                  action: none
+            styles: |
+              .bubble-button-card-container {
+                color: ${(hass.states['climate.downstairs_thermostat'].state === 'on' && hass.states['climate.downstairs_thermostat'].attributes.hvac_mode == 'cool') ? 'rgba(0, 96, 209, 1.0)' : 'white'} !important;
+              }
+              .bubble-icon {
+                color: ${(hass.states['climate.downstairs_thermostat'].state === 'on' && hass.states['climate.downstairs_thermostat'].attributes.hvac_mode == 'cool') ? 'rgba(0, 96, 209, 1.0)' : 'white'} !important;
+              }
+              .bubble-button-background{
+                background-color: ${hass.states['binary_sensor.sofa_presence'].state === 'on' ? 'rgba(142, 189, 78, 0.308)' : ''} !important;
+              }
+          - type: custom:bubble-card
+            card_type: separator
+
+          - type: "custom:bubble-card"
+            card_type: button
+            name: "Mode"
+            entity: climate.downstairs_thermostat
+            button_type: state
+            icon:
+            card_layout: normal
+            tap_action:
+              action: none
+            button_action:
+              action: none
+            show_name: true
+            sub_button:
+              - name: "auto"
+                card_layout: normal
+                show_name: true
+                show_icon: false
+                show_background: true
+                tap_action:
+                  action: call-service
+                  service: climate.set_hvac_mode
+                  target:
+                    entity_id: climate.downstairs_thermostat
+                  data:
+                    hvac_mode: auto
+
+              - name: "Cold"
+                card_layout: normal
+                show_name: true
+                show_icon: false
+                show_background: true
+                tap_action:
+                  action: call-service
+                  service: climate.set_hvac_mode
+                  target:
+                    entity_id: climate.downstairs_thermostat
+                  data:
+                    hvac_mode: cool
+
+              - name: "heat"
+                card_layout: normal
+                show_name: true
+                show_icon: false
+                show_background: true
+                tap_action:
+                  action: call-service
+                  service: climate.set_hvac_mode
+                  target:
+                    entity_id: climate.downstairs_thermostat
+                  data:
+                    hvac_mode: heat
+
+              - name: "off"
+                card_layout: normal
+                show_name: true
+                show_icon: false
+                show_background: true
+                tap_action:
+                  action: call-service
+                  service: climate.set_hvac_mode
+                  target:
+                    entity_id: climate.downstairs_thermostat
+                  data:
+                    hvac_mode: "off"
+            styles: |
+              .bubble-sub-button-1 > ha-icon {
+                color: ${hass.states['climate.downstairs_thermostat'].state === 'on' ? 'rgba(0, 96, 209, 1.0)' : 'white'} !important;
+              }

@@ -1,0 +1,53 @@
+---
+type: "custom:layout-card"
+layout_type: "custom:grid-layout"
+layout:
+  grid-template-rows: "min-content"
+  grid-template-columns: "min-content/100% min-content/100%"
+  grid-template-areas: >
+    "chip chip"
+    "camera1 camera2"
+    "card1 card1"
+  mediaquery:
+    # Mobile
+    "(max-width: 1300px)":
+      grid-template-columns: "1fr 1fr"
+      grid-template-rows: "min-content"
+      grid-template-areas: >
+        "chip chip"
+        "camera1 camera1"
+        "camera2 camera2"
+view_layout:
+  grid-area: "frontdoor"
+cards:
+  - view_layout:
+      grid-area: "chip"
+    type: "custom:button-card"
+    template: chip_mdi_icon_state
+    variables:
+      ulm_chip_mdi_icon_state_entity: binary_sensor.front_door_contact_sensor
+      ulm_chip_mdi_icon_state_icon: mdi:door
+      
+
+  - view_layout:
+      grid-area: "camera1"
+    type: "custom:button-card"
+    entity: "camera.front_door_doorbell_pro_ring"
+    template: "custom_card_camera"
+    show_icon: True #True if you set ulm_custom_card_camera_title: true
+    variables:
+      ulm_custom_card_camera_title: true
+      ulm_custom_card_camera_name: "Front Door"
+      ulm_custom_card_camera_label: "Doorbell Pro Ring"
+
+
+  - view_layout:
+      grid-area: "camera2"
+    type: "custom:button-card"
+    entity: camera.front_camera_alley_spotlight_cam_plus
+    template: custom_card_camera
+    show_icon: True #True if you set ulm_custom_card_camera_title: true
+    variables:
+      ulm_custom_card_camera_title: True
+      ulm_custom_card_camera_name: "Front Alley"
+      ulm_custom_card_camera_label: "Spotlight Cam Plus"

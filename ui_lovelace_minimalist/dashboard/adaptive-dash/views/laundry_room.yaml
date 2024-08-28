@@ -1,0 +1,144 @@
+---
+type: "custom:layout-card"
+layout_type: "custom:grid-layout"
+layout:
+  grid-template-rows: "min-content"
+  grid-template-columns: "1fr 1fr 1fr 1fr 1fr 1fr"
+  grid-template-areas: |
+    "title1 title1 title1 title1 title1 title1"
+    "washer washer washer dryer dryer dryer"
+    "title2 title2 title2 title2 title2 title2"
+    "SpeedTest SpeedTest SpeedTest ApexChart ApexChart ApexChart2"
+
+  mediaquery:
+    # Mobile
+    "(max-width: 1300px)":
+      grid-template-columns: "1fr 1fr"
+      grid-template-areas: >
+        "title title"
+        "washer washer"
+        "dryer dryer"
+        "title2 title2"
+        "SpeedTest SpeedTest"
+        "ApexChart ApexChart"
+        "ApexChart2 ApexChart3"
+view_layout:
+  grid-area: "laundryroom"
+cards:
+  - view_layout:
+      grid-area: "title1"
+      show:
+        mediaquery: "(min-width: 1400px)"
+    type: "horizontal-stack"
+    cards:
+      - type: "custom:button-card"
+        color_type: blank-card
+      - type: "custom:button-card"
+        color_type: blank-card
+      - type: "custom:button-card"
+        color_type: blank-card
+      - type: "custom:button-card"
+        color_type: blank-card
+      - type: "custom:button-card"
+        template: "card_title"
+        name: "Laundry Room"
+      - type: "custom:button-card"
+        color_type: blank-card
+  - view_layout:
+      grid-area: "title"
+      show:
+        mediaquery: "(max-width: 1300px)"
+    type: "custom:button-card"
+    template: "card_title"
+    name: "Laundry Room"
+
+  - view_layout:
+      grid-area: "washer"
+    type: "custom:button-card"
+    icon: mdi:washing-machine
+    template: "custom_card_haven_washer"
+    variables:
+      ulm_custom_card_washer_power: switch.washer
+      ulm_custom_card_washer_machine_state: sensor.washer_washer_machine_state
+      ulm_custom_card_washer_job_state: sensor.washer_washer_job_state
+      ulm_custom_card_washer_job_states:
+        state1:
+          name: "weightSensing"
+          icon: "mdi:scale"
+        state2:
+          name: "wash"
+          icon: "mdi:waves"
+        state3:
+          name: "rinse"
+          icon: "mdi:water"
+        state4:
+          name: "spin"
+          icon: "mdi:fan"
+      ulm_custom_card_washer_label_idle: >
+        [[[
+          var name = states["sensor.washer_energy"].attributes.friendly_name;
+          var value = states["sensor.washer_energy"].state;
+          var measurement = states["sensor.washer_energy"].attributes.unit_of_measurement;
+          return name + " • " + value + " " + measurement;
+        ]]]
+      ulm_custom_card_washer_label_running: "[[[ return states['sensor.washer_completion_time'].state; ]]]"
+
+  - view_layout:
+      grid-area: "dryer"
+    type: "custom:button-card"
+    template: "custom_card_haven_washer"
+    icon: mdi:tumble-dryer
+    variables:
+      ulm_custom_card_washer_power: switch.dryer
+      ulm_custom_card_washer_machine_state: sensor.dryer_dryer_machine_state
+      ulm_custom_card_washer_job_state: sensor.dryer_dryer_job_state
+      ulm_custom_card_washer_job_states:
+        state1:
+          name: "drying"
+          icon: "mdi:tumble-dryer"
+        state2:
+          name: "cooling"
+          icon: "mdi:snowflake-alert"
+        state3:
+          name: "finished"
+          icon: "mdi:check"
+      ulm_custom_card_washer_label_idle: >
+        [[[
+          var name = states["sensor.dryer_energy"].attributes.friendly_name;
+          var value = states["sensor.dryer_energy"].state;
+          var measurement = states["sensor.dryer_energy"].attributes.unit_of_measurement;
+          return name + " • " + value + " " + measurement;
+        ]]]
+      # ulm_custom_card_washer_label_running: "[[[ return { set ct = states('sensor.dryer_dryer_completion_time') | as_datetime % }
+      # {{ '00:00' if now() > ct else (ct - now()).total_seconds() | timestamp_custom('%H:%M', false) }}"; ]]]"
+      ulm_custom_card_washer_label_running: "[[[ return states['sensor.dryer_completion_time_2'].state; ]]]"
+
+  - view_layout:
+      grid-area: "title2"
+    type: "custom:button-card"
+    template: "card_title"
+    name: "Server"
+  - view_layout:
+      grid-area: "SpeedTest"
+    type: custom:button-card
+    template: custom_card_irmajavi_speedtest
+    variables:
+      ulm_custom_card_irmajavi_speedtest_download_speed_entity: sensor.speedtest_download
+      ulm_custom_card_irmajavi_speedtest_upload_speed_entity: sensor.speedtest_upload
+      ulm_custom_card_irmajavi_speedtest_ping_entity: sensor.speedtest_ping
+      ulm_custom_card_irmajavi_speedtest_color: blue
+      ulm_custom_card_irmajavi_speedtest_router_name: Eero
+      ulm_custom_card_irmajavi_speedtest_router_model: Pro 6
+
+  - view_layout:
+      grid_area: "ApexChart"
+    type: "custom:button-card"
+    template: "custom_card_bar_card"
+    variables:
+      ulm_custom_card_bar_card_entity: "sensor.system_monitor_memory_use"
+      ulm_custom_card_bar_card_name: Memory Usage
+      ulm_custom_card_bar_card_value: true
+      ulm_custom_card_bar_card_indicator: true
+      ulm_custom_card_bar_card_color: "var(--google-green)"
+      ulm_custom_card_bar_card_min: 0
+      ulm_custom_card_bar_card_max: 4
